@@ -6,8 +6,9 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: #1e1e1e;
 }
 .container {
   width: 1440px;
-  background-color: blue;
+  background-color: #ffffff;
 }
