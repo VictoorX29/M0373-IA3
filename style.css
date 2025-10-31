@@ -47,4 +47,11 @@ header {
   height: 68px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 48px;
 }
