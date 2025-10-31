@@ -27,7 +27,6 @@
   font-style: normal;
 }
 /* Estilos */
-
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +36,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #1e1e1e;
+  font-family: "SF Pro Display", sans-serif;
 }
 .container {
   width: 1440px;
@@ -44,4 +44,7 @@ body {
 }
 header {
   padding: 0 100px;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
 }
