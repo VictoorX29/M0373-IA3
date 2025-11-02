@@ -1,61 +1,71 @@
 /* Fuentes */
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("./fonts/SF-Pro-Display-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("./fonts/SF-Pro-Display-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("./fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("./fonts/SF-Pro-Display-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 /* Estilos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-  display: flex;
-  justify-content: center;
-  background-color: #1e1e1e;
-  font-family: "SF Pro Display", sans-serif;
+	display: flex;
+	justify-content: center;
+	background-color: #1e1e1e;
+	font-family: "SF Pro Display", sans-serif;
 }
 .container {
-  width: 1440px;
-  background-color: #ffffff;
+	width: 1440px;
+	background-color: #ffffff;
 }
 header {
-  padding: 0 100px;
-  height: 68px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	padding: 0 100px;
+	height: 68px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .nav {
-  display: flex;
-  list-style: none;
-  gap: 48px;
+	display: flex;
+	list-style: none;
+	gap: 48px;
 }
+.nav li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .nostyle {
-  text-decoration: none;
-  color: #000000;
+	text-decoration: none;
+	color: #000000;
 }
