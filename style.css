@@ -36,13 +36,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
+html {
 	display: flex;
 	justify-content: center;
 	background-color: #1e1e1e;
 	font-family: "SF Pro Display", sans-serif;
 }
-.container {
+body {
 	width: 1440px;
 	background-color: #ffffff;
 }
@@ -53,19 +53,38 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
-
-.nav {
+.flex {
 	display: flex;
+}
+.align-center {
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.nostyle {
+	text-decoration: none;
+}
+.logo {
+	color: #1b1f2d;
+}
+.logo h1 {
+	margin-left: 4px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 2%;
+}
+.nav {
 	list-style: none;
 	gap: 48px;
 }
 .nav li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 2%;
 }
-
-.nostyle {
-	text-decoration: none;
-	color: #000000;
+.nav a {
+	color: #333333;
 }
