@@ -53,13 +53,16 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+.nav {
+	height: 19px;
+}
+.flex {
+	display: flex;
+}
 .flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.nav {
-	display: flex;
 }
 .align-center {
 	align-items: center;
