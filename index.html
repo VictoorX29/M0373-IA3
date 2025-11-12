@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="flex justify-center m-0 p-0 box-border bg-[#1e1e1e]">
+<html lang="en" class="flex justify-center bg-[#1e1e1e] font-sfprodisplay">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,17 +43,12 @@
 			}
 			@theme {
 				--font-sfprodisplay: "SF Pro Display", sans-serif;
-				--general: 100px;
-			}
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
+				--spacing-general: 100px;
 			}
 		</style>
 	</head>
 	<body class="w-[1440px] bg-white">
-		<header class="flex justify-between items-center p-(--general)">
+		<header class="flex justify-between items-center px-general">
 			<div class="">
 				<a class="" href="index.html">
 					<img src="images/logoavion.svg" alt="Logo Avion" />
@@ -63,7 +58,7 @@
 			<div>
 				<ul class="">
 					<li>
-						<a href="#" class="text-clifford">Home</a>
+						<a href="#" class="">Home</a>
 					</li>
 					<li>
 						<a href="#" class="">Discover</a>
@@ -80,7 +75,7 @@
 				</ul>
 			</div>
 			<div class="">
-				<button class="" onclick="location.href=">Register</button>
+				<button class="">Register</button>
 				<button class="">Sign In</button>
 			</div>
 		</header>
