@@ -99,16 +99,16 @@
 			</nav>
 			<div class="flex gap-2.5">
 				<button
-					class="rounded-md border border-[#2F80ED] px-[18px] py-2.5 text-[15px] leading-5 tracking-[2%] text-[#2F80ED]">
+					class="rounded-md border border-[#2F80ED] px-[18px] py-2.5 text-[15px] leading-5 tracking-[2%] text-[#2F80ED] cursor-pointer">
 					Register
 				</button>
 				<button
-					class="rounded-md border border-white px-[18px] py-2.5 text-[15px] leading-5 tracking-[2%] text-white bg-[#2F80ED]">
+					class="rounded-md border border-white px-[18px] py-2.5 text-[15px] leading-5 tracking-[2%] text-white bg-[#2F80ED] cursor-pointer">
 					Sign In
 				</button>
 			</div>
 		</header>
-		<main class="flex items-center pt-3 px-general">
+		<main class="flex items-center pt-3 px-general flex-col">
 			<div class="flex items-center justify-center text-center">
 				<img
 					src="images/fondoenjoy.png"
@@ -119,11 +119,37 @@
 						Enjoy Your Dream Vacation
 					</h2>
 					<p
-						class="mt-5 font-normal text-xl leading-[140%] tracking-[2%] text-balance text-white">
+						class="mt-5 font-normal text-xl leading-[140%] tracking-[2%] text-[white]">
 						Plan and book our perfect trip with expert advice, travel tips,
-						destination information and inspiration from us
+						destination <br />
+						information and inspiration from us
 					</p>
 				</div>
+			</div>
+			<div class="py-2.5 px-3 rounded-lg">
+				<form class="search-form">
+					<div class="input-group">
+						<i class="fa fa-map-marker-alt"></i>
+						<input type="text" placeholder="Where are you going?" />
+					</div>
+
+					<div class="input-group">
+						<i class="fa fa-calendar-alt"></i>
+						<input type="text" placeholder="Check in date" />
+					</div>
+
+					<div class="input-group">
+						<i class="fa fa-calendar-alt"></i>
+						<input type="text" placeholder="Check out date" />
+					</div>
+
+					<div class="input-group">
+						<i class="fa fa-user"></i>
+						<input type="text" placeholder="Guests" />
+					</div>
+
+					<button type="submit">Search</button>
+				</form>
 			</div>
 		</main>
 		<footer></footer>
