@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="flex justify-center bg-[#1e1e1e] font-sfprodisplay">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,125 +7,187 @@
 		<meta name="author" content="Víctor M.N. " />
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/logoavion.svg" type="image/x-icon" />
-		<!-- Tailwind CSS -->
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<style type="text/tailwindcss">
-			@font-face {
-				font-family: "SF Pro Display";
-				src: url("./fonts/SF-Pro-Display-Regular.otf") format("opentype");
-				font-weight: 400;
-				font-style: normal;
-				font-display: swap;
-			}
-
-			@font-face {
-				font-family: "SF Pro Display";
-				src: url("./fonts/SF-Pro-Display-Medium.otf") format("opentype");
-				font-weight: 500;
-				font-style: normal;
-				font-display: swap;
-			}
-
-			@font-face {
-				font-family: "SF Pro Display";
-				src: url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype");
-				font-weight: 600;
-				font-style: normal;
-				font-display: swap;
-			}
-
-			@font-face {
-				font-family: "SF Pro Display";
-				src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
-				font-weight: 700;
-				font-style: normal;
-				font-display: swap;
-			}
-			@theme {
-				--font-sfprodisplay: "SF Pro Display", sans-serif;
-				--spacing-general: 100px;
-			}
-		</style>
+		<!-- Estilos -->
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body class="w-[1440px] bg-white">
-		<header class="flex justify-between items-center px-general h-[68px]">
-			<div class="">
-				<a class="flex align-center gap-1 h-6" href="index.html">
+	<body>
+		<header class="padding-general header">
+			<div class="div-logo">
+				<a class="logo">
 					<img src="images/logoavion.svg" alt="Logo Avion" />
-					<h1
-						class="font-medium text-lg leading-[100%] tracking-[2%] flex items-center text-[#1B1F2D]">
-						my Dream Place
-					</h1>
+					<h1 class="h1-logo">my Dream Place</h1>
 				</a>
 			</div>
-			<nav class="">
-				<ul class="flex gap-12">
+			<div>
+				<ul>
 					<li>
-						<a
-							href="#"
-							class="font-normal text-base leading-[100%] tracking-[2%] text-[#333333]"
-							>Home</a
-						>
+						<a href="#">Home</a>
 					</li>
 					<li>
-						<a
-							href="#"
-							class="font-normal text-base leading-[100%] tracking-[2%] text-[#333333]"
-							>Discover</a
-						>
+						<a href="#">Discover</a>
 					</li>
 					<li>
-						<a
-							href="#"
-							class="font-normal text-base leading-[100%] tracking-[2%] text-[#333333]"
-							>Activities</a
-						>
+						<a href="#">Activities</a>
 					</li>
 					<li>
-						<a
-							href="#"
-							class="font-normal text-base leading-[100%] tracking-[2%] text-[#333333]"
-							>About</a
-						>
+						<a href="#">About</a>
 					</li>
 					<li>
-						<a
-							href="#"
-							class="font-normal text-base leading-[100%] tracking-[2%] text-[#333333]"
-							>Contact</a
-						>
+						<a href="#">Contact</a>
 					</li>
 				</ul>
-			</nav>
-			<div class="flex gap-2.5">
-				<button
-					class="rounded-md border border-[#2F80ED] px-[18px] py-2.5 text-[15px] leading-5 tracking-[2%] text-[#2F80ED] cursor-pointer">
-					Register
-				</button>
-				<button
-					class="rounded-md border border-white px-[18px] py-2.5 text-[15px] leading-5 tracking-[2%] text-white bg-[#2F80ED] cursor-pointer">
-					Sign In
-				</button>
+			</div>
+			<div>
+				<button>Register</button>
+				<button>Sign In</button>
 			</div>
 		</header>
-		<main class="flex items-center pt-3 px-general flex-col">
-			<div class="flex items-center justify-center text-center">
-				<img
-					src="images/fondoenjoy.png"
-					alt="Fondo Enjoy Your Dream Vacation" />
-				<div class="absolute">
-					<h2
-						class="font-bold text-[32px] leading-[100%] tracking-normal text-white">
-						Enjoy Your Dream Vacation
-					</h2>
-					<p
-						class="mt-5 font-normal text-xl leading-[140%] tracking-[2%] text-[white]">
+		<main>
+			<div>
+				<img src="images/fondo1.webp" alt="Fondo Principal" />
+				<div>
+					<h2>Enjoy Your Dream Vacation</h2>
+					<p>
 						Plan and book our perfect trip with expert advice, travel tips,
-						destination <br />
-						information and inspiration from us
+						destination information and inspiration from us
 					</p>
 				</div>
 			</div>
+			<div>
+				<form action="resultados.html" method="post">
+					<label for="destination">Destination</label>
+					<input
+						type="text"
+						id="destination"
+						name="destination"
+						placeholder="Where are you going?" />
+
+					<label for="checkin">Check-In</label>
+					<input type="date" id="checkin" name="checkin" />
+
+					<label for="checkout">Check-Out</label>
+					<input type="date" id="checkout" name="checkout" />
+
+					<label for="guests">Guests</label>
+					<input
+						type="number"
+						id="guests"
+						name="guests"
+						min="1"
+						placeholder="Number of guests" />
+
+					<button type="submit">Search</button>
+				</form>
+			</div>
+			<div>
+				<img src="images/warning.webp" alt="Warning Icono" />
+				<p>
+					Check the latest COVID-19 restrictions before you travel.
+					<a href="">Learn more</a>
+				</p>
+			</div>
+			<section>
+				<h2>Enjoy your dream vacation</h2>
+				<p>
+					Plan and book our perfect trip with expert advice, travel tips,
+					destination information and inspiration from us
+				</p>
+				<div>
+					<div>
+						<img src="images/australia.webp" alt="Australia" />
+						<h3>Australia</h3>
+						<p>2246 properties</p>
+					</div>
+					<div>
+						<img src="images/japan.webp" alt="Japan" />
+						<h3>Japan</h3>
+						<p>1278 properties</p>
+					</div>
+					<div>
+						<img src="images/new-zealand.webp" alt="New Zealand" />
+						<h3>New Zealand</h3>
+						<p>480 properties</p>
+					</div>
+					<div>
+						<img src="images/greece.webp" alt="Greece" />
+						<h3>Greece</h3>
+						<p>320 properties</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Get inspiration for your next trip</h2>
+				<div>
+					<div>
+						<img src="images/sydeny.webp" alt="Sydney" />
+						<div>
+							<h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
+							<p>
+								Browse the fastest growing tourism sector in the heart of
+								Australia tourism capital ....
+							</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/vegantravel.webp" alt="Vegan Travellers" />
+						<div>
+							<h3>Top cities for Vegan Travellers</h3>
+							<p>
+								Top sites where you do not have to worry about being a vegan.
+								Our tourist guide is here...
+							</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/covidtimeline.webp" alt="COVID Timeline" />
+						<div>
+							<h3>World’s top destinations during and post covid timeline</h3>
+							<p>
+								Pandemic is still intact and will be here for a longer time.
+								Here’s where your next destination...
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Popular hotels</h2>
+				<div>
+					<div>
+						<img src="images/lakeside.png" alt="Lakeside Motel Warefront" />
+						<h3>Lakeside Motel Warefront</h3>
+						<p>2246 properties</p>
+					</div>
+					<div>
+						<img src="images/recce.png" alt="Recce Graham Resort" />
+						<h3>Recce Graham Resort</h3>
+						<p>1278 properties</p>
+					</div>
+					<div>
+						<img src="images/fireside.png" alt="Fireside Dinners" />
+						<h3>Fireside Dinners</h3>
+						<p>480 properties</p>
+					</div>
+					<div>
+						<img src="images/oculous.png" alt="Oculous Inn Stay" />
+						<h3>Oculous Inn Stay</h3>
+						<p>320 properties</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img src="" alt="" />
+				<div>
+					<h2>
+						Download the mobile application for bonus coupons and travel codes
+					</h2>
+					<button>Download mobile app</button>
+				</div>
+			</section>
+			<section>
+				<h2>Explore the world with My Dream place</h2>
+				<a href="">Discover new places and experiences</a>
+			</section>
 		</main>
 		<footer></footer>
 	</body>
