@@ -126,29 +126,42 @@
 					</p>
 				</div>
 			</div>
-			<div class="py-2.5 px-3 rounded-lg">
-				<form class="search-form">
-					<div class="input-group">
-						<i class="fa fa-map-marker-alt"></i>
-						<input type="text" placeholder="Where are you going?" />
-					</div>
-
-					<div class="input-group">
-						<i class="fa fa-calendar-alt"></i>
-						<input type="text" placeholder="Check in date" />
-					</div>
-
-					<div class="input-group">
-						<i class="fa fa-calendar-alt"></i>
-						<input type="text" placeholder="Check out date" />
-					</div>
-
-					<div class="input-group">
-						<i class="fa fa-user"></i>
-						<input type="text" placeholder="Guests" />
-					</div>
-
-					<button type="submit">Search</button>
+			<div class="py-2.5 px-3 rounded-lg relative bottom-8 bg-white w-[1030px]">
+				<form action="resultados.html" method="get" class="flex gap-2.5 w-full">
+					<input
+						type="text"
+						name="destino"
+						id="destino"
+						placeholder="Where are you going?"
+						required
+						class="rounded p-3 pt-[11px] bg-[#F2F2F2] flex-1" />
+					<input
+						type="date"
+						name="checkin"
+						id="checkin"
+						placeholder="Check in date"
+						required
+						class="rounded p-3 pt-[11px] bg-[#F2F2F2] flex-1" />
+					<input
+						type="date"
+						name="checkout"
+						id="checkout"
+						placeholder="Check out date"
+						required
+						class="rounded p-3 pt-[11px] bg-[#F2F2F2] flex-1" />
+					<input
+						type="number"
+						name="huespedes"
+						id="huespedes"
+						placeholder="Guests"
+						required
+						min="1"
+						class="rounded p-3 pt-[11px] bg-[#F2F2F2] flex-1" />
+					<button
+						type="submit"
+						class="bg-[#2F80ED] text-white font-medium text-[15px] leading-5 tracking-[2%] rounded-md py-3 px-[18px]">
+						Search
+					</button>
 				</form>
 			</div>
 		</main>
