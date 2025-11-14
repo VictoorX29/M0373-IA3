@@ -1,35 +1,3 @@
-/* Fuentes */
-@font-face {
-	font-family: "SF Pro Display";
-	src: url("./fonts/SF-Pro-Display-Regular.otf") format("opentype");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "SF Pro Display";
-	src: url("./fonts/SF-Pro-Display-Medium.otf") format("opentype");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "SF Pro Display";
-	src: url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "SF Pro Display";
-	src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
 /* Reset */
 html,
 body,
@@ -155,6 +123,38 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* Fuentes */
+@font-face {
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SF Pro Display";
+	src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 /* Estilos */
 html {
 	background-color: #1e1e1e;
@@ -229,10 +229,9 @@ body {
 	display: flex;
 	gap: 10px;
 }
-.header-botonFondoBlanco {
-	border: 1px solid #2f80ed;
+.header-botones-compartido {
+	font-family: "SF Pro Display", sans-serif;
 	border-radius: 6px;
-	width: 92px;
 	height: 40px;
 	display: flex;
 	justify-content: center;
@@ -241,30 +240,24 @@ body {
 	font-size: 15px;
 	line-height: 20px;
 	letter-spacing: 2%;
+	cursor: pointer;
+}
+.header-botonFondoBlanco {
+	border: 1px solid #2f80ed;
+	width: 92px;
 	color: #2f80ed;
 	background-color: #ffffff;
-	cursor: pointer;
 }
 .header-botonFondoAzul {
 	border: none;
-	border-radius: 6px;
 	width: 82px;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 20px;
-	letter-spacing: 2%;
 	color: #ffffff;
 	background-color: #2f80ed;
-	cursor: pointer;
 }
 
 /* Páginas Formularios */
 .main-signin {
-	padding: 96px 520px 0;
+	padding: 96px 520px 220px;
 }
 .section-main-signin {
 	display: flex;
@@ -359,15 +352,95 @@ body {
 	padding-left: 18px;
 	border: none;
 	background-color: #2f80ed;
+	font-family: "SF Pro Display", sans-serif;
+
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
 	letter-spacing: 2%;
 	color: #ffffff;
 	cursor: pointer;
-	transition: background 0.2s ease;
+	transition: background-color 0.2s ease;
 }
 .form-button:hover {
 	background-color: rgba(47, 128, 237, 0.8);
-	transition: background 0.2s ease;
+	transition: background-color 0.2s ease;
+}
+.div-or-options {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	justify-content: space-between;
+	margin-top: 24px;
+	height: 24px;
+}
+.p-or-options {
+	white-space: nowrap;
+	color: #4f4f4f;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 2%;
+}
+.hr-or-options {
+	width: 100%;
+	margin: 0;
+	border: 1px solid #e0e0e0;
+}
+.buttons-continue {
+	height: 44px;
+	border-radius: 6px;
+	padding-top: 12px;
+	padding-right: 18px;
+	padding-bottom: 12px;
+	padding-left: 18px;
+	display: flex;
+	font-family: "SF Pro Display", sans-serif;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	cursor: pointer;
+}
+.button-continue-google {
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	margin-top: 24px;
+	color: #4f4f4f;
+	transition: background-color 0.2s ease;
+}
+.button-continue-google:hover {
+	background-color: #e0e0e0;
+	transition: background-color 0.2s ease;
+}
+.button-continue-facebook {
+	margin-top: 12px;
+	background-color: rgb(71, 89, 147);
+	border: none;
+	color: #ffffff;
+	transition: background-color 0.2s ease;
+}
+.button-continue-facebook:hover {
+	background-color: rgba(71, 89, 147, 0.8);
+	transition: background-color 0.2s ease;
+}
+.p-register {
+	margin-top: 60px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	text-align: center;
+	color: #4f4f4f;
+}
+.p-register a {
+	color: #2f80ed;
+	transition: color 0.2s ease;
+}
+.p-register a:hover {
+	color: rgba(47, 128, 237, 0.8);
+	transition: color 0.2s ease;
 }
