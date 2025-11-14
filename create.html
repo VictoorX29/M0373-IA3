@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IA3: Proyecto 2</title>
+		<meta name="author" content="Víctor M.N." />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/logoavion.svg" type="image/x-icon" />
+		<!-- Estilos -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="body-signin">
+		<header class="padding-general header">
+			<div class="div-logo">
+				<a class="logo nostyle" href="index.html">
+					<img src="images/logoavion.svg" alt="Logo Avion" />
+					<h1 class="h1-logo">my Dream Place</h1>
+				</a>
+			</div>
+		</header>
+		<main class="main-signin">
+			<section class="section-main-signin">
+				<h2 class="tit-signin">Create password</h2>
+				<p class="p-signin">
+					Use a minimum of 10 characters, including letters, lowercase letters,
+					and numbers.
+				</p>
+				<form action="index-home.html" method="get" class="form-signin">
+					<label for="password" class="form-label">Password</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						class="form-text"
+						required
+						pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}"
+						placeholder="Enter password" />
+					<label for="confirm-password" class="form-label"
+						>Confirm password</label
+					>
+					<input
+						type="password"
+						name="confirm-password"
+						id="confirm-password"
+						class="form-text"
+						required
+						placeholder="Enter password" />
+
+					<button type="submit" class="form-button-create">
+						Create account
+					</button>
+				</form>
+				<p class="p-terminos">
+					By creating an account, you agree with our
+					<a href="" class="nostyle">Terms and Conditions</a> and
+					<a href="" class="nostyle">Privacy Statement</a>.
+				</p>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>

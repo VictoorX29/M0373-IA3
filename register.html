@@ -21,8 +21,8 @@
 		</header>
 		<main class="main-signin">
 			<section class="section-main-signin">
-				<h2 class="tit-signin">Sign in</h2>
-				<form action="index-home.html" method="get" class="form-signin">
+				<h2 class="tit-signin">Register</h2>
+				<form action="/create.html" method="get" class="form-signin">
 					<label for="email" class="form-label">Email address</label>
 					<input
 						type="email"
@@ -31,28 +31,9 @@
 						class="form-text"
 						required
 						placeholder="Email address" />
-					<label for="password" class="form-label">Password</label>
-					<input
-						type="password"
-						name="password"
-						id="password"
-						class="form-text"
-						required
-						placeholder="Enter password" />
-					<div class="div-form-forgot">
-						<div class="form-forgot1">
-							<input
-								type="checkbox"
-								name="keepme"
-								id="keepme"
-								class="form-checkbox" />
-							<label for="keepme" class="label-keepme">Keep me signed in</label>
-						</div>
-						<div class="form-forgot2">
-							<a href="/forgot.html" class="a-forgotpass">Forgot password?</a>
-						</div>
-					</div>
-					<button type="submit" class="form-button">Continue with email</button>
+					<button type="submit" class="form-button-register">
+						Continue with email
+					</button>
 				</form>
 				<div class="div-or-options">
 					<hr class="hr-or-options" />
@@ -68,8 +49,8 @@
 					Continue with Facebook
 				</button>
 				<p class="p-register">
-					Don’t have an account?
-					<a href="register.html" class="nostyle">Register</a>
+					Already have an account?
+					<a href="/signin.html" class="nostyle">Sign in</a>
 				</p>
 			</section>
 		</main>
