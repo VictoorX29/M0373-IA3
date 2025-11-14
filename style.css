@@ -176,6 +176,9 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
+.nostyle {
+	text-decoration: none;
+}
 .div-logo {
 	height: 24px;
 	display: flex;
@@ -194,4 +197,177 @@ body {
 	font-size: 18px;
 	line-height: 100%;
 	letter-spacing: 2%;
+	color: #1b1f2d;
+}
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 19px;
+}
+.header-nav-ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 48px;
+	height: 100%;
+}
+.header-li {
+	display: flex;
+	align-items: center;
+}
+.header-li > a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: #333333;
+}
+.header-botones {
+	display: flex;
+	gap: 10px;
+}
+.header-botonFondoBlanco {
+	border: 1px solid #2f80ed;
+	border-radius: 6px;
+	width: 92px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	color: #2f80ed;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+.header-botonFondoAzul {
+	border: none;
+	border-radius: 6px;
+	width: 82px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	color: #ffffff;
+	background-color: #2f80ed;
+	cursor: pointer;
+}
+
+/* Páginas Formularios */
+.main-signin {
+	padding: 96px 520px 0;
+}
+.section-main-signin {
+	display: flex;
+	flex-direction: column;
+}
+.tit-signin {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+}
+.form-signin {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.form-label {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	cursor: pointer;
+}
+.form-signin label:nth-of-type(2) {
+	margin-top: 20px;
+}
+.form-text {
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 4px;
+	margin-top: 4px;
+	padding: 11px 12px 12px 12px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 2%;
+}
+.div-form-forgot {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+.form-forgot1 {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+.form-forgot2 {
+	display: flex;
+	justify-content: end;
+	width: 50%;
+}
+.form-checkbox {
+	margin: 0px;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: 1px solid #bdbdbd;
+	cursor: pointer;
+}
+.label-keepme {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+	margin-left: 8px;
+	cursor: pointer;
+}
+.a-forgotpass {
+	align-items: center;
+	justify-content: end;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	text-decoration: none;
+	color: #2f80ed;
+	transition: color 0.2s ease;
+}
+.a-forgotpass:hover {
+	color: rgba(47, 128, 237, 0.8);
+	transition: color 0.2s ease;
+}
+.form-button {
+	margin-top: 20px;
+	border-radius: 6px;
+	padding-top: 12px;
+	padding-right: 18px;
+	padding-bottom: 12px;
+	padding-left: 18px;
+	border: none;
+	background-color: #2f80ed;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+.form-button:hover {
+	background-color: rgba(47, 128, 237, 0.8);
+	transition: background 0.2s ease;
 }
