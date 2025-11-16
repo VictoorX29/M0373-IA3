@@ -21,19 +21,19 @@
 			<nav class="header-nav">
 				<ul class="header-nav-ul">
 					<li class="header-li">
-						<a href="#" class="nostyle">Home</a>
+						<a href="#" class="nostyle header-a">Home</a>
 					</li>
 					<li class="header-li">
-						<a href="#" class="nostyle">Discover</a>
+						<a href="#" class="nostyle header-a">Discover</a>
 					</li>
 					<li class="header-li">
-						<a href="#" class="nostyle">Activities</a>
+						<a href="#" class="nostyle header-a">Activities</a>
 					</li>
 					<li class="header-li">
-						<a href="#" class="nostyle">About</a>
+						<a href="#" class="nostyle header-a">About</a>
 					</li>
 					<li class="header-li">
-						<a href="#" class="nostyle">Contact</a>
+						<a href="#" class="nostyle header-a">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -50,107 +50,152 @@
 				</button>
 			</div>
 		</header>
-		<main>
-			<div>
-				<img src="images/fondoenjoy.png" alt="Fondo Principal" />
-				<div>
-					<h2>Enjoy Your Dream Vacation</h2>
-					<p>
+		<main class="padding-general index">
+			<div class="div-enjoy">
+				<img
+					src="images/fondoenjoy.png"
+					alt="Fondo Principal"
+					class="img-enjoy" />
+				<div class="div-text-enjoy">
+					<h2 class="h2-text-enjoy">Enjoy Your Dream Vacation</h2>
+					<p class="p-text-enjoy">
 						Plan and book our perfect trip with expert advice, travel tips,
-						destination information and inspiration from us
+						destination <br />
+						information and inspiration from us
 					</p>
 				</div>
 			</div>
-			<div>
-				<form action="resultados.html" method="post">
-					<label for="destination">Destination</label>
+			<div class="div-search">
+				<form action="resultados.html" method="get" class="form-search">
 					<input
 						type="text"
 						id="destination"
 						name="destination"
-						placeholder="Where are you going?" />
-
-					<label for="checkin">Check-In</label>
-					<input type="date" id="checkin" name="checkin" />
-
-					<label for="checkout">Check-Out</label>
-					<input type="date" id="checkout" name="checkout" />
-
-					<label for="guests">Guests</label>
+						placeholder="Where are you going?"
+						class="input-where input-comp"
+						required />
+					<input
+						type="date"
+						id="checkin"
+						name="checkin"
+						placeholder="Check in date"
+						class="input-checkin input-comp"
+						required />
+					<input
+						type="date"
+						id="checkout"
+						name="checkout"
+						placeholder="Check out date"
+						class="input-checkout input-comp"
+						required />
 					<input
 						type="number"
 						id="guests"
 						name="guests"
 						min="1"
-						placeholder="Number of guests" />
+						placeholder="Guests"
+						class="input-guests input-comp"
+						required />
 
-					<button type="submit">Search</button>
+					<button type="submit" class="button-search">Search</button>
 				</form>
 			</div>
-			<div>
-				<img src="images/warning.webp" alt="Warning Icono" />
-				<p>
+			<div class="div-warning">
+				<img
+					src="images/icon-warning.png"
+					alt="Warning Icono"
+					class="warning-icono" />
+				<p class="warning-text">
 					Check the latest COVID-19 restrictions before you travel.
-					<a href="">Learn more</a>
+					<a href="" class="nostyle warning-a">Learn more</a>
 				</p>
 			</div>
-			<section>
-				<h2>Enjoy your dream vacation</h2>
-				<p>
+			<section class="sect-enjoy">
+				<h2 class="h2-index">Enjoy your dream vacation</h2>
+				<p class="sect-enjoy-p">
 					Plan and book our perfect trip with expert advice, travel tips,
-					destination information and inspiration from us
+					destination information and <br />inspiration from us
 				</p>
-				<div>
+				<div class="div-sect-enjoy">
 					<div>
-						<img src="images/australia.png" alt="Australia" />
-						<h3>Australia</h3>
-						<p>2246 properties</p>
+						<img
+							src="images/australia.png"
+							alt="Australia"
+							class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">Australia</h3>
+							<p class="p-div-text-sect-enjoy">2246 properties</p>
+						</div>
 					</div>
 					<div>
-						<img src="images/japan.png" alt="Japan" />
-						<h3>Japan</h3>
-						<p>1278 properties</p>
+						<img src="images/japan.png" alt="Japan" class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">Japan</h3>
+							<p class="p-div-text-sect-enjoy">1278 properties</p>
+						</div>
 					</div>
 					<div>
-						<img src="images/newzealand.png" alt="New Zealand" />
-						<h3>New Zealand</h3>
-						<p>480 properties</p>
+						<img
+							src="images/newzealand.png"
+							alt="New Zealand"
+							class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">New Zealand</h3>
+							<p class="p-div-text-sect-enjoy">480 properties</p>
+						</div>
 					</div>
 					<div>
-						<img src="images/greece.png" alt="Greece" />
-						<h3>Greece</h3>
-						<p>320 properties</p>
+						<img src="images/greece.png" alt="Greece" class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">Greece</h3>
+							<p class="p-div-text-sect-enjoy">320 properties</p>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<h2>Get inspiration for your next trip</h2>
-				<div>
-					<div>
-						<img src="images/sydeny.png" alt="Sydney" />
-						<div>
-							<h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
-							<p>
+			<section class="sect-nextrip">
+				<h2 class="h2-index">Get inspiration for your next trip</h2>
+				<div class="div-sect-nextrip">
+					<div class="card-div-sect-nextrip">
+						<img
+							src="images/sydeny.png"
+							alt="Sydney"
+							class="img-card-div-sect-nextrip" />
+						<div class="div-text-sect-nextrip">
+							<h3 class="h3-div-text-sect-nextrip">
+								Sydeny’s 10 most fashionable 5 star hotels
+							</h3>
+							<p class="p-div-text-sect-nextrip">
 								Browse the fastest growing tourism sector in the heart of
 								Australia tourism capital ....
 							</p>
 						</div>
 					</div>
-					<div>
-						<img src="images/vegantravel.png" alt="Vegan Travellers" />
-						<div>
-							<h3>Top cities for Vegan Travellers</h3>
-							<p>
+					<div class="card-div-sect-nextrip">
+						<img
+							src="images/vegantravel.png"
+							alt="Vegan Travellers"
+							class="img-card-div-sect-nextrip" />
+						<div class="div-text-sect-nextrip">
+							<h3 class="h3-div-text-sect-nextrip">
+								Top cities for Vegan Travellers
+							</h3>
+							<p class="p-div-text-sect-nextrip">
 								Top sites where you do not have to worry about being a vegan.
 								Our tourist guide is here...
 							</p>
 						</div>
 					</div>
-					<div>
-						<img src="images/covidtimeline.png" alt="COVID Timeline" />
-						<div>
-							<h3>World’s top destinations during and post covid timeline</h3>
-							<p>
+					<div class="card-div-sect-nextrip">
+						<img
+							src="images/covidtimeline.png"
+							alt="COVID Timeline"
+							class="img-card-div-sect-nextrip" />
+						<div class="div-text-sect-nextrip">
+							<h3 class="h3-div-text-sect-nextrip">
+								World’s top destinations during and post covid timeline
+							</h3>
+							<p class="p-div-text-sect-nextrip">
 								Pandemic is still intact and will be here for a longer time.
 								Here’s where your next destination...
 							</p>
@@ -158,43 +203,69 @@
 					</div>
 				</div>
 			</section>
-			<section>
-				<h2>Popular hotels</h2>
-				<div>
+			<section class="sect-popular">
+				<h2 class="h2-index">Popular hotels</h2>
+				<div class="div-sect-popular">
 					<div>
-						<img src="images/lakeside.png" alt="Lakeside Motel Warefront" />
-						<h3>Lakeside Motel Warefront</h3>
-						<p>2246 properties</p>
+						<img
+							src="images/lakeside.png"
+							alt="Lakeside Motel Warefront"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Lakeside Motel Warefront</h3>
+							<p class="p-div-text-sect-popular">2246 properties</p>
+						</div>
 					</div>
 					<div>
-						<img src="images/recce.png" alt="Recce Graham Resort" />
-						<h3>Recce Graham Resort</h3>
-						<p>1278 properties</p>
+						<img
+							src="images/recce.png"
+							alt="Recce Graham Resort"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Recce Graham Resort</h3>
+							<p class="p-div-text-sect-popular">1278 properties</p>
+						</div>
 					</div>
 					<div>
-						<img src="images/fireside.png" alt="Fireside Dinners" />
-						<h3>Fireside Dinners</h3>
-						<p>480 properties</p>
+						<img
+							src="images/fireside.png"
+							alt="Fireside Dinners"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Fireside Dinners</h3>
+							<p class="p-div-text-sect-popular">480 properties</p>
+						</div>
 					</div>
 					<div>
-						<img src="images/oculous.png" alt="Oculous Inn Stay" />
-						<h3>Oculous Inn Stay</h3>
-						<p>320 properties</p>
+						<img
+							src="images/oculous.png"
+							alt="Oculous Inn Stay"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Oculous Inn Stay</h3>
+							<p class="p-div-text-sect-popular">320 properties</p>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<img src="images/fondoplayamovil.png" alt="" />
-				<div>
-					<h2>
-						Download the mobile application for bonus coupons and travel codes
+			<section class="sect-download">
+				<img
+					src="images/fondoplayamovil.png"
+					alt=""
+					class="img-sect-download" />
+				<div class="div-sect-download">
+					<h2 class="h2-sect-download">
+						Download the mobile application for bonus <br />coupons and travel
+						codes
 					</h2>
-					<button>Download mobile app</button>
+					<button class="button-sect-download">Download mobile app</button>
 				</div>
 			</section>
-			<section>
-				<h2>Explore the world with My Dream place</h2>
-				<a href="">Discover new places and experiences</a>
+			<section class="sect-explore">
+				<h2 class="h2-sect-explore">Explore the world with My Dream place</h2>
+				<a href="" class="nostyle a-sect-explore"
+					>Discover new places and experiences</a
+				>
 			</section>
 		</main>
 		<footer></footer>
