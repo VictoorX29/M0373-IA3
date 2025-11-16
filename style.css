@@ -443,14 +443,83 @@ input[type="number"]::-webkit-outer-spin-button {
 	letter-spacing: 2%;
 	color: #2f80ed;
 	transition: color 0.2s ease;
-	display: block;
+	display: inline-block;
 	margin-top: 16px;
 }
 .a-sect-explore:hover {
 	color: rgba(47, 128, 237, 0.8);
 	transition: color 0.2s ease;
 }
-/* Páginas Formularios */
+.footer-index {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 90px;
+}
+.div-footer-logo {
+	width: 225px;
+}
+.footer-p-logo {
+	margin-top: 6px;
+	margin-left: 28px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+}
+.footer-h4-tit {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 2%;
+}
+.footer-ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.footer-li {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+	white-space: nowrap;
+}
+.footer-li-a {
+	display: inline-block;
+	color: rgb(47, 128, 237);
+	transition: color 0.2s ease;
+}
+.footer-li-a:hover {
+	color: rgba(47, 128, 237, 0.8);
+	transition: color 0.2s ease;
+}
+.footer-barragris {
+	margin-top: 60px;
+	background-color: #ebebeb;
+	padding: 10px 205px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.div-footer-copy {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.footer-iconcopy {
+	width: 16px;
+	height: 16px;
+}
+.footer-p-copy {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0%;
+	color: #4f4f4f;
+}
+/* -------------------- Páginas Formularios -------------------- */
 .body-signin {
 	height: 970px;
 }
