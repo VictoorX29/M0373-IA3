@@ -143,6 +143,67 @@ body {
 	background-color: rgba(47, 128, 237, 0.8);
 	transition: background-color 0.2s ease;
 }
+.header-iconos {
+	display: flex;
+	align-items: center;
+	gap: 22px;
+}
+.header-icono-noti {
+	width: 24px;
+	height: 24px;
+}
+.header-icono-perfil {
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+}
+.header-summary {
+	list-style: none;
+}
+.header-div-desplegable {
+	position: relative;
+}
+.header-desplegable {
+	display: block;
+	background-color: #ffffff;
+	border-radius: 10px;
+	width: 200px;
+	height: 183px;
+	padding-block: 10px;
+	position: absolute;
+	right: 0;
+	top: 55px;
+	box-shadow: 0px 4px 44px 0px #00000026;
+}
+.header-desplegable-li {
+	width: 100%;
+	height: 40px;
+	padding: 10px 14px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	box-shadow: 0px 0.5px 0px 0px #d6d6d6;
+}
+.header-desplegable-li:not(:last-child) {
+	border-bottom: 0.5px solid #d6d6d6;
+}
+.header-desplegable-a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: 100%;
+}
+.desplegable-img {
+	width: 20px;
+	height: 20px;
+}
+.desplegable-span {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+}
 .index {
 	padding-block: 12px 80px;
 }
@@ -408,9 +469,9 @@ input[type="number"]::-webkit-outer-spin-button {
 	height: 44px;
 	border-radius: 6px;
 	padding: 12px 18px;
-	gap: 10px;
 	border: none;
 	background-color: rgb(47, 128, 237);
+	display: inline-block;
 	margin-top: 30px;
 	font-weight: 500;
 	font-size: 15px;
