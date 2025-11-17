@@ -643,11 +643,16 @@ input[type="number"]::-webkit-outer-spin-button {
 	width: 50%;
 }
 .form-checkbox {
+	appearance: none;
 	width: 20px;
 	height: 20px;
 	border-radius: 5px;
 	border: 1px solid #bdbdbd;
 	cursor: pointer;
+}
+.form-checkbox:checked {
+	background-color: #2f80ed;
+	border: none;
 }
 .label-keepme {
 	font-weight: 400;
