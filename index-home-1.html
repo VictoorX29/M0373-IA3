@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IA3: Proyecto 2</title>
+		<meta name="author" content="Víctor M.N." />
+		<meta http-equiv="refresh" content="1; url=index-popup.html" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/logoavion.svg" type="image/x-icon" />
+		<!-- Estilos -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="padding-general header">
+			<div class="div-logo">
+				<a class="logo nostyle" href="/index-home-1.html">
+					<img src="images/logoavion.svg" alt="Logo Avion" />
+					<h1 class="h1-logo">my Dream Place</h1>
+				</a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-nav-ul">
+					<li class="header-li">
+						<a href="#" class="nostyle header-a">Home</a>
+					</li>
+					<li class="header-li">
+						<a href="#" class="nostyle header-a">Discover</a>
+					</li>
+					<li class="header-li">
+						<a href="#" class="nostyle header-a">Activities</a>
+					</li>
+					<li class="header-li">
+						<a href="#" class="nostyle header-a">About</a>
+					</li>
+					<li class="header-li">
+						<a href="#" class="nostyle header-a">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-iconos">
+				<img
+					src="images/icono-notificacion.png"
+					alt="Icono Notificación"
+					class="header-icono-noti" />
+				<details class="header-div-desplegable">
+					<summary class="header-summary">
+						<img
+							src="images/icono-perfil.png"
+							alt="Icono Perfil"
+							class="header-icono-perfil" />
+					</summary>
+					<ul class="header-desplegable">
+						<li class="header-desplegable-li">
+							<img
+								src="images/icono-usuario.png"
+								alt=""
+								class="desplegable-img" /><span class="desplegable-span"
+								>Manage account</span
+							>
+						</li>
+						<li class="header-desplegable-li">
+							<a href="/my-trips.html" class="nostyle header-desplegable-a">
+								<img
+									src="images/icono-avion.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>My trips</span
+								>
+							</a>
+						</li>
+						<li class="header-desplegable-li">
+							<img
+								src="images/icono-cartera.png"
+								alt=""
+								class="desplegable-img" /><span class="desplegable-span"
+								>Reward and wallet</span
+							>
+						</li>
+						<li class="header-desplegable-li">
+							<a href="/index.html" class="nostyle header-desplegable-a">
+								<img
+									src="images/icono-logout.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>Sign out</span
+								>
+							</a>
+						</li>
+					</ul>
+				</details>
+			</div>
+		</header>
+		<main class="padding-general index">
+			<div class="div-enjoy">
+				<img
+					src="images/fondoenjoy.png"
+					alt="Fondo Principal"
+					class="img-enjoy" />
+				<div class="div-text-enjoy">
+					<h2 class="h2-text-enjoy">Enjoy Your Dream Vacation</h2>
+					<p class="p-text-enjoy">
+						Plan and book our perfect trip with expert advice, travel tips,
+						destination <br />
+						information and inspiration from us
+					</p>
+				</div>
+			</div>
+			<div class="div-search">
+				<form action="resultados.html" method="get" class="form-search">
+					<input
+						type="text"
+						id="destination"
+						name="destination"
+						placeholder="Where are you going?"
+						class="input-where input-comp"
+						required />
+					<input
+						type="date"
+						id="checkin"
+						name="checkin"
+						placeholder="Check in date"
+						class="input-checkin input-comp"
+						required />
+					<input
+						type="date"
+						id="checkout"
+						name="checkout"
+						placeholder="Check out date"
+						class="input-checkout input-comp"
+						required />
+					<input
+						type="number"
+						id="guests"
+						name="guests"
+						min="1"
+						placeholder="Guests"
+						class="input-guests input-comp"
+						required />
+
+					<button type="submit" class="button-search">Search</button>
+				</form>
+			</div>
+			<div class="div-warning">
+				<img
+					src="images/icon-warning.png"
+					alt="Warning Icono"
+					class="warning-icono" />
+				<p class="warning-text">
+					Check the latest COVID-19 restrictions before you travel.
+					<a href="" class="nostyle warning-a">Learn more</a>
+				</p>
+			</div>
+			<section class="sect-enjoy">
+				<h2 class="h2-index">Enjoy your dream vacation</h2>
+				<p class="sect-enjoy-p">
+					Plan and book our perfect trip with expert advice, travel tips,
+					destination information and <br />inspiration from us
+				</p>
+				<div class="div-sect-enjoy">
+					<div>
+						<img
+							src="images/australia.png"
+							alt="Australia"
+							class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">Australia</h3>
+							<p class="p-div-text-sect-enjoy">2246 properties</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/japan.png" alt="Japan" class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">Japan</h3>
+							<p class="p-div-text-sect-enjoy">1278 properties</p>
+						</div>
+					</div>
+					<div>
+						<img
+							src="images/newzealand.png"
+							alt="New Zealand"
+							class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">New Zealand</h3>
+							<p class="p-div-text-sect-enjoy">480 properties</p>
+						</div>
+					</div>
+					<div>
+						<img src="images/greece.png" alt="Greece" class="img-sect-enjoy" />
+						<div class="div-text-sect-enjoy">
+							<h3 class="h3-div-text-sect-enjoy">Greece</h3>
+							<p class="p-div-text-sect-enjoy">320 properties</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sect-nextrip">
+				<h2 class="h2-index">Get inspiration for your next trip</h2>
+				<div class="div-sect-nextrip">
+					<div class="card-div-sect-nextrip">
+						<img
+							src="images/sydeny.png"
+							alt="Sydney"
+							class="img-card-div-sect-nextrip" />
+						<div class="div-text-sect-nextrip">
+							<h3 class="h3-div-text-sect-nextrip">
+								Sydeny’s 10 most fashionable 5 star hotels
+							</h3>
+							<p class="p-div-text-sect-nextrip">
+								Browse the fastest growing tourism sector in the heart of
+								Australia tourism capital ....
+							</p>
+						</div>
+					</div>
+					<div class="card-div-sect-nextrip">
+						<img
+							src="images/vegantravel.png"
+							alt="Vegan Travellers"
+							class="img-card-div-sect-nextrip" />
+						<div class="div-text-sect-nextrip">
+							<h3 class="h3-div-text-sect-nextrip">
+								Top cities for Vegan Travellers
+							</h3>
+							<p class="p-div-text-sect-nextrip">
+								Top sites where you do not have to worry about being a vegan.
+								Our tourist guide is here...
+							</p>
+						</div>
+					</div>
+					<div class="card-div-sect-nextrip">
+						<img
+							src="images/covidtimeline.png"
+							alt="COVID Timeline"
+							class="img-card-div-sect-nextrip" />
+						<div class="div-text-sect-nextrip">
+							<h3 class="h3-div-text-sect-nextrip">
+								World’s top destinations during and post covid timeline
+							</h3>
+							<p class="p-div-text-sect-nextrip">
+								Pandemic is still intact and will be here for a longer time.
+								Here’s where your next destination...
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sect-popular">
+				<h2 class="h2-index">Popular hotels</h2>
+				<div class="div-sect-popular">
+					<div>
+						<img
+							src="images/lakeside.png"
+							alt="Lakeside Motel Warefront"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Lakeside Motel Warefront</h3>
+							<p class="p-div-text-sect-popular">2246 properties</p>
+						</div>
+					</div>
+					<div>
+						<img
+							src="images/recce.png"
+							alt="Recce Graham Resort"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Recce Graham Resort</h3>
+							<p class="p-div-text-sect-popular">1278 properties</p>
+						</div>
+					</div>
+					<div>
+						<img
+							src="images/fireside.png"
+							alt="Fireside Dinners"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Fireside Dinners</h3>
+							<p class="p-div-text-sect-popular">480 properties</p>
+						</div>
+					</div>
+					<div>
+						<img
+							src="images/oculous.png"
+							alt="Oculous Inn Stay"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Oculous Inn Stay</h3>
+							<p class="p-div-text-sect-popular">320 properties</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sect-download">
+				<img
+					src="images/fondoplayamovil.png"
+					alt=""
+					class="img-sect-download" />
+				<div class="div-sect-download">
+					<h2 class="h2-sect-download">
+						Download the mobile application for bonus <br />coupons and travel
+						codes
+					</h2>
+					<a class="button-sect-download">Download mobile app</a>
+				</div>
+			</section>
+			<section class="sect-explore">
+				<h2 class="h2-sect-explore">Explore the world with My Dream place</h2>
+				<a href="" class="nostyle a-sect-explore"
+					>Discover new places and experiences</a
+				>
+			</section>
+		</main>
+		<footer>
+			<div class="padding-general footer-index">
+				<div class="div-footer-logo">
+					<div class="div-logo">
+						<a class="logo nostyle" href="index.html">
+							<img src="images/logoavion.svg" alt="Logo Avion" />
+							<h1 class="h1-logo">my Dream Place</h1>
+						</a>
+					</div>
+					<p class="footer-p-logo">Your next goto companion for travel</p>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Company</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">About</li>
+						<li class="footer-li">Jobs</li>
+						<li class="footer-li">Newsroom</li>
+						<li class="footer-li">Advertising</li>
+						<li class="footer-li">Contact us</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Explore</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">Australia</li>
+						<li class="footer-li">New Zealand</li>
+						<li class="footer-li">United States America (USA)</li>
+						<li class="footer-li">Greece</li>
+						<li class="footer-li">Maldives</li>
+						<li class="footer-li">Singapore</li>
+						<a href="" class="footer-li-a footer-li nostyle">See more</a>
+					</ul>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Terms and Policies</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">Privacy Policy</li>
+						<li class="footer-li">Terms of use</li>
+						<li class="footer-li">Accessibility</li>
+						<li class="footer-li">Reward system policy</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Help</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">Support</li>
+						<li class="footer-li">Cancel your bookings</li>
+						<li class="footer-li">Use Coupon</li>
+						<li class="footer-li">Refund Policies</li>
+						<li class="footer-li">International Travel Documents</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-barragris">
+				<div class="div-footer-copy">
+					<img
+						src="images/icon-copyright.png"
+						alt="Icono Copyright"
+						class="footer-iconcopy" />
+					<p class="footer-p-copy">my Dream Place 2025</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
