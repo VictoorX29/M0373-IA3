@@ -1147,9 +1147,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .tabla-rating tr td {
 	vertical-align: middle;
-	
+
 }
 .icono-estrella-rating {
 	width: 18px;
 	height: 18px;
 }
+
