@@ -1139,18 +1139,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	letter-spacing: 2%;
 	color: #4f4f4f;
 }
-.tabla-rating {
-	margin-top: 8px;
-	border: 1px solid #e0e0e0;
-	border-radius: 5px;
-	width: 100%;
-}
-.tabla-rating tr td {
-	vertical-align: middle;
-
-}
 .icono-estrella-rating {
 	width: 18px;
 	height: 18px;
 }
-
