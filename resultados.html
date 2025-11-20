@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IA3: Proyecto 2</title>
+		<meta name="author" content="Víctor M.N." />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/logoavion.svg" type="image/x-icon" />
+		<!-- Estilos -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="padding-general header-resultados">
+			<div class="div-header-resultados">
+				<div class="div-logo">
+					<a class="logo-resultados nostyle" href="/index-home-1.html">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+								fill="#2F80ED" />
+						</svg>
+						<h1 class="h1-logo">my Dream Place</h1>
+					</a>
+				</div>
+				<nav class="header-nav">
+					<ul class="header-nav-ul">
+						<li class="header-li-resultados">
+							<a href="#" class="nostyle header-a-resultados">Home</a>
+						</li>
+						<li class="header-li-resultados">
+							<a href="#" class="nostyle header-a-resultados">Discover</a>
+						</li>
+						<li class="header-li-resultados">
+							<a href="#" class="nostyle header-a-resultados">Activities</a>
+						</li>
+						<li class="header-li-resultados">
+							<a href="#" class="nostyle header-a-resultados">About</a>
+						</li>
+						<li class="header-li-resultados">
+							<a href="#" class="nostyle header-a-resultados">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-iconos">
+					<img
+						src="images/icono-notificacion-blanco.png"
+						alt="Icono Notificación"
+						class="header-icono-noti" />
+					<details class="header-div-desplegable">
+						<summary class="header-summary">
+							<img
+								src="images/icono-perfil.png"
+								alt="Icono Perfil"
+								class="header-icono-perfil" />
+						</summary>
+						<ul class="header-desplegable">
+							<li class="header-desplegable-li">
+								<img
+									src="images/icono-usuario.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>Manage account</span
+								>
+							</li>
+							<li class="header-desplegable-li">
+								<a href="/my-trips.html" class="nostyle header-desplegable-a">
+									<img
+										src="images/icono-avion.png"
+										alt=""
+										class="desplegable-img" /><span class="desplegable-span"
+										>My trips</span
+									>
+								</a>
+							</li>
+							<li class="header-desplegable-li">
+								<img
+									src="images/icono-cartera.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>Reward and wallet</span
+								>
+							</li>
+							<li class="header-desplegable-li">
+								<a href="/index.html" class="nostyle header-desplegable-a">
+									<img
+										src="images/icono-logout.png"
+										alt=""
+										class="desplegable-img" /><span class="desplegable-span"
+										>Sign out</span
+									>
+								</a>
+							</li>
+						</ul>
+					</details>
+				</div>
+			</div>
+		</header>
+		<main class="padding-general index">
+			<div class="div-search-resultados">
+				<form action="/resultados.html" method="get" class="form-search">
+					<input
+						type="text"
+						id="destination"
+						name="destination"
+						placeholder="Where are you going?"
+						class="input-where input-comp"
+						required />
+					<input
+						type="date"
+						id="checkin"
+						name="checkin"
+						placeholder="Check in date"
+						class="input-checkin input-comp"
+						required />
+					<input
+						type="date"
+						id="checkout"
+						name="checkout"
+						placeholder="Check out date"
+						class="input-checkout input-comp"
+						required />
+					<input
+						type="number"
+						id="guests"
+						name="guests"
+						min="1"
+						placeholder="Guests"
+						class="input-guests input-comp"
+						required />
+
+					<button type="submit" class="button-search">Search</button>
+				</form>
+			</div>
+			<div class="div-main-resultados">
+				<div class="izq-main-resultados">
+					<div class="div-search-izq-resultados">
+						<label for="search" class="izq-main-h4"
+							>Search by property name</label
+						>
+						<input
+							type="search"
+							name="search"
+							id="search"
+							placeholder="eg. Beach westpalm" />
+					</div>
+					<h3 class="izq-main-h3">Filter by</h3>
+					<div class="div-budget-izq-resultados">
+						<div class="div-tit-izq">
+							<h4 class="izq-main-h4">Your budget per day</h4>
+						</div>
+						<div class="div-info">
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="200"
+									id="200"
+									class="form-checkbox" />
+								<label for="200"
+									><span>$ 0 - $ 200</span>
+									<span>200</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="100"
+									id="100"
+									class="form-checkbox" />
+								<label for="100"
+									><span>$ 200 - $ 500</span>
+									<span>100</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="15"
+									id="15"
+									class="form-checkbox" />
+								<label for="15"
+									><span>$ 500 - $ 1,000</span>
+									<span>15</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="12"
+									id="12"
+									class="form-checkbox" />
+								<label for="12"
+									><span>$ 1,000 - $ 2,000</span>
+									<span>12</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="230"
+									id="230"
+									class="form-checkbox" />
+								<label for="230"
+									><span>$ 2,000 - $ 5,000</span>
+									<span>230</span>
+								</label>
+							</div>
+							<div class="div-label-switch-budget">
+								<label for="switch" class="label-switch"
+									>Set your own budget</label
+								>
+								<label class="switch-img">
+									<input type="checkbox" class="switch-resultados" />
+									<img
+										class="img-off"
+										src="images/icono-switch.png"
+										alt="switch off" />
+									<img
+										class="img-on"
+										src="images/icono-switch1.png"
+										alt="switch on" />
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="div-budget-izq-resultados">
+						<div class="div-tit-izq">
+							<h4 class="izq-main-h4">Rating</h4>
+						</div>
+						<div class="div-info">
+							<p class="p-rating">Show only ratings more than</p>
+						</div>
+					</div>
+					<div class="div-budget-izq-resultados">
+						<div class="div-tit-izq">
+							<h4 class="izq-main-h4">Popular Filters</h4>
+						</div>
+						<div class="div-info">
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="200"
+									id="200"
+									class="form-checkbox" />
+								<label for="200"
+									><span>$ 0 - $ 200</span>
+									<span>200</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="100"
+									id="100"
+									class="form-checkbox" />
+								<label for="100"
+									><span>$ 200 - $ 500</span>
+									<span>100</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="15"
+									id="15"
+									class="form-checkbox" />
+								<label for="15"
+									><span>$ 500 - $ 1,000</span>
+									<span>15</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="12"
+									id="12"
+									class="form-checkbox" />
+								<label for="12"
+									><span>$ 1,000 - $ 2,000</span>
+									<span>12</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="230"
+									id="230"
+									class="form-checkbox" />
+								<label for="230"
+									><span>$ 2,000 - $ 5,000</span>
+									<span>230</span>
+								</label>
+							</div>
+							<div class="div-label-switch-budget">
+								<label for="switch" class="label-switch"
+									>Set your own budget</label
+								>
+								<label class="switch-img">
+									<input type="checkbox" class="switch-resultados" />
+									<img
+										class="img-off"
+										src="images/icono-switch.png"
+										alt="switch off" />
+									<img
+										class="img-on"
+										src="images/icono-switch1.png"
+										alt="switch on" />
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="div-budget-izq-resultados">
+						<div class="div-tit-izq">
+							<h4 class="izq-main-h4">Activities</h4>
+						</div>
+						<div class="div-info">
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="200"
+									id="200"
+									class="form-checkbox" />
+								<label for="200"
+									><span>$ 0 - $ 200</span>
+									<span>200</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="100"
+									id="100"
+									class="form-checkbox" />
+								<label for="100"
+									><span>$ 200 - $ 500</span>
+									<span>100</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="15"
+									id="15"
+									class="form-checkbox" />
+								<label for="15"
+									><span>$ 500 - $ 1,000</span>
+									<span>15</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="12"
+									id="12"
+									class="form-checkbox" />
+								<label for="12"
+									><span>$ 1,000 - $ 2,000</span>
+									<span>12</span>
+								</label>
+							</div>
+							<div class="div-input-label-budget">
+								<input
+									type="checkbox"
+									name="230"
+									id="230"
+									class="form-checkbox" />
+								<label for="230"
+									><span>$ 2,000 - $ 5,000</span>
+									<span>230</span>
+								</label>
+							</div>
+							<div class="div-label-switch-budget">
+								<label for="switch" class="label-switch"
+									>Set your own budget</label
+								>
+								<label class="switch-img">
+									<input type="checkbox" class="switch-resultados" />
+									<img
+										class="img-off"
+										src="images/icono-switch.png"
+										alt="switch off" />
+									<img
+										class="img-on"
+										src="images/icono-switch1.png"
+										alt="switch on" />
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="der-main-resultados">
+					<h2 class="h2-resultados">Melbourne : 2,582 search results found</h2>
+				</div>
+			</div>
+			<div class="div-warning">
+				<img
+					src="images/icon-warning.png"
+					alt="Warning Icono"
+					class="warning-icono" />
+				<p class="warning-text">
+					Check the latest COVID-19 restrictions before you travel.
+					<a href="" class="nostyle warning-a">Learn more</a>
+				</p>
+			</div>
+		</main>
+		<footer>
+			<div class="padding-general footer-index">
+				<div class="div-footer-logo">
+					<div class="div-logo">
+						<a class="logo nostyle" href="index.html">
+							<img src="images/logoavion.svg" alt="Logo Avion" />
+							<h1 class="h1-logo">my Dream Place</h1>
+						</a>
+					</div>
+					<p class="footer-p-logo">Your next goto companion for travel</p>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Company</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">About</li>
+						<li class="footer-li">Jobs</li>
+						<li class="footer-li">Newsroom</li>
+						<li class="footer-li">Advertising</li>
+						<li class="footer-li">Contact us</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Explore</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">Australia</li>
+						<li class="footer-li">New Zealand</li>
+						<li class="footer-li">United States America (USA)</li>
+						<li class="footer-li">Greece</li>
+						<li class="footer-li">Maldives</li>
+						<li class="footer-li">Singapore</li>
+						<a href="" class="footer-li-a footer-li nostyle">See more</a>
+					</ul>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Terms and Policies</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">Privacy Policy</li>
+						<li class="footer-li">Terms of use</li>
+						<li class="footer-li">Accessibility</li>
+						<li class="footer-li">Reward system policy</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="footer-h4-tit">Help</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">Support</li>
+						<li class="footer-li">Cancel your bookings</li>
+						<li class="footer-li">Use Coupon</li>
+						<li class="footer-li">Refund Policies</li>
+						<li class="footer-li">International Travel Documents</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-barragris">
+				<div class="div-footer-copy">
+					<img
+						src="images/icon-copyright.png"
+						alt="Icono Copyright"
+						class="footer-iconcopy" />
+					<p class="footer-p-copy">my Dream Place 2025</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
