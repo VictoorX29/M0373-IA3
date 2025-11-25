@@ -1256,14 +1256,6 @@ input[type="number"]::-webkit-outer-spin-button {
 	height: 16px;
 	margin-right: 4px;
 }
-.div-card-result1 {
-	display: flex;
-	align-items: center;
-	gap: 24px;
-	border: 1px solid #e0e0e0;
-	border-radius: 5px;
-	margin-top: 28px;
-}
 .div-card-result {
 	display: flex;
 	align-items: center;
@@ -1272,7 +1264,9 @@ input[type="number"]::-webkit-outer-spin-button {
 	border-radius: 5px;
 	margin-top: 24px;
 }
-
+.cards-result .div-card-result:first-child {
+	margin-top: 28px;
+}
 .div-img-card-result {
 	margin: 20px 0px 20px 20px;
 }
