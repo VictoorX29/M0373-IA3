@@ -79,6 +79,9 @@ body {
 	letter-spacing: 2%;
 	color: #1b1f2d;
 }
+.div-header-global {
+	width: 200px;
+}
 .header-nav {
 	display: flex;
 	justify-content: space-between;
@@ -91,7 +94,6 @@ body {
 	gap: 48px;
 	height: 100%;
 	width: 458px;
-	margin-left: 25px;
 }
 .header-li {
 	display: flex;
@@ -110,6 +112,7 @@ body {
 .header-botones {
 	display: flex;
 	gap: 10px;
+	justify-content: flex-end;
 }
 .header-botones-compartido {
 	border-radius: 6px;
@@ -148,6 +151,7 @@ body {
 .header-iconos {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 	gap: 22px;
 }
 .header-icono-noti {
@@ -686,11 +690,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .a-sect-explore:hover {
 	color: rgba(47, 128, 237, 0.8);
 	transition: color 0.2s ease;
-}
-.footer-index {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 90px;
 }
 .div-footer-logo {
 	width: 225px;
@@ -1413,4 +1412,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .div-info-card-result {
 	width: 100%;
 	margin: 24px 24px 24px 0px;
+}
+.div-h3tit-porce-result{
+	
 }

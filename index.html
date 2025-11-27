@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<header class="padding-general header">
-			<div class="div-logo">
+			<div class="div-logo div-header-global">
 				<a class="logo nostyle" href="index.html">
 					<img src="images/logoavion.svg" alt="Logo Avion" />
 					<h1 class="h1-logo">my Dream Place</h1>
@@ -37,7 +37,7 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="header-botones">
+			<div class="header-botones div-header-global">
 				<a
 					class="header-botonFondoBlanco header-botones-compartido nostyle"
 					href="/register.html">
@@ -167,7 +167,7 @@
 							type="text"
 							maxlength="10"
 							placeholder="Check in date"
-							class="input-checkinout auto-date"
+							class="input-checkinout"
 							required />
 					</div>
 					<div class="div-input-checkinout">
@@ -247,20 +247,9 @@
 							type="text"
 							maxlength="10"
 							placeholder="Check out date"
-							class="input-checkinout auto-date"
+							class="input-checkinout"
 							required />
-						<script>
-							document.querySelectorAll(".auto-date").forEach((input) => {
-								input.addEventListener("input", (e) => {
-									let v = e.target.value.replace(/\D/g, "");
-									if (v.length >= 5)
-										v = v.replace(/(\d{2})(\d{2})(\d{1,4})/, "$1-$2-$3");
-									else if (v.length >= 3)
-										v = v.replace(/(\d{2})(\d{1,2})/, "$1-$2");
-									e.target.value = v;
-								});
-							});
-						</script>
+						
 					</div>
 					<div class="div-input-guests">
 						<svg
@@ -474,60 +463,6 @@
 			</section>
 		</main>
 		<footer>
-			<!-- <div class="padding-general footer-index">
-				<div class="div-footer-logo">
-					<div class="div-logo">
-						<a class="logo nostyle" href="index.html">
-							<img src="images/logoavion.svg" alt="Logo Avion" />
-							<h1 class="h1-logo">my Dream Place</h1>
-						</a>
-					</div>
-					<p class="footer-p-logo">Your next goto companion for travel</p>
-				</div>
-				<div>
-					<h4 class="footer-h4-tit">Company</h4>
-					<ul class="footer-ul">
-						<li class="footer-li">About</li>
-						<li class="footer-li">Jobs</li>
-						<li class="footer-li">Newsroom</li>
-						<li class="footer-li">Advertising</li>
-						<li class="footer-li">Contact us</li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="footer-h4-tit">Explore</h4>
-					<ul class="footer-ul">
-						<li class="footer-li">Australia</li>
-						<li class="footer-li">New Zealand</li>
-						<li class="footer-li">United States America (USA)</li>
-						<li class="footer-li">Greece</li>
-						<li class="footer-li">Maldives</li>
-						<li class="footer-li">Singapore</li>
-						<li class="footer-li">
-							<a href="" class="footer-li-a nostyle">See more</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="footer-h4-tit">Terms and Policies</h4>
-					<ul class="footer-ul">
-						<li class="footer-li">Privacy Policy</li>
-						<li class="footer-li">Terms of use</li>
-						<li class="footer-li">Accessibility</li>
-						<li class="footer-li">Reward system policy</li>
-					</ul>
-				</div>
-				<div>
-					<h4 class="footer-h4-tit">Help</h4>
-					<ul class="footer-ul">
-						<li class="footer-li">Support</li>
-						<li class="footer-li">Cancel your bookings</li>
-						<li class="footer-li">Use Coupon</li>
-						<li class="footer-li">Refund Policies</li>
-						<li class="footer-li">International Travel Documents</li>
-					</ul>
-				</div>
-			</div> -->
 			<div class="padding-general footer-index2">
 				<div class="div-footer-logo">
 					<div class="div-logo">
