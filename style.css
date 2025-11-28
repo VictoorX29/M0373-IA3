@@ -1154,6 +1154,9 @@ input[type="number"]::-webkit-outer-spin-button {
 	line-height: 100%;
 	letter-spacing: 0%;
 	color: #181818;
+	height: 32px;
+	display: flex;
+	align-items: center;
 }
 .div-search-izq-resultados {
 	width: 100%;
@@ -1324,6 +1327,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	display: flex;
 }
 .tabla-picks td {
+	height: 40px;
 	padding: 10px 18px;
 	white-space: nowrap;
 	display: flex;
@@ -1341,11 +1345,22 @@ input[type="number"]::-webkit-outer-spin-button {
 	border: 1px solid #2f80ed;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
+	width: 126px;
 }
 .tabla-picks td:last-child {
 	border: 1px solid #2f80ed;
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
+	width: 128px;
+}
+.tabla-picks td:nth-child(2) {
+	width: 177px;
+}
+.tabla-picks td:nth-child(3) {
+	width: 105px;
+}
+.tabla-picks td:nth-child(4) {
+	width: 79px;
 }
 .tabla-picks td:nth-child(2),
 .tabla-picks td:nth-child(3),
@@ -1393,26 +1408,181 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .div-card-result {
 	display: flex;
-	align-items: center;
 	gap: 24px;
 	border: 1px solid #e0e0e0;
 	border-radius: 5px;
 	margin-top: 24px;
 }
-.cards-result .div-card-result:first-child {
-	margin-top: 28px;
-}
-.div-img-card-result {
-	margin: 20px 0px 20px 20px;
+.izq-div-card-result {
+	padding: 20px 0px 20px 20px;
 }
 .img-card-result {
 	width: 285px;
 	height: 200px;
 }
-.div-info-card-result {
+.der-div-card-result {
+	padding: 24px 24px 24px 0px;
 	width: 100%;
-	margin: 24px 24px 24px 0px;
 }
-.div-h3tit-porce-result{
-	
+.div-h3tit-porce-result {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.h3-tit-card-result {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: 1%;
+	height: 32px;
+	display: flex;
+	align-items: center;
+}
+.div-recieve-porce-result {
+}
+.p-recieve-porce-result {
+	width: 190px;
+	height: 26px;
+	border-radius: 6px;
+	background-color: #eb5757;
+	display: flex;
+	align-items: center;
+	padding: 4px 8px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 2%;
+	color: #ffffff;
+	text-align: center;
+}
+.div-imgestr-pcalif-result {
+	display: flex;
+	gap: 12px;
+	margin-top: 7px;
+}
+.img-estrellas-result {
+	width: 82px;
+	height: 20px;
+}
+.p-calificacion-result {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+}
+.divgeneral-availa-precio {
+	margin-top: 17px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+.div-p-availa-result {
+	max-width: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+.p-live-result {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+	height: 18px;
+}
+.p-reats-result {
+	margin-top: 4px;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+}
+.a-availa-result {
+	width: 137px;
+	height: 40px;
+	border-radius: 6px;
+	padding: 10px 18px;
+	margin-top: 18px;
+	background: #2f80ed;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	color: #ffffff;
+}
+.div-p-precio-result {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: end;
+}
+.div-percoff-result {
+	width: 54px;
+	height: 26px;
+	border-radius: 6px;
+	background-color: #219653;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px 8px;
+}
+.p-percoff-result {
+	width: 38px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 2%;
+	color: #ffffff;
+	text-align: center;
+}
+.p-roomdays-result {
+	margin-top: 6px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: #333333;
+	height: 17px;
+	display: flex;
+	align-items: center;
+}
+.div-precio-result {
+	margin-top: 6px;
+	display: flex;
+	align-items: center;
+	height: 24px;
+	gap: 8px;
+}
+.p-prectach-result {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 1%;
+	text-decoration: line-through;
+	color: #eb5757;
+}
+.p-precfinal-result {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: 1%;
+	color: #333333;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.p-taxes-result {
+	margin-top: 6px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: #333333;
+	height: 17px;
+	display: flex;
+	align-items: center;
 }
