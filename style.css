@@ -6,7 +6,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: "SF Pro Display";
 	src: url("./fonts/SF-Pro-Display-Medium.otf") format("opentype");
@@ -14,7 +13,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: "SF Pro Display";
 	src: url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype");
@@ -22,7 +20,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: "SF Pro Display";
 	src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
@@ -158,6 +155,15 @@ body {
 	width: 24px;
 	height: 24px;
 }
+.header-resultados .header-icono-noti path {
+	fill: white;
+}
+.header-resultados .header-icono-noti circle {
+	stroke: #2867bc;
+}
+.header-detalles .header-icono-noti path {
+	fill: #bdbdbd;
+}
 .header-icono-perfil {
 	width: 44px;
 	height: 44px;
@@ -215,7 +221,6 @@ body {
 .index {
 	padding-block: 12px 80px;
 }
-
 .sect-welcome-card {
 	position: fixed;
 	height: 100vh;
@@ -226,7 +231,6 @@ body {
 	background-color: rgba(30, 30, 30, 0.6);
 	z-index: 10;
 }
-
 .welcome-card {
 	z-index: 0;
 	height: 500px;
@@ -427,7 +431,6 @@ body {
 	path {
 	stroke: #2f80ed;
 }
-
 .button-search {
 	width: 148px;
 	border-radius: 6px;
@@ -1421,7 +1424,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .a-card-result {
 	display: flex;
 }
-
 .img-card-result {
 	width: 285px;
 	height: 200px;
@@ -1445,13 +1447,10 @@ input[type="number"]::-webkit-outer-spin-button {
 	align-items: center;
 }
 .p-recieve-porce-result {
-	width: 190px;
 	height: 26px;
 	border-radius: 6px;
 	background-color: #eb5757;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding: 4px 8px;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
@@ -1507,7 +1506,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	border-radius: 6px;
 	padding: 10px 18px;
 	margin-top: 18px;
-	background: #2f80ed;
+	background-color: #2f80ed;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -1516,6 +1515,11 @@ input[type="number"]::-webkit-outer-spin-button {
 	line-height: 20px;
 	letter-spacing: 2%;
 	color: #ffffff;
+	transition: background-color 0.2s ease;
+}
+.a-availa-result:hover {
+	background-color: rgba(47, 128, 237, 0.8);
+	transition: background-color 0.2s ease;
 }
 .div-p-precio-result {
 	display: flex;
@@ -1524,13 +1528,10 @@ input[type="number"]::-webkit-outer-spin-button {
 	justify-content: end;
 }
 .p-percoff-result {
-	width: 54px;
 	height: 26px;
 	border-radius: 6px;
 	background-color: #219653;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding: 4px 8px;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
@@ -1584,3 +1585,41 @@ input[type="number"]::-webkit-outer-spin-button {
 	display: flex;
 	align-items: center;
 }
+.p-recieve-porce-result-scepter {
+	height: 26px;
+	border-radius: 6px;
+	background-color: #f2994a;
+	padding: 4px 8px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 2%;
+	color: #ffffff;
+}
+.div-loadmore-result {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.p-loadmore-result {
+	width: 156px;
+	height: 40px;
+	border-radius: 6px;
+	padding: 10px 18px;
+	background-color: #2f80ed1a;
+	color: #2f80ed;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 2%;
+	display: inline-flex;
+}
+.header-detalles {
+	height: 68px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
