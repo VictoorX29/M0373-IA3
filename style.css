@@ -161,9 +161,6 @@ body {
 .header-resultados .header-icono-noti circle {
 	stroke: #2867bc;
 }
-.header-detalles .header-icono-noti path {
-	fill: #bdbdbd;
-}
 .header-icono-perfil {
 	width: 44px;
 	height: 44px;
@@ -1616,10 +1613,162 @@ input[type="number"]::-webkit-outer-spin-button {
 	letter-spacing: 2%;
 	display: inline-flex;
 }
+.detalles-fondogris {
+	background-color: #f4f4f4;
+}
 .header-detalles {
 	height: 68px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: #ffffff;
+}
+.header-detalles .header-icono-noti path {
+	fill: #bdbdbd;
 }
 
+.divgrid-detalles {
+	padding-top: 24px;
+	background: #f4f4f400;
+	background: linear-gradient(
+		180deg,
+		rgba(244, 244, 244, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	width: 100%;
+	height: 500px;
+}
+
+.diventanas-detalles {
+	width: 100%;
+	height: 48px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 0px 0px #e0e0e0;
+}
+
+.svg-input-detalles {
+	min-width: 20px;
+	min-height: 20px;
+}
+.svg-input-detalles path {
+	stroke: #2f80ed;
+}
+.divmain-detalles {
+	padding-block: 40px 80px;
+}
+.divinfo-detalles {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+.divinfo-izq-detalles {
+	min-width: 810px;
+}
+.h2-divinfoizq {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 100%;
+	letter-spacing: 1%;
+	display: flex;
+	align-items: center;
+	color: #1a1a1a;
+}
+.div-imgestr-pcalif-detalles {
+	display: flex;
+	gap: 12px;
+	margin-top: 12px;
+}
+.div-lorem-detalles {
+	margin-top: 12px;
+	height: 21px;
+	display: flex;
+	gap: 6px;
+}
+.p-lorem-detalles {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #333333;
+}
+.div-infohotel-detalles {
+	margin-top: 31px;
+	padding: 24px 40px 40px 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	height: 508px;
+}
+.h4-infohotel-detalles {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 1%;
+	height: 21px;
+	display: flex;
+	align-items: center;
+	color: #181818;
+}
+.p-infohotel-detalles {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+}
+.hr-infohotel-detalles {
+	border: 1px solid #e0e0e0;
+	margin-inline: -30px -40px;
+	margin-block: 44px 26px;
+}
+.div-facilities-detalles {
+	margin-top: 24px;
+	display: grid;
+	grid-template-columns: 144px 153px;
+	column-gap: 114px;
+	row-gap: 12px;
+}
+.div-facility-detalles {
+	display: flex;
+	gap: 12px;
+	height: 22px;
+}
+.p-facility-detalles {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 2%;
+	color: #4f4f4f;
+	height: 21px;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+.h4-explore-detalles {
+	margin-top: 35px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 1%;
+	color: #181818;
+	height: 21px;
+	display: flex;
+	align-items: center;
+}
+.img-explore-detalles {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.div-explore-area-detalles {
+	margin-top: 22px;
+}
+.div-explore-detalles {
+	display: flex;
+	gap: 8px;
+}
+.div-p-explore-detalles {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
