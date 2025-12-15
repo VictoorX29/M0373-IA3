@@ -215,6 +215,9 @@ body {
 	letter-spacing: 0.3px;
 	color: #4f4f4f;
 }
+.main-index {
+	padding-block: 24px 20px;
+}
 .index {
 	padding-block: 12px 80px;
 }
