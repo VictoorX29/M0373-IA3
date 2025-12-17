@@ -229,19 +229,43 @@ body {
 }
 .main-index section {
 	border-radius: 6px;
-	border: 1px solid #bdbdbd;
+	border: 1px solid #2f80ed;
 	padding: 8px;
-	box-shadow: 4px 4px 4px 0px #00000026;
+	box-shadow: 4px 4px 4px 0px #2f80ed26;
 	cursor: pointer;
+	position: relative;
+}
+.main-index section::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #2f80ed;
+	border-radius: 6px;
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	display: none;
+	transition: all 0.2s ease;
+}
+.main-index section:hover::before {
+	display: block;
+	transition: all 0.2s ease;
+}
+.main-index section:hover {
+	box-shadow: none;
+	border-color: #2f80ed;
 }
 .main-index figcaption {
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 140%;
 	letter-spacing: 0.28px;
 	color: #333333;
 }
-
+.main-index section:hover figcaption {
+	color: #2f80ed;
+}
 .index {
 	padding-block: 12px 80px;
 }
@@ -523,7 +547,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #181818;
 	height: 32px;
 	display: flex;
@@ -556,7 +580,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #181818;
 	height: 24px;
 	display: flex;
@@ -600,7 +624,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #ffffff;
 }
 .p-div-text-sect-nextrip {
@@ -630,7 +654,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #181818;
 	height: 24px;
 	display: flex;
@@ -664,7 +688,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 140%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #ffffff;
 }
 .button-sect-download {
@@ -696,7 +720,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 140%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #181818;
 	height: 32px;
 	display: flex;
@@ -807,7 +831,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 140%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #4f4f4f;
 }
 /* -------------------- Páginas Formularios -------------------- */
@@ -840,7 +864,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	cursor: pointer;
 }
 .form-signin label:nth-of-type(2) {
@@ -855,7 +879,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 }
 .div-form-forgot {
 	margin-top: 20px;
@@ -889,7 +913,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #4f4f4f;
 	margin-left: 8px;
 	cursor: pointer;
@@ -898,7 +922,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	text-decoration: none;
 	color: #2f80ed;
 	transition: color 0.2s ease;
@@ -916,7 +940,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #ffffff;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
@@ -939,7 +963,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 }
 .hr-or-options {
 	width: 100%;
@@ -957,7 +981,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	cursor: pointer;
 }
 .button-continue-google {
@@ -991,7 +1015,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.32px;
 	text-align: center;
 	color: #4f4f4f;
 }
@@ -1012,7 +1036,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #ffffff;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
@@ -1025,7 +1049,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.32px;
 	text-align: center;
 	color: #4f4f4f;
 	margin-top: 12px;
@@ -1039,7 +1063,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #ffffff;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
@@ -1052,7 +1076,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	margin-top: 24px;
 	color: #4f4f4f;
 }
@@ -1072,7 +1096,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #ffffff;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
@@ -1085,7 +1109,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	margin-top: 30px;
 	color: #4f4f4f;
 }
@@ -1113,7 +1137,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0.56px;
 	text-align: center;
 }
 .header-resultados {
@@ -1150,7 +1174,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.32px;
 	color: #ffffff;
 }
 .header-iconos-resultados {
@@ -1181,7 +1205,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0.48px;
 	color: #181818;
 	height: 32px;
 	display: flex;
@@ -1200,7 +1224,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.16px;
 	color: #181818;
 }
 .div-search-izq-resultados label {
@@ -1215,13 +1239,13 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 }
 .izq-main-h3 {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.36px;
 	color: #333333;
 	margin: 20px 0px 0px 18px;
 }
@@ -1257,7 +1281,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 }
 .div-input-label-budget:not(:first-child) {
@@ -1274,7 +1298,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 }
 .switch-resultados {
@@ -1365,7 +1389,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #4f4f4f;
 	cursor: pointer;
 	transition: all 200ms ease;
@@ -1419,7 +1443,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 12px;
-	letter-spacing: 2%;
+	letter-spacing: 0.24px;
 	color: #828282;
 }
 .p-recommended {
@@ -1427,7 +1451,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 }
 .icono-flechaabajo {
@@ -1465,7 +1489,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.2px;
 	height: 32px;
 	display: flex;
 	align-items: center;
@@ -1478,7 +1502,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.26px;
 	color: #ffffff;
 }
 .div-imgestr-pcalif-result {
@@ -1494,7 +1518,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #4f4f4f;
 }
 .divgeneral-availa-precio {
@@ -1512,7 +1536,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.26px;
 	color: #4f4f4f;
 	height: 18px;
 }
@@ -1521,7 +1545,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.26px;
 	color: #4f4f4f;
 }
 .a-availa-result {
@@ -1537,7 +1561,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #ffffff;
 	transition: background-color 0.2s ease;
 }
@@ -1559,7 +1583,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.26px;
 	color: #ffffff;
 }
 .p-roomdays-result {
@@ -1567,7 +1591,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 	height: 17px;
 	display: flex;
@@ -1584,7 +1608,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.14px;
 	text-decoration: line-through;
 	color: #eb5757;
 }
@@ -1592,7 +1616,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.2px;
 	color: #333333;
 	height: 100%;
 	display: flex;
@@ -1603,7 +1627,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 	height: 17px;
 	display: flex;
@@ -1617,7 +1641,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
-	letter-spacing: 2%;
+	letter-spacing: 0.26px;
 	color: #ffffff;
 }
 .div-loadmore-result {
@@ -1637,7 +1661,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	display: inline-flex;
 }
 .detalles-fondogris {
@@ -1695,7 +1719,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.32px;
 	display: flex;
 	align-items: center;
 	color: #1a1a1a;
@@ -1715,7 +1739,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 }
 .div-infohotel-detalles {
@@ -1729,7 +1753,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.18px;
 	height: 21px;
 	display: flex;
 	align-items: center;
@@ -1740,7 +1764,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.32px;
 	color: #4f4f4f;
 }
 .hr-infohotel-detalles {
@@ -1764,7 +1788,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 	color: #4f4f4f;
 	height: 21px;
 	display: flex;
@@ -1818,7 +1842,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 100%;
-	letter-spacing: 0%;
+	letter-spacing: 0px;
 	color: #181818;
 	height: 32px;
 	display: flex;
@@ -1843,7 +1867,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 }
 .div-p-available-detalles {
 	width: 320px;
@@ -1863,7 +1887,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 140%;
-	letter-spacing: 2%;
+	letter-spacing: 0.28px;
 	color: #333333;
 }
 .div-grid-available-detalles {
@@ -1926,7 +1950,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 2%;
+	letter-spacing: 0.36px;
 	color: #ffffff;
 	height: 21px;
 	display: flex;
@@ -1936,7 +1960,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 1%;
+	letter-spacing: 0.18px;
 	color: #1a1a1a;
 	height: 22px;
 	display: flex;
@@ -1974,5 +1998,5 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
-	letter-spacing: 2%;
+	letter-spacing: 0.3px;
 }
