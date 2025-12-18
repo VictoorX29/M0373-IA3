@@ -234,6 +234,7 @@ body {
 	box-shadow: 4px 4px 4px 0px #2f80ed26;
 	cursor: pointer;
 	position: relative;
+	overflow: hidden;
 }
 .main-index section::before {
 	position: absolute;
