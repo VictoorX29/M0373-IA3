@@ -1689,8 +1689,15 @@ input[type="number"]::-webkit-outer-spin-button {
 	);
 	width: 100%;
 	height: 500px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
-
+.divgrid-img-detalles:not(:first-child) {
+	
+}
+.divgrid-img-detalles:first-child {
+	grid-column: 1 / span 2;
+}
 .diventanas-detalles {
 	width: 100%;
 	height: 48px;
@@ -1869,6 +1876,11 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-size: 15px;
 	line-height: 20px;
 	letter-spacing: 0.3px;
+	transition: background-color 0.2s ease;
+}
+.a-div-available-detalles:hover {
+	background-color: rgba(47, 128, 237, 0.8);
+	transition: background-color 0.2s ease;
 }
 .div-p-available-detalles {
 	width: 320px;
@@ -2000,4 +2012,9 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-size: 15px;
 	line-height: 20px;
 	letter-spacing: 0.3px;
+	transition: background-color 0.2s ease;
+}
+.a-reserve-card-detalles:hover {
+	background-color: rgba(47, 128, 237, 0.8);
+	transition: background-color 0.2s ease;
 }
