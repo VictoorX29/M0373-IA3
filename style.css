@@ -2061,3 +2061,109 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: rgba(47, 128, 237, 0.8);
 	transition: background-color 0.2s ease;
 }
+.main-checkout {
+	padding-block: 60px 141px;
+}
+.main-checkout .div-warning {
+	margin-top: 30px;
+}
+.h2-main-checkout {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 100%;
+	letter-spacing: 0.32px;
+	color: #1a1a1a;
+	display: flex;
+	align-items: center;
+	height: 32px;
+}
+.divinfo-checkout {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 30px;
+}
+
+.divinfo-izq-checkout {
+	width: 810px;
+}
+.divinfo-der-checkout {
+	width: 400px;
+}
+.divinfo-room1-checkout {
+	background-color: #ffffff;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.header-room1-checkout {
+	background-color: #2f80ed;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding: 16px 20px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+}
+.header-room1-checkout h3 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+	margin-left: 16px;
+}
+.header-room1-checkout p {
+	margin-left: 18px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.16px;
+}
+.form-room1-checkout {
+	padding: 32px 278px 40px 32px;
+}
+.form-room1-grid-checkout {
+	display: flex;
+	gap: 20px;
+}
+.input-form-room1-checkout {
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+}
+.input-form-room1-checkout label {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0.28px;
+	color: #181818;
+	cursor: pointer;
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
+.input-form-room1-checkout input {
+	margin-top: 4px;
+	border: 0;
+	background-color: #f2f2f2;
+	height: 44px;
+	border-radius: 4px;
+	padding-top: 11px;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 0.3px;
+	color: #333333;
+}
+.input-form-room1-checkout input:focus {
+	outline-color: #2f80ed;
+}
+.inputnumb-form-room1-checkout {
+	display: flex;
+	flex-direction: column;
+}
+.select-numb-form-room1-checkout {
+	display: flex;
+}
