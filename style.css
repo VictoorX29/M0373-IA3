@@ -1692,19 +1692,62 @@ input[type="number"]::-webkit-outer-spin-button {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
-.divgrid-img-detalles:not(:first-child) {
-	
-}
 .divgrid-img-detalles:first-child {
-	grid-column: 1 / span 2;
+	margin-right: 20px;
+}
+.divgrid-imgs-detalles {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 .diventanas-detalles {
 	width: 100%;
 	height: 48px;
 	background-color: #ffffff;
 	box-shadow: 0px 1px 0px 0px #e0e0e0;
+	display: flex;
+	align-items: flex-end;
+	gap: 14px;
 }
-
+.diventana-detalles {
+	cursor: pointer;
+}
+.diventana-detalles:first-child {
+	width: 94px;
+}
+.diventana-detalles:nth-child(2) {
+	width: 77px;
+}
+.diventana-detalles:nth-child(3) {
+	width: 132px;
+}
+.diventana-texto-detalles {
+	height: 39px;
+	padding: 10px 14px;
+	margin-bottom: 3px;
+}
+.pventana-texto-detalles {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0.32px;
+	color: #333333;
+	height: 19px;
+	display: flex;
+	align-items: center;
+}
+.diventana-detalles hr {
+	display: none;
+}
+.diventana-detalles:hover hr {
+	display: block;
+	border: none;
+	border-top: 3px solid #2f80ed;
+	width: 100%;
+}
+.diventana-detalles:hover .diventana-texto-detalles {
+	margin-bottom: 0;
+}
 .svg-input-detalles {
 	min-width: 20px;
 	min-height: 20px;
