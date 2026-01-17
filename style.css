@@ -2238,6 +2238,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	display: flex;
 	align-items: flex-end;
 	gap: 14px;
+	padding-left: 32px;
 }
 .diventana-payment-checkout {
 	cursor: pointer;
@@ -2252,20 +2253,19 @@ input[type="number"]::-webkit-outer-spin-button {
 	width: 109px;
 }
 .diventana-texto-payment-checkout {
-	height: 40px;
+	height: 37px;
 	padding: 10px 14px;
 	margin-bottom: 3px;
 }
 .pventana-texto-payment-checkout {
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 100%;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.28px;
 	color: #333333;
-	height: 19px;
+	height: 17px;
 	display: flex;
 	align-items: center;
-	white-space: nowrap;
 }
 .diventana-payment-checkout hr {
 	display: none;
