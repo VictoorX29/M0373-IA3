@@ -115,15 +115,15 @@
 							<div class="form-room1-grid-checkout">
 								<div class="input-form-room1-checkout">
 									<label for="first">First name</label>
-									<input type="text" id="first" />
+									<input type="text" id="first" placeholder="Juilis" />
 								</div>
 								<div class="input-form-room1-checkout">
 									<label for="last">Last name</label>
-									<input type="text" id="last" />
+									<input type="text" id="last" placeholder="Lorenzo" />
 								</div>
 							</div>
 							<div class="inputnumb-form-room1-checkout">
-								<label for="">Mobile number</label>
+								<label for="mobile">Mobile number</label>
 								<div class="div-select-input-form-room1-checkout">
 									<div class="select-numb-form-room1-checkout">
 										<img
@@ -134,7 +134,11 @@
 											src="../images/checkout/icono-flechaabajo.svg"
 											alt="Icono Flecha Abajo" />
 									</div>
-									<input type="number" />
+									<input
+										type="number"
+										name="mobile"
+										id="mobile"
+										placeholder="88672778" />
 								</div>
 							</div>
 							<div class="checkbox-form-room1-checkout">
@@ -147,7 +151,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="divinfo-paymentoptions-checkout">
+					<div class="divinfo-paymentoptions-checkout divsinfo-reservation">
 						<header class="header-room1-checkout">
 							<img
 								src="../images/checkout/paymentOptions.svg"
@@ -279,7 +283,7 @@
 										>Security Code</label
 									>
 									<input
-										type="text"
+										type="number"
 										name="securitycode"
 										id="securitycode"
 										class="inputtext-divinfo-payment-checkout mt4"
@@ -290,7 +294,7 @@
 										>Billing Zip code</label
 									>
 									<input
-										type="text"
+										type="number"
 										name="zipcode"
 										id="zipcode"
 										class="inputtext-divinfo-payment-checkout mt4"
@@ -301,6 +305,48 @@
 										src="../images/checkout/tick.svg"
 										alt="Icono Confirmación" />
 								</div>
+							</div>
+						</div>
+					</div>
+					<div class="divsinfo-important-booking divsinfo-reservation">
+						<header class="header-important-booking">
+							<h3>Important information about your booking</h3>
+						</header>
+						<div class="divinfo-important-booking">
+							<ol>
+								<li>
+									This rate is non-refundable. If you change or cancel your
+									booking you will not get a refund or credit to use for a
+									future stay.
+								</li>
+								<li>Stay extensions will require a new reservation.</li>
+								<li>Front desk staff will greet guests on arrival</li>
+								<li>
+									No refunds will be issued for late check-in or early
+									check-out.
+								</li>
+							</ol>
+							<div class="divinfo-p-important-booking">
+								<p>
+									By clicking the button below, I acknowledge that I have
+									reviewed the
+									<a href="" class="nostyle">Privacy Statement</a> and have
+									reviewd and accept the
+									<a href="" class="nostyle">Rules and Restrictions</a> and
+									<a href="" class="nostyle">Terms of Use</a>.
+								</p>
+							</div>
+							<a href="" class="nostyle button-divinfo-important-booking"
+								>Complete Booking</a
+							>
+							<div class="divinfo-text-important-booking">
+								<img
+									src="../images/checkout/circulo-lock.svg"
+									alt="Circulo Candado Verde" />
+								<p>
+									We use secure transmission and encrypted storage to protect
+									your personal information
+								</p>
 							</div>
 						</div>
 					</div>
