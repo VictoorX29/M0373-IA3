@@ -2229,6 +2229,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: #ffffff;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
+	height: 576px;
 }
 .diventanas-payment-checkout {
 	width: 100%;
@@ -2269,13 +2270,138 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .diventana-payment-checkout hr {
 	display: none;
-}
-.diventana-payment-checkout:hover hr {
-	display: block;
 	border: none;
 	border-top: 3px solid #2f80ed;
 	width: 100%;
 }
+.diventana-payment-checkout:hover hr {
+	display: block;
+}
+.diventana-payment-checkout:first-child hr {
+	display: block;
+}
 .diventana-payment-checkout:hover .diventana-texto-payment-checkout {
 	margin-bottom: 0;
+}
+.diventana-payment-checkout:first-child .diventana-texto-payment-checkout {
+	margin-bottom: 0;
+}
+.divinfo-payment-checkout {
+	padding: 32px 242px 40px 32px;
+}
+.diventanas-metodos-pago {
+	display: flex;
+	gap: 6px;
+}
+.diventana-metodo-pago {
+	width: 60px;
+	height: 40px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.div-nameoncard-payment-checkout {
+	margin-top: 26px;
+}
+.label-divinfo-payment-checkout {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0.28px;
+	display: inline-flex;
+	height: 20px;
+	cursor: pointer;
+	color: #181818;
+}
+.inputtext-divinfo-payment-checkout {
+	width: 100%;
+	height: 44px;
+	outline-color: #2f80ed;
+	padding: 11px 12px 12px 12px;
+	border: none;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 0.3px;
+	color: #333333;
+}
+.w500 {
+	width: 500px;
+}
+.div-inputtext-tick-payment-checkout {
+	display: flex;
+}
+.divtick-payment-checkout {
+	margin-top: 4px;
+	margin-left: 16px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.div-inputtext-tick-payment-checkout:has(
+		.inputtext-divinfo-payment-checkout:not(:placeholder-shown)
+	)
+	.divtick-payment-checkout {
+	display: flex;
+}
+.mt4 {
+	margin-top: 4px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.div-selects-payment-checkout {
+	display: flex;
+	gap: 12px;
+}
+.select-divinfo-payment-checkout {
+	width: 150px;
+	height: 42px;
+	border: none;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	appearance: none;
+	background-image: url(../images/checkout/icono-flechaabajo.svg);
+	background-repeat: no-repeat;
+	background-position: right 13px center;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 0.3px;
+	padding: 10px 12px 10px 12px;
+	outline: none;
+	cursor: pointer;
+	color: #333333;
+}
+.select-divinfo-payment-checkout:has(option:checked:disabled) {
+	color: #828282;
+}
+.divs-info-code-zipcode-payment-checkout {
+	display: flex;
+}
+.divs-info-code-zipcode-payment-checkout .inputtext-divinfo-payment-checkout {
+	width: 240px;
+}
+.divs-info-code-zipcode-payment-checkout div:nth-child(2) {
+	margin-left: 20px;
+}
+.div-imgtick-payment-checkout {
+	margin-top: 24px;
+	margin-left: 16px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.divs-info-code-zipcode-payment-checkout:has(
+		.inputtext-divinfo-payment-checkout:nth-of-type(1):not(:placeholder-shown)
+	):has(
+		.inputtext-divinfo-payment-checkout:nth-of-type(2):not(:placeholder-shown)
+	)
+	.div-imgtick-payment-checkout {
+	display: flex;
 }
