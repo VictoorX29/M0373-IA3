@@ -43,7 +43,6 @@
 						stroke="white"
 						stroke-width="2" />
 				</svg>
-
 				<details class="header-div-desplegable">
 					<summary class="header-summary">
 						<img
@@ -116,34 +115,243 @@
 							<div class="form-room1-grid-checkout">
 								<div class="input-form-room1-checkout">
 									<label for="first">First name</label>
-									<input type="text" id="first" />
+									<input type="text" id="first" placeholder="Juilis" />
 								</div>
 								<div class="input-form-room1-checkout">
 									<label for="last">Last name</label>
-									<input type="text" id="last" />
+									<input type="text" id="last" placeholder="Lorenzo" />
 								</div>
 							</div>
 							<div class="inputnumb-form-room1-checkout">
-								<label for="">Mobile number</label>
-								<div class="select-numb-form-room1-checkout">
-									<img
-										src="../images/checkout/australia.svg"
-										alt="Australia Flag" />
-									<p>+61</p>
-									<img
-										src="../images/checkout/icono-flechaabajo.svg"
-										alt="Icono Flecha Abajo" />
+								<label for="mobile">Mobile number</label>
+								<div class="div-select-input-form-room1-checkout">
+									<div class="select-numb-form-room1-checkout">
+										<img
+											src="../images/checkout/australia.svg"
+											alt="Australia Flag" />
+										<p>+61</p>
+										<img
+											src="../images/checkout/icono-flechaabajo.svg"
+											alt="Icono Flecha Abajo" />
+									</div>
+									<input
+										type="number"
+										name="mobile"
+										id="mobile"
+										placeholder="88672778" />
 								</div>
-								<input type="number" />
 							</div>
-							<div>
-								<input type="checkbox" name="" id="" />
-								<label for="">Receive text alerts about this trip.</label>
+							<div class="checkbox-form-room1-checkout">
+								<input
+									type="checkbox"
+									name="alerts"
+									id="alerts"
+									class="form-checkbox" />
+								<label for="alerts">Receive text alerts about this trip.</label>
+							</div>
+						</div>
+					</div>
+					<div class="divinfo-paymentoptions-checkout divsinfo-reservation">
+						<header class="header-room1-checkout">
+							<img
+								src="../images/checkout/paymentOptions.svg"
+								alt="Icono Opciones de Pagamento" />
+							<h3>Payment options</h3>
+						</header>
+						<div class="diventanas-payment-checkout">
+							<div class="diventana-payment-checkout">
+								<div class="diventana-texto-payment-checkout">
+									<p class="pventana-texto-payment-checkout">
+										Debit/Credit Card
+									</p>
+								</div>
+								<hr />
+							</div>
+							<div class="diventana-payment-checkout">
+								<div class="diventana-texto-payment-checkout">
+									<p class="pventana-texto-payment-checkout">Paypal</p>
+								</div>
+								<hr />
+							</div>
+							<div class="diventana-payment-checkout">
+								<div class="diventana-texto-payment-checkout">
+									<p class="pventana-texto-payment-checkout">Bank transfer</p>
+								</div>
+								<hr />
+							</div>
+						</div>
+						<div class="divinfo-payment-checkout">
+							<div class="diventanas-metodos-pago">
+								<div class="diventana-metodo-pago">
+									<img
+										src="../images/checkout/metodo-1.svg"
+										alt="Mastercard Logo" />
+								</div>
+								<div class="diventana-metodo-pago">
+									<img src="../images/checkout/metodo-2.svg" alt="VISA Logo" />
+								</div>
+								<div class="diventana-metodo-pago">
+									<img
+										src="../images/checkout/metodo-3.svg"
+										alt="American Express Logo" />
+								</div>
+								<div class="diventana-metodo-pago">
+									<img
+										src="../images/checkout/metodo-4.svg"
+										alt="Discover Logo" />
+								</div>
+							</div>
+							<div class="div-nameoncard-payment-checkout">
+								<label for="nameoncard" class="label-divinfo-payment-checkout"
+									>Name on card</label
+								>
+								<div class="div-inputtext-tick-payment-checkout">
+									<input
+										type="text"
+										id="nameoncard"
+										name="nameoncard"
+										class="inputtext-divinfo-payment-checkout w500 mt4"
+										placeholder="Julius Lorenzo" />
+									<div class="divtick-payment-checkout">
+										<img
+											src="../images/checkout/tick.svg"
+											alt="Icono Confirmación" />
+									</div>
+								</div>
+							</div>
+							<div class="mt20">
+								<label for="debit" class="label-divinfo-payment-checkout"
+									>Debit/Credit card number</label
+								>
+								<div class="div-inputtext-tick-payment-checkout">
+									<input
+										type="number"
+										id="debit"
+										name="debit"
+										class="inputtext-divinfo-payment-checkout w500 mt4"
+										placeholder="9923464374822293" />
+									<div class="divtick-payment-checkout">
+										<img
+											src="../images/checkout/tick.svg"
+											alt="Icono Confirmación" />
+									</div>
+								</div>
+							</div>
+							<div class="mt20">
+								<p class="label-divinfo-payment-checkout">Expiration Date</p>
+								<div class="mt4 div-selects-payment-checkout">
+									<select class="select-divinfo-payment-checkout">
+										<option selected disabled>Month</option>
+										<option>January</option>
+										<option>February</option>
+										<option>March</option>
+										<option>April</option>
+										<option>May</option>
+										<option>June</option>
+										<option>July</option>
+										<option>August</option>
+										<option>September</option>
+										<option>October</option>
+										<option>November</option>
+										<option>December</option>
+									</select>
+									<select class="select-divinfo-payment-checkout">
+										<option value="" selected disabled>Year</option>
+										<option>2026</option>
+										<option>2027</option>
+										<option>2028</option>
+										<option>2029</option>
+										<option>2030</option>
+										<option>2031</option>
+										<option>2032</option>
+										<option>2033</option>
+										<option>2034</option>
+										<option>2035</option>
+										<option>2036</option>
+										<option>2037</option>
+										<option>2038</option>
+										<option>2039</option>
+										<option>2040</option>
+									</select>
+								</div>
+							</div>
+							<div class="mt20 divs-info-code-zipcode-payment-checkout w500">
+								<div>
+									<label
+										for="securitycode"
+										class="label-divinfo-payment-checkout"
+										>Security Code</label
+									>
+									<input
+										type="number"
+										name="securitycode"
+										id="securitycode"
+										class="inputtext-divinfo-payment-checkout mt4"
+										placeholder="543" />
+								</div>
+								<div>
+									<label for="zipcode" class="label-divinfo-payment-checkout"
+										>Billing Zip code</label
+									>
+									<input
+										type="number"
+										name="zipcode"
+										id="zipcode"
+										class="inputtext-divinfo-payment-checkout mt4"
+										placeholder="203846" />
+								</div>
+								<div class="div-imgtick-payment-checkout">
+									<img
+										src="../images/checkout/tick.svg"
+										alt="Icono Confirmación" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="divsinfo-important-booking divsinfo-reservation">
+						<header class="header-important-booking">
+							<h3>Important information about your booking</h3>
+						</header>
+						<div class="divinfo-important-booking">
+							<ol>
+								<li>
+									This rate is non-refundable. If you change or cancel your
+									booking you will not get a refund or credit to use for a
+									future stay.
+								</li>
+								<li>Stay extensions will require a new reservation.</li>
+								<li>Front desk staff will greet guests on arrival</li>
+								<li>
+									No refunds will be issued for late check-in or early
+									check-out.
+								</li>
+							</ol>
+							<div class="divinfo-p-important-booking">
+								<p>
+									By clicking the button below, I acknowledge that I have
+									reviewed the
+									<a href="" class="nostyle">Privacy Statement</a> and have
+									reviewd and accept the
+									<a href="" class="nostyle">Rules and Restrictions</a> and
+									<a href="" class="nostyle">Terms of Use</a>.
+								</p>
+							</div>
+							<a href="" class="nostyle button-divinfo-important-booking"
+								>Complete Booking</a
+							>
+							<div class="divinfo-text-important-booking">
+								<img
+									src="../images/checkout/circulo-lock.svg"
+									alt="Circulo Candado Verde" />
+								<p>
+									We use secure transmission and encrypted storage to protect
+									your personal information
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="divinfo-der-checkout">aa</div>
+				<div class="divinfo-der-checkout"></div>
 			</div>
 		</main>
 		<footer></footer>
