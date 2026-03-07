@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -14,14 +14,15 @@
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body class="detalles-fondogris">
-		<header class="padding-general header-detalles">
-			<div class="div-logo div-header-global">
-				<a class="logo nostyle" href="index-home-2.html">
+		<header
+			class="padding-general header-detalles flex justify-between align-center">
+			<div class="div-logo flex div-header-global">
+				<a class="logo flex align-center nostyle" href="index.html">
 					<img src="../images/logoavion.svg" alt="Logo Avion" />
-					<h1 class="h1-logo">my Dream Place</h1>
+					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
 			</div>
-			<div class="header-iconos div-header-global">
+			<div class="header-iconos flex align-center div-header-global">
 				<svg
 					class="header-icono-noti"
 					width="24"
@@ -43,15 +44,13 @@
 						stroke="white"
 						stroke-width="2" />
 				</svg>
-				<details class="header-div-desplegable">
-					<summary class="header-summary">
-						<img
-							src="../images/icono-perfil.png"
-							alt="Icono Perfil"
-							class="header-icono-perfil" />
-					</summary>
-					<ul class="header-desplegable">
-						<li class="header-desplegable-li">
+				<div class="header-div-desplegable">
+					<img
+						src="../images/icono-perfil.png"
+						alt="Icono Perfil"
+						class="header-icono-perfil" />
+					<ul class="header-desplegable hidden">
+						<li class="header-desplegable-li flex align-center">
 							<img
 								src="../images/icono-usuario.png"
 								alt=""
@@ -59,8 +58,10 @@
 								>Manage account</span
 							>
 						</li>
-						<li class="header-desplegable-li">
-							<a href="my-trips.html" class="nostyle header-desplegable-a">
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="my-trips.html"
+								class="nostyle header-desplegable-a flex align-center">
 								<img
 									src="../images/icono-avion.png"
 									alt=""
@@ -69,7 +70,7 @@
 								>
 							</a>
 						</li>
-						<li class="header-desplegable-li">
+						<li class="header-desplegable-li flex align-center">
 							<img
 								src="../images/icono-cartera.png"
 								alt=""
@@ -77,8 +78,10 @@
 								>Reward and wallet</span
 							>
 						</li>
-						<li class="header-desplegable-li">
-							<a href="index.html" class="nostyle header-desplegable-a">
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="index.html"
+								class="nostyle header-desplegable-a flex align-center">
 								<img
 									src="../images/icono-logout.png"
 									alt=""
@@ -88,7 +91,7 @@
 							</a>
 						</li>
 					</ul>
-				</details>
+				</div>
 			</div>
 		</header>
 		<main class="padding-general main-checkout">

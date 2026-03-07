@@ -27,7 +27,7 @@
 	font-style: normal;
 	font-display: swap;
 }
-/* Estilos */
+/* Estilos base */
 * {
 	font-family: 'SF Pro Display', sans-serif;
 	margin: 0;
@@ -44,30 +44,39 @@ body {
 	width: 1440px;
 	background-color: #ffffff;
 }
-.padding-general {
-	padding-inline: 100px;
-}
-.header {
-	height: 68px;
+/* Estilos generales (flex,justify-center...) */
+.flex {
 	display: flex;
-	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
 	justify-content: space-between;
+}
+.align-center {
+	align-items: center;
 }
 .nostyle {
 	text-decoration: none;
 }
+.hidden {
+	display: none;
+}
+/* Headers */
+.header {
+	height: 68px;
+}
+.padding-general {
+	padding-inline: 100px;
+}
 .div-logo {
 	height: 24px;
-	display: flex;
 }
 .logo {
-	display: flex;
-	align-items: center;
 	gap: 4px;
 }
 .h1-logo {
-	display: flex;
-	align-items: center;
 	height: 21px;
 	font-weight: 500;
 	font-style: normal;
@@ -80,25 +89,14 @@ body {
 	width: 200px;
 }
 .header-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	height: 19px;
 }
 .header-nav-ul {
-	display: flex;
-	justify-content: space-between;
 	gap: 48px;
 	height: 100%;
 	width: 458px;
 }
-.header-li {
-	display: flex;
-	align-items: center;
-}
 .header-a {
-	display: flex;
-	align-items: center;
 	height: 100%;
 	font-weight: 400;
 	font-size: 16px;
@@ -107,16 +105,12 @@ body {
 	color: #333333;
 }
 .header-botones {
-	display: flex;
 	gap: 10px;
 	justify-content: flex-end;
 }
 .header-botones-compartido {
 	border-radius: 6px;
 	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 20px;
@@ -146,8 +140,6 @@ body {
 	transition: background-color 0.2s ease;
 }
 .header-iconos {
-	display: flex;
-	align-items: center;
 	justify-content: flex-end;
 	gap: 22px;
 }
@@ -166,16 +158,10 @@ body {
 	height: 44px;
 	cursor: pointer;
 }
-.header-summary {
-	list-style: none;
-	display: flex;
-	align-items: center;
-}
 .header-div-desplegable {
 	position: relative;
 }
 .header-desplegable {
-	display: block;
 	background-color: #ffffff;
 	border-radius: 10px;
 	width: 200px;
@@ -190,8 +176,6 @@ body {
 	width: 100%;
 	height: 40px;
 	padding: 10px 14px;
-	display: flex;
-	align-items: center;
 	gap: 10px;
 	box-shadow: 0px 0.5px 0px 0px #d6d6d6;
 }
@@ -199,8 +183,6 @@ body {
 	border-bottom: 0.5px solid #d6d6d6;
 }
 .header-desplegable-a {
-	display: flex;
-	align-items: center;
 	gap: 10px;
 	height: 100%;
 }
@@ -215,6 +197,14 @@ body {
 	letter-spacing: 0.3px;
 	color: #4f4f4f;
 }
+.header-detalles {
+	height: 68px;
+	background-color: #ffffff;
+}
+.header-detalles .header-icono-noti path {
+	fill: #bdbdbd;
+}
+/* Mains */
 .main-index {
 	padding-block: 24px 20px;
 	display: grid;
@@ -1137,19 +1127,10 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .header-resultados {
 	height: 200px;
-	display: flex;
 	flex-direction: column;
 	background: linear-gradient(180deg, #2969bf 0%, #144e9d 100%);
 }
-.div-header-resultados {
-	height: 68px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 .logo-resultados {
-	display: flex;
-	align-items: center;
 	gap: 4px;
 }
 .logo-resultados svg path {
@@ -1158,13 +1139,7 @@ input[type='number']::-webkit-outer-spin-button {
 .logo-resultados h1 {
 	color: white;
 }
-.header-li-resultados {
-	display: flex;
-	align-items: center;
-}
 .header-a-resultados {
-	display: flex;
-	align-items: center;
 	height: 100%;
 	font-weight: 400;
 	font-size: 16px;
@@ -1661,16 +1636,6 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .detalles-fondogris {
 	background-color: #f4f4f4;
-}
-.header-detalles {
-	height: 68px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: #ffffff;
-}
-.header-detalles .header-icono-noti path {
-	fill: #bdbdbd;
 }
 
 .divgrid-detalles {
@@ -2472,7 +2437,4 @@ input[type='number']::-webkit-outer-spin-button {
 .divinfo-text-important-booking p {
 	margin-top: 1px;
 	height: 20px;
-}
-.hidden {
-	display: none;
 }
