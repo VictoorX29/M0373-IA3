@@ -181,12 +181,25 @@ function añadirAzul(cambio) {
 // 	}
 // });
 const iconoPerfil = document.querySelector('.header-icono-perfil');
-iconoPerfil.addEventListener('click', function () {
-	const desplegable = document.querySelector('#header-desplegable');
-	desplegable.classList.toggle('hidden');
-	// if (desplegable.classList.contains('hidden')) {
-	// 	desplegable.classList.remove('hidden');
-	// } else {
-	// 	desplegable.classList.add('hidden');
-	// }
-});
+if (iconoPerfil) {
+	iconoPerfil.addEventListener('click', function () {
+		const desplegable = document.querySelector('.header-desplegable');
+		desplegable.classList.toggle('hidden');
+		// if (desplegable.classList.contains('hidden')) {
+		// 	desplegable.classList.remove('hidden');
+		// } else {
+		// 	desplegable.classList.add('hidden');
+		// }
+	});
+}
+
+var buttonWelcome = document.querySelector('.button-welcome-card');
+var sectWelcome = document.querySelector('.sect-welcome-card');
+if (buttonWelcome && sectWelcome) {
+	sectWelcome.addEventListener('click', ctrlClickWelcome);
+	buttonWelcome.addEventListener('click', ctrlClickWelcome);
+	function ctrlClickWelcome(e) {
+		e.preventDefault();
+		sectWelcome.classList.add('hidden');
+	}
+}
