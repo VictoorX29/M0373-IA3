@@ -2437,3 +2437,44 @@ input[type='number']::-webkit-outer-spin-button {
 	margin-top: 1px;
 	height: 20px;
 }
+.divs-info-der-checkout {
+	background-color: white;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.div-content-infohotel {
+	padding: 20px;
+}
+.div-content-infohotel h3 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 0.18px;
+	color: #181818;
+	height: 21px;
+}
+.div-content-infohotel .div-imgestr-pcalif-detalles {
+	margin-top: 10px;
+}
+.div-info-check {
+	margin-top: 25px;
+	flex-direction: column;
+	gap: 8px;
+}
+.div-info-check p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.14px;
+	color: #4f4f4f;
+}
+.div-info-check p:first-child {
+	color: #eb5757;
+}
+.divs-info-der-checkout:nth-child(2) {
+	margin-top: 30px;
+}
+.divs-info-der-checkout header {
+	background-color: #85e0ab;
+	height: 55px;
+}
