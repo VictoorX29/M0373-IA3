@@ -141,55 +141,11 @@ function añadirAzul(cambio) {
 		icon.classList.remove('iconoAzul');
 	}
 }
-// iptWhere.addEventListener('blur', function (e) {
-// 	e.preventDefault();
-// 	const iconWhere = document.querySelector('#iconWhere');
-// 	if (iptWhere.value.trim() !== '') {
-// 		iconWhere.classList.add('iconoAzul');
-// 	} else {
-// 		iconWhere.classList.remove('iconoAzul');
-// 	}
-// });
-
-// iptCIDate.addEventListener('blur', function (e) {
-// 	e.preventDefault();
-// 	const iconCIDate = document.querySelector('#iconCIDate');
-// 	if (iptCIDate.value.trim() !== '') {
-// 		iconCIDate.classList.add('iconoAzul');
-// 	} else {
-// 		iconCIDate.classList.remove('iconoAzul');
-// 	}
-// });
-
-// iptCODate.addEventListener('blur', function (e) {
-// 	e.preventDefault();
-// 	const iconCODate = document.querySelector('#iconCODate');
-// 	if (iptCODate.value.trim() !== '') {
-// 		iconCODate.classList.add('iconoAzul');
-// 	} else {
-// 		iconCODate.classList.remove('iconoAzul');
-// 	}
-// });
-
-// iptGuests.addEventListener('blur', function (e) {
-// 	e.preventDefault;
-// 	const iconGuests = document.querySelector('#iconGuests');
-// 	if (iptGuests.value.trim() !== '') {
-// 		iconGuests.classList.add('iconoAzul');
-// 	} else {
-// 		iconGuests.classList.remove('iconoAzul');
-// 	}
-// });
 const iconoPerfil = document.querySelector('.header-icono-perfil');
 if (iconoPerfil) {
+	const desplegable = document.querySelector('.header-desplegable');
 	iconoPerfil.addEventListener('click', function () {
-		const desplegable = document.querySelector('.header-desplegable');
 		desplegable.classList.toggle('hidden');
-		// if (desplegable.classList.contains('hidden')) {
-		// 	desplegable.classList.remove('hidden');
-		// } else {
-		// 	desplegable.classList.add('hidden');
-		// }
 	});
 }
 
