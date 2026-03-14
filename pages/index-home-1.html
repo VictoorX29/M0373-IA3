@@ -17,7 +17,7 @@
 	<body>
 		<header class="padding-general header flex justify-between align-center">
 			<div class="div-logo flex div-header-global">
-				<a class="logo flex align-center nostyle" href="index.html">
+				<a class="logo flex align-center nostyle" href="../index.html">
 					<img src="../images/logoavion.svg" alt="Logo Avion" />
 					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
@@ -135,6 +135,7 @@
 					<div class="div-input-where">
 						<svg
 							class="svg-div-input"
+							id="iconWhere"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -152,12 +153,14 @@
 						<input
 							type="text"
 							class="input-where"
+							id="input-Where"
 							placeholder="Where are you going?"
 							required />
 					</div>
 					<div class="div-input-checkinout">
 						<svg
 							class="svg-div-input"
+							id="iconCIDate"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -229,15 +232,17 @@
 								stroke-linejoin="round" />
 						</svg>
 						<input
-							type="text"
+							type="number"
 							maxlength="10"
 							placeholder="Check in date"
 							class="input-checkinout"
+							id="input-CIDate"
 							required />
 					</div>
 					<div class="div-input-checkinout">
 						<svg
 							class="svg-div-input"
+							id="iconCODate"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -309,15 +314,17 @@
 								stroke-linejoin="round" />
 						</svg>
 						<input
-							type="text"
+							type="number"
 							maxlength="10"
 							placeholder="Check out date"
 							class="input-checkinout"
+							id="input-CODate"
 							required />
 					</div>
 					<div class="div-input-guests">
 						<svg
 							class="svg-div-input"
+							id="iconGuests"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -350,9 +357,12 @@
 							</defs>
 						</svg>
 						<input
-							type="text"
+							type="number"
 							class="input-guests"
+							id="input-Guests"
 							placeholder="Guests"
+							min="1"
+							max="8"
 							required />
 					</div>
 					<button type="submit" class="button-search">Search</button>
