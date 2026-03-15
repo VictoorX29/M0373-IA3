@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IA3: Proyecto 2</title>
+		<meta name="author" content="Víctor M.N." />
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="../images/logoavion.svg"
+			type="image/x-icon" />
+		<!-- Estilos -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body class="detalles-fondogris">
+		<header
+			class="padding-general header-detalles flex justify-between align-center">
+			<div class="div-logo flex div-header-global">
+				<a class="logo flex align-center nostyle" href="../index.html">
+					<img src="../images/logoavion.svg" alt="Logo Avion" />
+					<h1 class="h1-logo flex align-center">my Dream Place</h1>
+				</a>
+			</div>
+			<nav class="header-nav flex align-center justify-between">
+				<ul class="header-nav-ul flex justify-between">
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Home</a>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Discover</a>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center"
+							>Activities</a
+						>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">About</a>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-iconos flex align-center div-header-global">
+				<svg
+					class="header-icono-noti"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82004C17.9387 7.70407 17.6216 6.61125 17.0252 5.66801C16.4288 4.72477 15.5776 3.96966 14.5699 3.49004C14.3128 3.03338 13.9376 2.65418 13.4838 2.39207C13.0299 2.12997 12.514 1.99457 11.9899 2.00004C10.8999 2.00004 9.91994 2.59004 9.39994 3.52004C7.44994 4.49004 6.09994 6.50004 6.09994 8.82004V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z"
+						fill="#828282" />
+					<path
+						d="M14.8302 20.01C14.6199 20.5922 14.2355 21.0954 13.7291 21.4515C13.2228 21.8075 12.6191 21.999 12.0002 22C11.2102 22 10.4302 21.68 9.88018 21.11C9.56018 20.81 9.32018 20.41 9.18018 20C9.31018 20.02 9.44018 20.03 9.58018 20.05C9.81018 20.08 10.0502 20.11 10.2902 20.13C10.8602 20.18 11.4402 20.21 12.0202 20.21C12.5902 20.21 13.1602 20.18 13.7202 20.13C13.9302 20.11 14.1402 20.1 14.3402 20.07L14.8302 20.01Z"
+						fill="#828282" />
+					<circle
+						cx="17"
+						cy="6"
+						r="5"
+						fill="#EB5757"
+						stroke="white"
+						stroke-width="2" />
+				</svg>
+				<div class="header-div-desplegable">
+					<img
+						src="../images/icono-perfil.png"
+						alt="Icono Perfil"
+						class="header-icono-perfil" />
+					<ul class="header-desplegable hidden">
+						<li class="header-desplegable-li flex align-center">
+							<img
+								src="../images/icono-usuario.png"
+								alt=""
+								class="desplegable-img" /><span class="desplegable-span"
+								>Manage account</span
+							>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="my-trips.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icono-avion.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>My trips</span
+								>
+							</a>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<img
+								src="../images/icono-cartera.png"
+								alt=""
+								class="desplegable-img" /><span class="desplegable-span"
+								>Reward and wallet</span
+							>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="index.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icono-logout.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>Sign out</span
+								>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="padding-general main-myTrips">
+			<div class="divTitTrips">
+				<h2 class="h2-main-checkout">My trips</h2>
+				<div class="div-card-result">
+					<div class="izq-div-card-result">
+						<a href="detalles.html" class="nostyle a-card-result">
+							<img
+								src="../images/resultados/lakeside.png"
+								alt=""
+								class="img-card-result" />
+						</a>
+					</div>
+					<div class="der-div-card-result">
+						<div class="div-h3tit-porce-result">
+							<h3 class="h3-tit-card-result">Lakeside Motel Warefront</h3>
+						</div>
+						<div class="div-imgestr-pcalif-result">
+							<img
+								src="../images/grupo-icono-estrellas.png"
+								alt="Estrellas"
+								class="img-estrellas-result" />
+							<p class="p-calificacion-result">4.5 (1200 Reviews)</p>
+						</div>
+						<div class="divgeneral-availa-precio-myTrips">
+							<div class="div-info-check flex">
+								<p>Non refundable</p>
+								<p>Check in: Sunday, March 18, 2022</p>
+								<p>Check out: Tuesday, March 20, 2022</p>
+								<p>2 night stay</p>
+							</div>
+							<div class="div-p-precio-result">
+								<p class="p-roomdays-result">1 room 2 days</p>
+								<div class="div-precio-result">
+									<p class="p-prectach-result">$150</p>
+									<p class="p-precfinal-result">$130</p>
+								</div>
+								<p class="p-taxes-result">Includes taxes and fees</p>
+								<a href="detalles.html" class="a-availa-myTrips nostyle"
+									>View trip details</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="sect-popular-myTrips">
+				<h2 class="h2-index">Based on your history</h2>
+				<div class="div-sect-popular">
+					<div>
+						<img
+							src="https://us.images.westend61.de/0002015268j/aerial-view-of-luxury-resort-island-with-turquoise-waters-and-reef-vashafaru-maldives-AAEF37097.jpg"
+							alt="Azure Bay Resort"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Azure Bay Resort</h3>
+							<p class="p-div-text-sect-popular">1.945 properties</p>
+						</div>
+					</div>
+
+					<div>
+						<img
+							src="https://assets.anantara.com/image/upload/q_auto%2Cf_auto/media/minor/anantara/images/qasr-al-sarab-desert-resort-by-anantara/leisure/infinity-pool/infinity-pool-2025/984x532_infinity_pool_qasr.jpg"
+							alt="Golden Palm Retreat"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Golden Palm Retreat</h3>
+							<p class="p-div-text-sect-popular">1.32 properties</p>
+						</div>
+					</div>
+
+					<div>
+						<img
+							src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/24/67/a5/glass-igloos-at-the-dusk.jpg?h=500&amp;s=1&amp;w=900"
+							alt="Northern Lights Lodge"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Northern Lights Lodge</h3>
+							<p class="p-div-text-sect-popular">865 properties</p>
+						</div>
+					</div>
+
+					<div>
+						<img
+							src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/820635917.jpg?k=6d7c8d4b4227dd9ae56a966b82f9d05491513dedc2403366b8691e61b8d5cb38&amp;o="
+							alt="Riviera Grand Hotel"
+							class="img-sect-popular" />
+						<div class="div-text-sect-popular">
+							<h3 class="h3-div-text-sect-popular">Riviera Grand Hotel</h3>
+							<p class="p-div-text-sect-popular">742 properties</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="div-warning-myTrips">
+				<img
+					src="../images/icon-warning.png"
+					alt="Warning Icono"
+					class="warning-icono" />
+				<p class="warning-text">
+					Check the latest COVID-19 restrictions before you travel.
+					<a href="" class="nostyle warning-a">Learn more</a>
+				</p>
+			</div>
+		</main>
+		<footer>
+			<div class="padding-general footer-index2">
+				<div class="div-footer-logo">
+					<div class="div-logo">
+						<a class="logo nostyle" href="index.html">
+							<img src="../images/logoavion.svg" alt="Logo Avion" />
+							<h1 class="h1-logo">my Dream Place</h1>
+						</a>
+					</div>
+					<p class="footer-p-logo">Your next goto companion for travel</p>
+				</div>
+				<div class="footer-div-company">
+					<h4 class="footer-h4-tit">Company</h4>
+					<ul class="footer-ul">
+						<li>About</li>
+						<li>Jobs</li>
+						<li>Newsroom</li>
+						<li>Advertising</li>
+						<li>Contact us</li>
+					</ul>
+				</div>
+				<div class="footer-div-explore">
+					<h4 class="footer-h4-tit">Explore</h4>
+					<ul class="footer-ul">
+						<li>Australia</li>
+						<li>New Zealand</li>
+						<li>United States America (USA)</li>
+						<li>Greece</li>
+						<li>Maldives</li>
+						<li>Singapore</li>
+						<li><a href="" class="nostyle">See more</a></li>
+					</ul>
+				</div>
+				<div class="footer-div-terms">
+					<h4 class="footer-h4-tit">Terms and Policies</h4>
+					<ul class="footer-ul">
+						<li>Privacy Policy</li>
+						<li>Terms of use</li>
+						<li>Acessibility</li>
+						<li>Reward system policy</li>
+					</ul>
+				</div>
+				<div class="footer-div-help">
+					<h4 class="footer-h4-tit">Help</h4>
+					<ul class="footer-ul">
+						<li>Support</li>
+						<li>Cancel your bookings</li>
+						<li>Use Coupon</li>
+						<li>Refund Policies</li>
+						<li>International Travel Documents</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-barragris">
+				<div class="div-footer-copy">
+					<img
+						src="../images/icon-copyright.png"
+						alt="Icono Copyright"
+						class="footer-iconcopy" />
+					<p class="footer-p-copy">my Dream Place 2025</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

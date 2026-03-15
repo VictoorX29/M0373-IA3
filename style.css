@@ -2477,4 +2477,161 @@ input[type='number']::-webkit-outer-spin-button {
 .divs-info-der-checkout header {
 	background-color: #85e0ab;
 	height: 55px;
+	padding: 18px;
+}
+.divs-info-der-checkout header h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.16px;
+}
+.divPriceDetails {
+	padding: 23px 17px 20px;
+	border-inline: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	flex-direction: column;
+	gap: 12px;
+}
+.divPriceDetails p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.14px;
+	color: #4f4f4f;
+}
+.hrDivPrice {
+	border: 1px solid #e0e0e0;
+}
+.divTotalCoupon {
+	border-inline: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 20px 18px 24px;
+}
+.divTotalCoupon a,
+label {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.28px;
+	display: block;
+}
+.divTotalCoupon a {
+	color: #2f80ed;
+	transition: color 0.2s ease;
+	margin-top: 10px;
+}
+.divTotalCoupon a:hover {
+	color: rgba(47, 128, 237, 0.8);
+	transition: color 0.2s ease;
+}
+.divTotalCoupon label {
+	color: #181818;
+	display: inline-block;
+}
+.divTotalPrice {
+	align-items: flex-end;
+}
+.divTotalPrice p:nth-child(1) {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.16px;
+	color: #181818;
+}
+.divTotalPrice p:nth-child(2) {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.24px;
+}
+.divCoupon {
+	margin-top: 22px;
+}
+.divCouponInput {
+	margin-top: 4px;
+	height: 44px;
+	width: 100%;
+	display: flex;
+	gap: 6px;
+}
+.divCouponInput input {
+	height: 100%;
+	width: 226px;
+	border: none;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	padding: 11px 12px 12px;
+	color: #333333;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.3px;
+}
+.divCouponInput button {
+	width: 132px;
+	height: 100%;
+	border: none;
+	background-color: #333333;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.divCouponInput button:hover {
+	filter: opacity(85%);
+}
+.divTitTrips {
+	padding-inline: 105px;
+}
+.divTitTrips .div-card-result {
+	margin-top: 28px;
+	background-color: #ffffff;
+}
+.sect-popular-myTrips {
+	margin-top: 360px;
+}
+.div-warning-myTrips {
+	margin-top: 64px;
+	background-color: #fcefca;
+	border-radius: 8px;
+	padding: 20px 24px;
+	display: flex;
+	align-items: center;
+	gap: 19px;
+	width: 100%;
+}
+.main-myTrips {
+	padding-block: 60px 80px;
+}
+.divTitTrips .div-info-check {
+	margin-top: 30px;
+}
+.a-availa-myTrips {
+	width: 143px;
+	height: 40px;
+	border-radius: 6px;
+	margin-top: 16px;
+	background-color: #2f80ed;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	color: #ffffff;
+	transition: background-color 0.2s ease;
+}
+.a-availa-myTrips:hover {
+	background-color: rgba(47, 128, 237, 0.8);
+	transition: background-color 0.2s ease;
+}
+.divgeneral-availa-precio-myTrips {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
 }
