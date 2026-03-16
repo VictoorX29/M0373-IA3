@@ -77,11 +77,9 @@ body {
 	gap: 4px;
 }
 .h1-logo {
-	height: 21px;
 	font-weight: 500;
-	font-style: normal;
 	font-size: 18px;
-	line-height: 100%;
+	line-height: 21px;
 	letter-spacing: 0.36px;
 	color: #1b1f2d;
 }
@@ -736,7 +734,7 @@ input[type='number']::-webkit-outer-spin-button {
 	margin-left: 28px;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 140%;
+	line-height: 20px;
 	letter-spacing: 0.28px;
 	color: #4f4f4f;
 }
@@ -744,12 +742,9 @@ input[type='number']::-webkit-outer-spin-button {
 	display: flex;
 }
 .footer-h4-tit {
-	height: 19px;
-	display: flex;
-	align-items: center;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 100%;
+	line-height: 19px;
 	letter-spacing: 0.32px;
 	white-space: nowrap;
 }
@@ -760,12 +755,9 @@ input[type='number']::-webkit-outer-spin-button {
 .footer-ul li {
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 100%;
+	line-height: 17px;
 	letter-spacing: 0.28px;
 	color: #4f4f4f;
-	height: 17px;
-	display: flex;
-	align-items: center;
 	white-space: nowrap;
 }
 .footer-ul a {
@@ -798,13 +790,9 @@ input[type='number']::-webkit-outer-spin-button {
 	margin-top: 60px;
 	background-color: #ebebeb;
 	padding: 10px 205px;
-	display: flex;
-	align-items: center;
 	justify-content: flex-end;
 }
 .div-footer-copy {
-	display: flex;
-	align-items: center;
 	gap: 6px;
 }
 .footer-iconcopy {
@@ -814,7 +802,7 @@ input[type='number']::-webkit-outer-spin-button {
 .footer-p-copy {
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 140%;
+	line-height: 20px;
 	letter-spacing: 0px;
 	color: #4f4f4f;
 }
