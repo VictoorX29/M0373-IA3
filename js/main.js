@@ -148,7 +148,6 @@ if (iconoPerfil) {
 		desplegable.classList.toggle('hidden');
 	});
 }
-
 var buttonWelcome = document.querySelector('.button-welcome-card');
 var sectWelcome = document.querySelector('.sect-welcome-card');
 if (buttonWelcome && sectWelcome) {
