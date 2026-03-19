@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -30,26 +30,38 @@
 					and numbers.
 				</p>
 				<form action="index-home-1.html" method="get" class="form-signin">
-					<label for="password" class="form-label">Password</label>
-					<input
-						type="password"
-						name="password"
-						id="password"
-						class="form-text"
-						required
-						pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}"
-						placeholder="Enter password" />
-					<label for="confirm-password" class="form-label"
-						>Confirm password</label
-					>
-					<input
-						type="password"
-						name="confirm-password"
-						id="confirm-password"
-						class="form-text"
-						required
-						placeholder="Enter password" />
-
+					<label for="inputContraseña" class="label-auth">
+						Password
+						<div class="div-label-auth">
+							<input
+								type="password"
+								name="password"
+								id="inputContraseña"
+								placeholder="Enter password"
+								required
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}" />
+							<img
+								src="../images/icons/eye.svg"
+								alt="Alternar contraseña Icono"
+								id="imgAlternarContraseña" />
+						</div>
+					</label>
+					<label for="inputRepetirContraseña" class="label-auth">
+						Confirm password
+						<div class="div-label-auth">
+							<input
+								type="password"
+								name="password"
+								id="inputRepetirContraseña"
+								placeholder="Confirm password"
+								required
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}" />
+							<img
+								src="../images/icons/eye.svg"
+								alt="Alternar contraseña Icono"
+								id="imgAlternarRepetirContraseña" />
+						</div>
+					</label>
 					<button type="submit" class="form-button-create">
 						Create account
 					</button>
@@ -62,5 +74,29 @@
 			</section>
 		</main>
 		<footer></footer>
+		<script type="module">
+			document
+				.querySelector('#imgAlternarContraseña')
+				.addEventListener('click', function () {
+					const inputContraseña = document.querySelector('#inputContraseña');
+					if (inputContraseña.type === 'password') {
+						inputContraseña.type = 'text';
+					} else {
+						inputContraseña.type = 'password';
+					}
+				});
+			document
+				.querySelector('#imgAlternarRepetirContraseña')
+				.addEventListener('click', function () {
+					const inputRepetirContraseña = document.querySelector(
+						'#inputRepetirContraseña',
+					);
+					if (inputRepetirContraseña.type === 'password') {
+						inputRepetirContraseña.type = 'text';
+					} else {
+						inputRepetirContraseña.type = 'password';
+					}
+				});
+		</script>
 	</body>
 </html>
