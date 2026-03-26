@@ -61,7 +61,7 @@ export const cardsHotels = [
 		imagen:
 			'https://assets.anantara.com/image/upload/q_auto%2Cf_auto/media/minor/anantara/images/qasr-al-sarab-desert-resort-by-anantara/leisure/infinity-pool/infinity-pool-2025/984x532_infinity_pool_qasr.jpg',
 		hotel: 'Golden Palm Retreat',
-		propiedades: 1.32,
+		propiedades: 1.327,
 	},
 	{
 		imagen:

@@ -91,17 +91,6 @@
 			</section>
 		</main>
 		<footer></footer>
-		<script type="module">
-			document
-				.querySelector('#imgAlternarContraseña')
-				.addEventListener('click', function (e) {
-					const inputContraseña = document.querySelector('#inputContraseña');
-					if (inputContraseña.type === 'password') {
-						inputContraseña.type = 'text';
-					} else {
-						inputContraseña.type = 'password';
-					}
-				});
-		</script>
+		<script type="module" src="../js/password.js"></script>
 	</body>
 </html>

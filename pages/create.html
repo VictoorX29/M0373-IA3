@@ -69,34 +69,11 @@
 				<p class="p-terminos">
 					By creating an account, you agree with our
 					<a href="" class="nostyle">Terms and Conditions</a> and
-					<a href="" class="nostyle">Privacy Statement</a>.
+					<a href="" class="nostyle">Privacy Statement</a>
 				</p>
 			</section>
 		</main>
 		<footer></footer>
-		<script type="module">
-			document
-				.querySelector('#imgAlternarContraseña')
-				.addEventListener('click', function () {
-					const inputContraseña = document.querySelector('#inputContraseña');
-					if (inputContraseña.type === 'password') {
-						inputContraseña.type = 'text';
-					} else {
-						inputContraseña.type = 'password';
-					}
-				});
-			document
-				.querySelector('#imgAlternarRepetirContraseña')
-				.addEventListener('click', function () {
-					const inputRepetirContraseña = document.querySelector(
-						'#inputRepetirContraseña',
-					);
-					if (inputRepetirContraseña.type === 'password') {
-						inputRepetirContraseña.type = 'text';
-					} else {
-						inputRepetirContraseña.type = 'password';
-					}
-				});
-		</script>
+		<script type="module" src="../js/password.js"></script>
 	</body>
 </html>
