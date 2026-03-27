@@ -1481,6 +1481,7 @@ input[type='number']::-webkit-outer-spin-button {
 .img-card-result {
 	width: 285px;
 	height: 200px;
+	border-radius: 5px;
 }
 .der-div-card-result {
 	padding: 24px 24px 24px 0px;
