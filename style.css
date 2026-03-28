@@ -1,29 +1,72 @@
 /* Fuentes */
 @font-face {
 	font-family: 'SF Pro Display';
-	src: url('./fonts/SF-Pro-Display-Regular.otf') format('opentype');
+	src: url('../fonts/SF-Pro-Display-Ultralight.otf') format('opentype');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF-Pro-Display-Thin.otf') format('opentype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF-Pro-Display-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF-Pro-Display-Regular.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'SF Pro Display';
-	src: url('./fonts/SF-Pro-Display-Medium.otf') format('opentype');
+	src: url('../fonts/SF-Pro-Display-Medium.otf') format('opentype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'SF Pro Display';
-	src: url('./fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+	src: url('../fonts/SF-Pro-Display-Semibold.otf') format('opentype');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'SF Pro Display';
-	src: url('./fonts/SF-Pro-Display-Bold.otf') format('opentype');
+	src: url('../fonts/SF-Pro-Display-Bold.otf') format('opentype');
 	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF-Pro-Display-Heavy.otf') format('opentype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF-Pro-Display-Black.otf') format('opentype');
+	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
 }
@@ -1210,12 +1253,9 @@ input[type='number']::-webkit-outer-spin-button {
 .h2-resultados {
 	font-weight: 600;
 	font-size: 24px;
-	line-height: 100%;
-	letter-spacing: 0.48px;
+	line-height: 32px;
+	letter-spacing: 0px;
 	color: #181818;
-	height: 32px;
-	display: flex;
-	align-items: center;
 }
 .div-search-izq-resultados {
 	width: 100%;
@@ -1495,22 +1535,22 @@ input[type='number']::-webkit-outer-spin-button {
 .h3-tit-card-result {
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 100%;
+	line-height: 32px;
 	letter-spacing: 0.2px;
-	height: 32px;
-	display: flex;
-	align-items: center;
 }
 .p-recieve-porce-result {
 	height: 26px;
+	width: 190px;
 	border-radius: 6px;
 	background-color: #eb5757;
-	padding: 4px 8px;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
 	letter-spacing: 0.26px;
 	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .div-imgestr-pcalif-result {
 	display: flex;
@@ -1542,10 +1582,9 @@ input[type='number']::-webkit-outer-spin-button {
 .p-live-result {
 	font-weight: 500;
 	font-size: 13px;
-	line-height: 140%;
+	line-height: 18px;
 	letter-spacing: 0.26px;
 	color: #4f4f4f;
-	height: 18px;
 }
 .p-reats-result {
 	margin-top: 4px;
@@ -1642,14 +1681,17 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .p-recieve-porce-result-scepter {
 	height: 26px;
+	width: 236px;
 	border-radius: 6px;
 	background-color: #f2994a;
-	padding: 4px 8px;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 18px;
 	letter-spacing: 0.26px;
 	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .div-loadmore-result {
 	width: 100%;

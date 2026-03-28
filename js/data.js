@@ -76,3 +76,100 @@ export const cardsHotels = [
 		propiedades: 742,
 	},
 ];
+export const hotels = [
+	{
+		image: '../images/resultados/lakeside.jpg',
+		href: 'detalles.html',
+		name: 'Lakeside Motel Warefront',
+		badge: {
+			type: 'p-recieve-porce-result',
+			text: 'Book now and receive 15% off',
+		},
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		discount: 5,
+		oldPrice: 150,
+		finalPrice: 130,
+	},
+	{
+		image: '../images/resultados/julia.jpg',
+		href: '#',
+		name: 'Julia Dens Resort',
+		badge: null,
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		finalPrice: 240,
+	},
+	{
+		image: '../images/resultados/scepter.jpg',
+		href: '#',
+		name: 'Aghnim Scepter Hotel',
+		badge: {
+			type: 'p-recieve-porce-result-scepter',
+			text: 'Receive 30% discount on a restaurant',
+		},
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		finalPrice: 300,
+	},
+	{
+		image: '../images/resultados/marineford.jpg',
+		href: '#',
+		name: 'Marineford Hotel',
+		badge: null,
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		finalPrice: 120,
+	},
+	{
+		image: '../images/resultados/shanghai.jpg',
+		href: '#',
+		name: 'Shanghai Open House',
+		badge: null,
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		finalPrice: 145,
+	},
+	{
+		image: '../images/resultados/ocean.jpg',
+		href: '#',
+		name: 'Ocean Waves Resort',
+		badge: null,
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		finalPrice: 310,
+	},
+	{
+		image: '../images/resultados/maimi.jpg',
+		href: '#',
+		name: 'Maimi City Frontier',
+		badge: {
+			type: 'p-recieve-porce-result-scepter',
+			text: 'Receive 30% discount on a restaurant',
+		},
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		discount: 15,
+		oldPrice: 200,
+		finalPrice: 190,
+	},
+	{
+		image: '../images/resultados/lakeside2.jpg',
+		href: '#',
+		name: 'Lakeside Motel Warefront',
+		badge: null,
+		description: 'Live a little and celebrate with champagne',
+		details:
+			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+		discount: 15,
+		oldPrice: 320,
+		finalPrice: 300,
+	},
+];
