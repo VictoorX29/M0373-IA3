@@ -61,13 +61,7 @@ function añadirAzul(cambio) {
 		icon.classList.remove('iconoAzul');
 	}
 }
-const iconoPerfil = document.querySelector('.header-icono-perfil');
-if (iconoPerfil) {
-	const desplegable = document.querySelector('.header-desplegable');
-	iconoPerfil.addEventListener('click', function () {
-		desplegable.classList.toggle('hidden');
-	});
-}
+
 var buttonWelcome = document.querySelector('.button-welcome-card');
 var sectWelcome = document.querySelector('.sect-welcome-card');
 if (buttonWelcome && sectWelcome) {
