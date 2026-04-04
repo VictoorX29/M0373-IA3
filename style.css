@@ -1733,6 +1733,11 @@ input[type='number']::-webkit-outer-spin-button {
 .divgrid-img-detalles:first-child {
 	margin-right: 20px;
 }
+.divgrid-img-detalles img {
+	border-radius: 5px;
+	width: 820px;
+	height: 452px;
+}
 .divgrid-imgs-detalles {
 	display: flex;
 	flex-direction: column;
@@ -1776,12 +1781,18 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .diventana-detalles hr {
 	display: none;
-}
-.diventana-detalles:hover hr {
-	display: block;
 	border: none;
 	border-top: 3px solid #2f80ed;
 	width: 100%;
+}
+.diventana-detalles:first-child hr {
+	display: block;
+}
+.diventana-detalles:hover hr {
+	display: block;
+}
+.diventana-detalles:first-child .diventana-texto-detalles {
+	margin-bottom: 0;
 }
 .diventana-detalles:hover .diventana-texto-detalles {
 	margin-bottom: 0;

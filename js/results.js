@@ -6,7 +6,7 @@ function renderizarResultados() {
 		html += `
         <div class="div-card-result">
             <div class="izq-div-card-result">
-                <a href="${hotel.href}" class="nostyle a-card-result">
+                <a href="detalles.html?id=${hotel.id}" class="nostyle a-card-result">
                     <img
                         src="${hotel.image}"
                         alt=""
@@ -33,7 +33,7 @@ function renderizarResultados() {
                         <p class="p-reats-result">
                             ${hotel.details}
                         </p>
-                        <a href="${hotel.href}" class="a-availa-result nostyle"
+                        <a href="detalles.html?id=${hotel.id}" class="a-availa-result nostyle"
                             >See availability</a
                         >
                     </div>

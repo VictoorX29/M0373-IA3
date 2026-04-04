@@ -78,8 +78,8 @@ export const cardsHotels = [
 ];
 export const hotels = [
 	{
+		id: 1,
 		image: '../images/resultados/lakeside.jpg',
-		href: 'detalles.html',
 		name: 'Lakeside Motel Warefront',
 		badge: {
 			type: 'p-recieve-porce-result',
@@ -87,89 +87,265 @@ export const hotels = [
 		},
 		description: 'Live a little and celebrate with champagne',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		discount: 5,
 		oldPrice: 150,
 		finalPrice: 130,
+
+		// Detalle
+		rating: 4.5,
+		reviewsCount: 1200,
+		address: 'Lorem ipsum road, Tantri\n-2322, Melbourne, Australia',
+		overviewText:
+			'Featuring free WiFi throughout the property, Lakeside Motel Waterfront offers accommodations in Lakes Entrance, 19 mi from Bairnsdale. Free private parking is available on site.\n\nEach room at this motel is air conditioned and comes with a flat-screen TV. You will find a kettle, toaster and a microwave in the room. Each room is fitted with a private bathroom. Guests have access to barbecue facilities and a lovely large lawn area.',
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'ac', label: 'Air Conditioning' },
+			{ id: 'parking', label: 'Parking available' },
+			{ id: 'business', label: 'Business Services' },
+			{ id: 'pool', label: 'Swimming pool' },
+			{ id: 'top-rated', label: 'Top rated in area' },
+		],
+		exploreArea: [
+			{ name: 'Hotel Pennsylvania', distance: '2 min drive' },
+			{ name: 'Travis Bakery store house', distance: '10 min drive' },
+			{ name: 'Olivia Johnson Garden', distance: '15 min drive' },
+			{ name: 'Norman Opera Circus', distance: '18 min drive' },
+			{ name: 'Rockdesert Hotel', distance: '32 min drive' },
+		],
 	},
 	{
+		id: 2,
 		image: '../images/resultados/julia.jpg',
-		href: '#',
 		name: 'Julia Dens Resort',
 		badge: null,
-		description: 'Live a little and celebrate with champagne',
+		description: 'Escape to paradise with breathtaking ocean views',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		finalPrice: 240,
+
+		// Detalle
+		rating: 4.8,
+		reviewsCount: 2340,
+		address: '45 Ocean Drive\nSydney, NSW 2000, Australia',
+		overviewText:
+			'Julia Dens Resort is a luxury beachfront property located on the famous Sydney coastline. Guests enjoy direct beach access, an infinity pool overlooking the Pacific Ocean, and world-class dining at our two on-site restaurants.\n\nAll suites feature private balconies with panoramic sea views, premium bedding, and marble bathrooms with soaking tubs. A dedicated concierge team is available 24/7 to curate unforgettable experiences.',
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'pool', label: 'Infinity pool' },
+			{ id: 'spa', label: 'Full spa' },
+			{ id: 'restaurant', label: 'Fine dining' },
+			{ id: 'beach', label: 'Private beach access' },
+			{ id: 'concierge', label: '24/7 Concierge' },
+		],
+		exploreArea: [
+			{ name: 'Bondi Beach', distance: '5 min walk' },
+			{ name: 'Sydney Opera House', distance: '20 min drive' },
+			{ name: 'Harbour Bridge', distance: '22 min drive' },
+			{ name: 'Taronga Zoo', distance: '30 min drive' },
+			{ name: 'Royal Botanic Garden', distance: '18 min drive' },
+		],
 	},
 	{
+		id: 3,
 		image: '../images/resultados/scepter.jpg',
-		href: '#',
 		name: 'Aghnim Scepter Hotel',
 		badge: {
 			type: 'p-recieve-porce-result-scepter',
 			text: 'Receive 30% discount on a restaurant',
 		},
-		description: 'Live a little and celebrate with champagne',
+		description: 'A historic gem in the heart of the city',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		finalPrice: 300,
+
+		// Detalle
+		rating: 4.6,
+		reviewsCount: 876,
+		address: '12 Royal Parade\nMelbourne, VIC 3004, Australia',
+		overviewText:
+			'The Aghnim Scepter Hotel is a landmark property housed in a beautifully restored 1920s building. Located in the vibrant city centre, guests are steps away from premier shopping, theatres, and cultural attractions.\n\nClassic architecture blends seamlessly with modern comforts. Rooms feature high ceilings, original hardwood floors, and curated artworks. The award-winning in-house restaurant, The Scepter Grill, serves contemporary Australian cuisine with local seasonal produce.',
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'restaurant', label: 'Award-winning restaurant' },
+			{ id: 'bar', label: 'Rooftop bar' },
+			{ id: 'gym', label: 'Fitness centre' },
+			{ id: 'meeting', label: 'Meeting rooms' },
+			{ id: 'top-rated', label: 'Top rated in area' },
+		],
+		exploreArea: [
+			{ name: 'Federation Square', distance: '3 min walk' },
+			{ name: 'National Gallery of Victoria', distance: '7 min walk' },
+			{ name: 'Queen Victoria Market', distance: '10 min drive' },
+			{ name: 'Melbourne Cricket Ground', distance: '12 min drive' },
+			{ name: 'Royal Exhibition Building', distance: '8 min drive' },
+		],
 	},
 	{
+		id: 4,
 		image: '../images/resultados/marineford.jpg',
-		href: '#',
 		name: 'Marineford Hotel',
 		badge: null,
-		description: 'Live a little and celebrate with champagne',
+		description: 'Affordable comfort with a waterfront location',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		finalPrice: 120,
+
+		// Detalle
+		rating: 3.9,
+		reviewsCount: 540,
+		address: '8 Harbour Street\nBrisbane, QLD 4000, Australia',
+		overviewText:
+			'Marineford Hotel offers great value accommodation right on the Brisbane River. Perfect for budget-conscious travellers who still want a central location and clean, comfortable rooms.\n\nAll rooms include free WiFi, air conditioning, and a daily continental breakfast. The hotel provides easy access to public transport, making it simple to explore everything Brisbane has to offer.',
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'breakfast', label: 'Free breakfast' },
+			{ id: 'ac', label: 'Air Conditioning' },
+			{ id: 'parking', label: 'Parking available' },
+			{ id: 'laundry', label: 'Laundry service' },
+			{ id: 'transport', label: 'Near public transport' },
+		],
+		exploreArea: [
+			{ name: 'South Bank Parklands', distance: '5 min walk' },
+			{ name: 'Brisbane City Hall', distance: '8 min walk' },
+			{ name: 'Story Bridge', distance: '15 min drive' },
+			{ name: 'Lone Pine Koala Sanctuary', distance: '25 min drive' },
+			{ name: 'Fortitude Valley', distance: '10 min drive' },
+		],
 	},
 	{
+		id: 5,
 		image: '../images/resultados/shanghai.jpg',
-		href: '#',
 		name: 'Shanghai Open House',
 		badge: null,
-		description: 'Live a little and celebrate with champagne',
+		description: 'Contemporary design meets eastern hospitality',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		finalPrice: 145,
+
+		// Detalle
+		rating: 4.2,
+		reviewsCount: 1050,
+		address: '300 Nanjing Road\nShanghai, 200001, China',
+		overviewText:
+			"Shanghai Open House is a contemporary boutique hotel situated on the iconic Nanjing Road. Inspired by the blend of Eastern tradition and modern innovation, every space has been thoughtfully designed to reflect Shanghai's unique character.\n\nGuests enjoy a rooftop terrace with panoramic city views, a dedicated tea ceremony lounge, and a vibrant communal dining area. Rooms are minimalist in style with high-end amenities and smart room controls.",
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'rooftop', label: 'Rooftop terrace' },
+			{ id: 'tea-lounge', label: 'Tea ceremony lounge' },
+			{ id: 'ac', label: 'Air Conditioning' },
+			{ id: 'smart-room', label: 'Smart room controls' },
+			{ id: 'city-view', label: 'City views' },
+		],
+		exploreArea: [
+			{ name: 'The Bund', distance: '10 min walk' },
+			{ name: 'Yu Garden', distance: '15 min drive' },
+			{ name: 'Shanghai Museum', distance: '12 min walk' },
+			{ name: 'Xintiandi', distance: '20 min drive' },
+			{ name: "People's Square", distance: '5 min walk' },
+		],
 	},
 	{
+		id: 6,
 		image: '../images/resultados/ocean.jpg',
-		href: '#',
 		name: 'Ocean Waves Resort',
 		badge: null,
-		description: 'Live a little and celebrate with champagne',
+		description: 'Luxury all-inclusive with pristine white sand beaches',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		finalPrice: 310,
+
+		// Detalle
+		rating: 4.9,
+		reviewsCount: 3100,
+		address: 'Coral Bay Road\nWhitsundays, QLD 4802, Australia',
+		overviewText:
+			'Ocean Waves Resort is the pinnacle of all-inclusive luxury on the Great Barrier Reef. Set on a private stretch of pristine white sand, every detail has been crafted to offer an unmatched tropical escape.\n\nYour stay includes all meals at four themed restaurants, unlimited water sports, snorkelling tours to the reef, and nightly entertainment. Villas feature private plunge pools, outdoor showers, and direct beach access. Dedicated staff maintain a 3:1 guest-to-staff ratio for personalised service.',
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'all-inclusive', label: 'All inclusive' },
+			{ id: 'pool', label: 'Multiple pools' },
+			{ id: 'water-sports', label: 'Water sports' },
+			{ id: 'spa', label: 'Luxury spa' },
+			{ id: 'top-rated', label: 'Top rated in area' },
+		],
+		exploreArea: [
+			{ name: 'Great Barrier Reef', distance: '10 min boat' },
+			{ name: 'Whitehaven Beach', distance: '20 min boat' },
+			{ name: 'Hill Inlet Lookout', distance: '25 min boat' },
+			{ name: 'Airlie Beach', distance: '45 min ferry' },
+			{ name: 'Hardy Reef', distance: '30 min boat' },
+		],
 	},
 	{
+		id: 7,
 		image: '../images/resultados/maimi.jpg',
-		href: '#',
 		name: 'Maimi City Frontier',
 		badge: {
 			type: 'p-recieve-porce-result-scepter',
 			text: 'Receive 30% discount on a restaurant',
 		},
-		description: 'Live a little and celebrate with champagne',
+		description: 'Feel the energy of the city that never sleeps',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		discount: 15,
 		oldPrice: 200,
 		finalPrice: 190,
+
+		// Detalle
+		rating: 4.3,
+		reviewsCount: 1875,
+		address: '1600 Collins Avenue\nMiami Beach, FL 33139, USA',
+		overviewText:
+			'Maimi City Frontier puts you right in the heart of South Beach, steps from the famous Art Deco district and the vibrant nightlife of Ocean Drive. The hotel blends bold Miami aesthetics with upscale amenities.\n\nA rooftop pool deck with a cocktail bar offers sweeping ocean views. The lobby lounge features live DJ sets on weekends. Rooms are designed with sun-bleached tones and tropical accents, giving every space a resort-like feel even in the middle of the city.',
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'pool', label: 'Rooftop pool' },
+			{ id: 'bar', label: 'Cocktail bar' },
+			{ id: 'gym', label: 'Fitness centre' },
+			{ id: 'beach', label: 'Beach access' },
+			{ id: 'parking', label: 'Valet parking' },
+		],
+		exploreArea: [
+			{ name: 'Ocean Drive', distance: '3 min walk' },
+			{ name: 'South Beach', distance: '5 min walk' },
+			{ name: 'Wynwood Walls', distance: '15 min drive' },
+			{ name: 'Bayside Marketplace', distance: '20 min drive' },
+			{ name: 'Little Havana', distance: '18 min drive' },
+		],
 	},
 	{
+		id: 8,
 		image: '../images/resultados/lakeside2.jpg',
-		href: '#',
 		name: 'Lakeside Motel Warefront',
 		badge: null,
-		description: 'Live a little and celebrate with champagne',
+		description: 'A peaceful lakeside retreat with stunning mountain views',
 		details:
-			'Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
+			'Treats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies',
 		discount: 15,
 		oldPrice: 320,
 		finalPrice: 300,
+
+		// Detalle
+		rating: 4.4,
+		reviewsCount: 690,
+		address: '77 Lakeview Road\nRotorua, 3010, New Zealand',
+		overviewText:
+			"The second Lakeside Motel Warefront property sits on the shores of Lake Rotorua, surrounded by native New Zealand forest and geothermal hot springs. It is the perfect base for exploring the North Island's volcanic landscape.\n\nThe property features natural hot spring pools fed directly from the geothermal source, kayak and paddleboard rentals, and guided nature walks. Rooms have floor-to-ceiling windows to make the most of the stunning lake views and are decorated with Māori-inspired artwork.",
+		topFacilities: [
+			{ id: 'wifi', label: 'Free wifi' },
+			{ id: 'hot-springs', label: 'Natural hot springs' },
+			{ id: 'kayak', label: 'Kayak rental' },
+			{ id: 'parking', label: 'Free parking' },
+			{ id: 'nature-walks', label: 'Guided nature walks' },
+			{ id: 'lake-view', label: 'Lake views' },
+		],
+		exploreArea: [
+			{ name: 'Te Puia Geothermal Park', distance: '10 min drive' },
+			{ name: 'Wai-O-Tapu Thermal Wonderland', distance: '25 min drive' },
+			{ name: 'Rotorua Government Gardens', distance: '8 min drive' },
+			{ name: 'Skyline Rotorua', distance: '12 min drive' },
+			{ name: 'Rainbow Springs', distance: '15 min drive' },
+		],
 	},
 ];
