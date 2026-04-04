@@ -1118,6 +1118,9 @@ input[type='number']::-webkit-outer-spin-button {
 	color: #4f4f4f;
 	margin-top: 12px;
 }
+.p-signin span {
+	font-weight: 500;
+}
 .form-button-create {
 	margin-top: 30px;
 	border-radius: 6px;
@@ -1798,11 +1801,8 @@ input[type='number']::-webkit-outer-spin-button {
 	margin-bottom: 0;
 }
 .svg-input-detalles {
-	min-width: 20px;
-	min-height: 20px;
-}
-.svg-input-detalles path {
-	stroke: #2f80ed;
+	width: 20px;
+	height: 20px;
 }
 .divmain-detalles {
 	padding-block: 40px 80px;

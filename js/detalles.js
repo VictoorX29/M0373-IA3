@@ -7,7 +7,6 @@ if (!hotel) {
 		`<p>No hay imágenes para mostrar porque no se ha seleccionado ningún hotel.</p>`;
 	document.querySelector('.h2-divinfoizq').textContent = 'No hotel';
 } else {
-	console.log(hotel);
 	document.querySelector('.divgrid-img-detalles img').src = hotel.image;
 	document.querySelector('.h2-divinfoizq').textContent = hotel.name;
 	document.querySelector('#p-direccion').textContent = hotel.address;
