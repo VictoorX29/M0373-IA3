@@ -20,7 +20,7 @@ function renderizarResultados() {
                 </div>
                 <div class="div-imgestr-pcalif-result">
                     <img
-                        src="../images/grupo-icono-estrellas.svg"
+                        src="../images/icons/grupo-icono-estrellas.svg"
                         alt="Estrellas"
                         class="img-estrellas-result" />
                     <p class="p-calificacion-result">4.5 (1200 Reviews)</p>
