@@ -19,8 +19,9 @@ async function Detalles() {
 		document.querySelector('.divgrid-detalles').innerHTML =
 			`<p>No hay imágenes para mostrar porque no se ha seleccionado ningún hotel.</p>`;
 		document.querySelector('.divgrid-detalles').innerHTML +=
-			`<p>${!error.code === 'PGRST116' ? `Error: ${error.message}` : 'Selecciona un hotel desde resultados.'}</p>`;
-		document.querySelector('.h2-divinfoizq').textContent = 'No hotel';
+			`<p>${!error.code === 'PGRST116' ? `Error: ${error.message}` : ''}</p>`;
+		document.querySelector('.h2-divinfoizq').textContent =
+			'Selecciona un hotel en resultados';
 	} else {
 		document.querySelector('.divgrid-img-detalles img').src =
 			`https://kwzqtbwcsamesdbmjyvb.supabase.co/storage/v1/object/public/myDreamPlace/${hotel.image_url}`;
