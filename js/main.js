@@ -48,6 +48,30 @@ async function inspirations() {
 	}
 	divInspirations.innerHTML = htmlInsp;
 }
-
+async function featuredHotels() {
+	const divHotels = document.querySelector('.div-sect-popular');
+	let { data: featured_hotels, error } = await supabase
+		.from('featured_hotels')
+		.select('*');
+	let htmlHotels;
+	if (error) {
+		htmlHotels = `<p>Error: ${error.message}</p>`;
+	} else {
+		htmlHotels = '';
+		for (const hotel of featured_hotels) {
+			htmlHotels += `
+			<div>
+				<img src="https://kwzqtbwcsamesdbmjyvb.supabase.co/storage/v1/object/public/myDreamPlace/${hotel.image_url}" alt="${hotel.nombre}" class="img-sect-popular">
+				<div class="div-text-sect-popular">
+					<h3 class="h3-div-text-sect-popular">${hotel.nombre}</h3>
+					<p class="p-div-text-sect-popular">${hotel.propiedades} properties</p>
+				</div>
+			</div>
+			`;
+		}
+	}
+	divHotels.innerHTML = htmlHotels;
+}
 destinations();
 inspirations();
+featuredHotels();
