@@ -1,63 +1,53 @@
-import { cardsEnjoy } from './data.js';
-let htmlCardsEnjoy = '';
-for (const cardEnjoy of cardsEnjoy) {
-	htmlCardsEnjoy += `
-	<div>
-		<img src="${cardEnjoy.imagen}" alt="${cardEnjoy.nombre}" class="img-sect-enjoy">
-		<div class="div-text-sect-enjoy">
-			<h3 class="h3-div-text-sect-enjoy">${cardEnjoy.nombre}</h3>
-			<p class="p-div-text-sect-enjoy">${cardEnjoy.propiedades} properties</p>
-		</div>
-	</div>
-	`;
-}
-document.querySelector('.div-sect-enjoy').innerHTML = htmlCardsEnjoy;
-import { cardsInspirations } from './data.js';
-let htmlCardsIns = '';
-for (const cardInspiration of cardsInspirations) {
-	htmlCardsIns += `
-    <div class="card-div-sect-nextrip">
-		<img
-			src="${cardInspiration.imagen}"
-			alt="${cardInspiration.alt}"
-			class="img-card-div-sect-nextrip" />
-		<div class="div-text-sect-nextrip">
-			<h3 class="h3-div-text-sect-nextrip">${cardInspiration.titulo}</h3>
-			<p class="p-div-text-sect-nextrip">${cardInspiration.cuerpo}</p>
-		</div>	
-	</div>			
-    `;
-}
-document.querySelector('.div-sect-nextrip').innerHTML = htmlCardsIns;
-import { cardsHotels } from './data.js';
-let htmlCardsHotels = '';
-for (const cardHotel of cardsHotels) {
-	htmlCardsHotels += `
-    <div>
-		<img src="${cardHotel.imagen}" alt="${cardHotel.hotel}" class="img-sect-popular">
-		<div class="div-text-sect-popular">
-			<h3 class="h3-div-text-sect-popular">${cardHotel.hotel}</h3>
-			<p class="p-div-text-sect-popular">${cardHotel.propiedades} properties</p>
-		</div>
-	</div>
-    `;
-}
-document.querySelector('.div-sect-popular').innerHTML = htmlCardsHotels;
+import { supabase } from './supabase.js';
 
-const iptWhere = document.querySelector('#input-Where');
-const iptCIDate = document.querySelector('#input-CIDate');
-const iptCODate = document.querySelector('#input-CODate');
-const iptGuests = document.querySelector('#input-Guests');
-iptWhere.addEventListener('blur', () => añadirAzul('Where'));
-iptCIDate.addEventListener('blur', () => añadirAzul('CIDate'));
-iptCODate.addEventListener('blur', () => añadirAzul('CODate'));
-iptGuests.addEventListener('blur', () => añadirAzul('Guests'));
-function añadirAzul(cambio) {
-	const icon = document.querySelector(`#icon${cambio}`);
-	const input = document.querySelector(`#input-${cambio}`);
-	if (input.value.trim() !== '') {
-		icon.classList.add('iconoAzul');
+async function destinations() {
+	const divDestinations = document.querySelector('.div-sect-enjoy');
+	let { data: destinations, error } = await supabase
+		.from('destinations')
+		.select('*');
+	let htmlDest;
+	if (error) {
+		htmlDest = `<p>Error: ${error.message}</p>`;
 	} else {
-		icon.classList.remove('iconoAzul');
+		htmlDest = ``;
+		for (const dest of destinations) {
+			htmlDest += `
+			<div>
+				<img src="https://kwzqtbwcsamesdbmjyvb.supabase.co/storage/v1/object/public/myDreamPlace/${dest.image_url}" alt="${dest.nombre}" class="img-sect-enjoy">
+				<div class="div-text-sect-enjoy">
+					<h3 class="h3-div-text-sect-enjoy">${dest.nombre}</h3>
+					<p class="p-div-text-sect-enjoy">${dest.propiedades} properties</p>
+				</div>
+			</div>
+			`;
+		}
 	}
+	divDestinations.innerHTML = htmlDest;
 }
+async function inspirations() {
+	const divInspirations = document.querySelector('.div-sect-nextrip');
+	let { data: inspirations, error } = await supabase
+		.from('inspirations')
+		.select('*');
+	let htmlInsp;
+	if (error) {
+		htmlInsp = `<p>Error: ${error.message}</p>`;
+	} else {
+		htmlInsp = ``;
+		for (const insp of inspirations) {
+			htmlInsp += `
+			<div class="card-div-sect-nextrip">
+				<img src="https://kwzqtbwcsamesdbmjyvb.supabase.co/storage/v1/object/public/myDreamPlace/${insp.image_url}" alt="${insp.alt}" class="img-card-div-sect-nextrip">
+				<div class="div-text-sect-nextrip">
+					<h3 class="h3-div-text-sect-nextrip">${insp.titulo}</h3>
+					<p class="p-div-text-sect-nextrip">${insp.cuerpo}.</p>
+				</div>	
+			</div>
+			`;
+		}
+	}
+	divInspirations.innerHTML = htmlInsp;
+}
+
+destinations();
+inspirations();
