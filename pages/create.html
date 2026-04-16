@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>IA3: Proyecto 2</title>
+		<title>IA3: Proyecto 2 | Create password</title>
 		<meta name="author" content="Víctor M.N." />
 		<!-- Favicon -->
 		<link
 			rel="shortcut icon"
-			href="../images/logoavion.svg"
+			href="../images/header/plane.svg"
 			type="image/x-icon" />
 		<!-- Estilos -->
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body class="body-signin">
-		<header class="padding-general header">
-			<div class="div-logo">
-				<a class="logo nostyle" href="index.html">
-					<img src="../images/logoavion.svg" alt="Logo Avion" />
-					<h1 class="h1-logo">my Dream Place</h1>
+		<header class="padding-general header flex justify-between align-center">
+			<div class="div-logo flex div-header-global">
+				<a class="logo flex align-center nostyle" href="../index.html">
+					<img src="../images/header/plane.svg" alt="Logo Avion" />
+					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
 			</div>
 		</header>
@@ -30,26 +30,38 @@
 					and numbers.
 				</p>
 				<form action="index-home-1.html" method="get" class="form-signin">
-					<label for="password" class="form-label">Password</label>
-					<input
-						type="password"
-						name="password"
-						id="password"
-						class="form-text"
-						required
-						pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}"
-						placeholder="Enter password" />
-					<label for="confirm-password" class="form-label"
-						>Confirm password</label
-					>
-					<input
-						type="password"
-						name="confirm-password"
-						id="confirm-password"
-						class="form-text"
-						required
-						placeholder="Enter password" />
-
+					<label for="inputContraseña" class="label-auth">
+						Password
+						<div class="div-label-auth">
+							<input
+								type="password"
+								name="password"
+								id="inputContraseña"
+								placeholder="Enter password"
+								required
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}" />
+							<img
+								src="../images/forms/eye.svg"
+								alt="Alternar contraseña Icono"
+								id="imgAlternarContraseña" />
+						</div>
+					</label>
+					<label for="inputRepetirContraseña" class="label-auth">
+						Confirm password
+						<div class="div-label-auth">
+							<input
+								type="password"
+								name="password"
+								id="inputRepetirContraseña"
+								placeholder="Confirm password"
+								required
+								pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}" />
+							<img
+								src="../images/forms/eye.svg"
+								alt="Alternar contraseña Icono"
+								id="imgAlternarRepetirContraseña" />
+						</div>
+					</label>
 					<button type="submit" class="form-button-create">
 						Create account
 					</button>
@@ -57,10 +69,11 @@
 				<p class="p-terminos">
 					By creating an account, you agree with our
 					<a href="" class="nostyle">Terms and Conditions</a> and
-					<a href="" class="nostyle">Privacy Statement</a>.
+					<a href="" class="nostyle">Privacy Statement</a>
 				</p>
 			</section>
 		</main>
 		<footer></footer>
+		<script type="module" src="../js/password.js"></script>
 	</body>
 </html>

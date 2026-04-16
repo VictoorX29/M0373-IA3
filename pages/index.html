@@ -3,51 +3,53 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>IA3: Proyecto 2</title>
+		<title>IA3: Proyecto 2 | Index</title>
 		<meta name="author" content="Víctor M.N." />
 		<!-- Favicon -->
 		<link
 			rel="shortcut icon"
-			href="../images/logoavion.svg"
+			href="../images/header/plane.svg"
 			type="image/x-icon" />
 		<!-- Estilos -->
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
-		<header class="padding-general header">
-			<div class="div-logo div-header-global">
-				<a class="logo nostyle" href="index.html">
-					<img src="../images/logoavion.svg" alt="Logo Avion" />
-					<h1 class="h1-logo">my Dream Place</h1>
+		<header class="padding-general header flex justify-between align-center">
+			<div class="div-logo flex div-header-global">
+				<a class="logo flex align-center nostyle" href="../index.html">
+					<img src="../images/header/plane.svg" alt="Logo Avion" />
+					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
 			</div>
-			<nav class="header-nav">
-				<ul class="header-nav-ul">
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Home</a>
+			<nav class="header-nav flex align-center justify-between">
+				<ul class="header-nav-ul flex justify-between">
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Home</a>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Discover</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Discover</a>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Activities</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center"
+							>Activities</a
+						>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">About</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">About</a>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Contact</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Contact</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="header-botones div-header-global">
+			<div class="header-botones flex div-header-global">
 				<a
-					class="header-botonFondoBlanco header-botones-compartido nostyle"
+					class="header-botonFondoBlanco header-botones-compartido flex align-center justify-center nostyle"
 					href="register.html">
 					Register
 				</a>
 				<a
-					class="header-botonFondoAzul header-botones-compartido nostyle"
+					class="header-botonFondoAzul header-botones-compartido flex align-center justify-center nostyle"
 					href="signin.html">
 					Sign In
 				</a>
@@ -56,7 +58,7 @@
 		<main class="padding-general index">
 			<div class="div-enjoy">
 				<img
-					src="../images/fondoenjoy.png"
+					src="../images/index/fondoenjoy.jpg"
 					alt="Fondo Principal"
 					class="img-enjoy" />
 				<div class="div-text-enjoy">
@@ -73,6 +75,7 @@
 					<div class="div-input-where">
 						<svg
 							class="svg-div-input"
+							id="iconWhere"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -90,12 +93,14 @@
 						<input
 							type="text"
 							class="input-where"
+							id="input-Where"
 							placeholder="Where are you going?"
 							required />
 					</div>
 					<div class="div-input-checkinout">
 						<svg
 							class="svg-div-input"
+							id="iconCIDate"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -167,15 +172,17 @@
 								stroke-linejoin="round" />
 						</svg>
 						<input
-							type="text"
+							type="number"
 							maxlength="10"
 							placeholder="Check in date"
 							class="input-checkinout"
+							id="input-CIDate"
 							required />
 					</div>
 					<div class="div-input-checkinout">
 						<svg
 							class="svg-div-input"
+							id="iconCODate"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -247,15 +254,17 @@
 								stroke-linejoin="round" />
 						</svg>
 						<input
-							type="text"
+							type="number"
 							maxlength="10"
 							placeholder="Check out date"
 							class="input-checkinout"
+							id="input-CODate"
 							required />
 					</div>
 					<div class="div-input-guests">
 						<svg
 							class="svg-div-input"
+							id="iconGuests"
 							width="20"
 							height="20"
 							viewBox="0 0 20 20"
@@ -288,9 +297,12 @@
 							</defs>
 						</svg>
 						<input
-							type="text"
+							type="number"
 							class="input-guests"
+							id="input-Guests"
 							placeholder="Guests"
+							min="1"
+							max="8"
 							required />
 					</div>
 					<button type="submit" class="button-search">Search</button>
@@ -298,7 +310,7 @@
 			</div>
 			<div class="div-warning">
 				<img
-					src="../images/icon-warning.png"
+					src="../images/icons/warning.svg"
 					alt="Warning Icono"
 					class="warning-icono" />
 				<p class="warning-text">
@@ -312,144 +324,19 @@
 					Plan and book our perfect trip with expert advice, travel tips,
 					destination information and <br />inspiration from us
 				</p>
-				<div class="div-sect-enjoy">
-					<div>
-						<img
-							src="../images/australia.png"
-							alt="Australia"
-							class="img-sect-enjoy" />
-						<div class="div-text-sect-enjoy">
-							<h3 class="h3-div-text-sect-enjoy">Australia</h3>
-							<p class="p-div-text-sect-enjoy">2246 properties</p>
-						</div>
-					</div>
-					<div>
-						<img src="../images/japan.png" alt="Japan" class="img-sect-enjoy" />
-						<div class="div-text-sect-enjoy">
-							<h3 class="h3-div-text-sect-enjoy">Japan</h3>
-							<p class="p-div-text-sect-enjoy">1278 properties</p>
-						</div>
-					</div>
-					<div>
-						<img
-							src="../images/newzealand.png"
-							alt="New Zealand"
-							class="img-sect-enjoy" />
-						<div class="div-text-sect-enjoy">
-							<h3 class="h3-div-text-sect-enjoy">New Zealand</h3>
-							<p class="p-div-text-sect-enjoy">480 properties</p>
-						</div>
-					</div>
-					<div>
-						<img
-							src="../images/greece.png"
-							alt="Greece"
-							class="img-sect-enjoy" />
-						<div class="div-text-sect-enjoy">
-							<h3 class="h3-div-text-sect-enjoy">Greece</h3>
-							<p class="p-div-text-sect-enjoy">320 properties</p>
-						</div>
-					</div>
-				</div>
+				<div class="div-sect-enjoy"></div>
 			</section>
 			<section class="sect-nextrip">
 				<h2 class="h2-index">Get inspiration for your next trip</h2>
-				<div class="div-sect-nextrip">
-					<div class="card-div-sect-nextrip">
-						<img
-							src="../images/sydeny.png"
-							alt="Sydney"
-							class="img-card-div-sect-nextrip" />
-						<div class="div-text-sect-nextrip">
-							<h3 class="h3-div-text-sect-nextrip">
-								Sydeny’s 10 most fashionable 5 star hotels
-							</h3>
-							<p class="p-div-text-sect-nextrip">
-								Browse the fastest growing tourism sector in the heart of
-								Australia tourism capital ....
-							</p>
-						</div>
-					</div>
-					<div class="card-div-sect-nextrip">
-						<img
-							src="../images/vegantravel.png"
-							alt="Vegan Travellers"
-							class="img-card-div-sect-nextrip" />
-						<div class="div-text-sect-nextrip">
-							<h3 class="h3-div-text-sect-nextrip">
-								Top cities for Vegan Travellers
-							</h3>
-							<p class="p-div-text-sect-nextrip">
-								Top sites where you do not have to worry about being a vegan.
-								Our tourist guide is here...
-							</p>
-						</div>
-					</div>
-					<div class="card-div-sect-nextrip">
-						<img
-							src="../images/covidtimeline.png"
-							alt="COVID Timeline"
-							class="img-card-div-sect-nextrip" />
-						<div class="div-text-sect-nextrip">
-							<h3 class="h3-div-text-sect-nextrip">
-								World’s top destinations during and post covid timeline
-							</h3>
-							<p class="p-div-text-sect-nextrip">
-								Pandemic is still intact and will be here for a longer time.
-								Here’s where your next destination...
-							</p>
-						</div>
-					</div>
-				</div>
+				<div class="div-sect-nextrip"></div>
 			</section>
 			<section class="sect-popular">
 				<h2 class="h2-index">Popular hotels</h2>
-				<div class="div-sect-popular">
-					<div>
-						<img
-							src="../images/lakeside.png"
-							alt="Lakeside Motel Warefront"
-							class="img-sect-popular" />
-						<div class="div-text-sect-popular">
-							<h3 class="h3-div-text-sect-popular">Lakeside Motel Warefront</h3>
-							<p class="p-div-text-sect-popular">2246 properties</p>
-						</div>
-					</div>
-					<div>
-						<img
-							src="../images/recce.png"
-							alt="Recce Graham Resort"
-							class="img-sect-popular" />
-						<div class="div-text-sect-popular">
-							<h3 class="h3-div-text-sect-popular">Recce Graham resort</h3>
-							<p class="p-div-text-sect-popular">1278 properties</p>
-						</div>
-					</div>
-					<div>
-						<img
-							src="../images/fireside.png"
-							alt="Fireside Dinners"
-							class="img-sect-popular" />
-						<div class="div-text-sect-popular">
-							<h3 class="h3-div-text-sect-popular">Fireside Dinners</h3>
-							<p class="p-div-text-sect-popular">480 properties</p>
-						</div>
-					</div>
-					<div>
-						<img
-							src="../images/oculous.png"
-							alt="Oculous Inn Stay"
-							class="img-sect-popular" />
-						<div class="div-text-sect-popular">
-							<h3 class="h3-div-text-sect-popular">Oculous Inn Stay</h3>
-							<p class="p-div-text-sect-popular">320 properties</p>
-						</div>
-					</div>
-				</div>
+				<div class="div-sect-popular"></div>
 			</section>
 			<section class="sect-download">
 				<img
-					src="../images/fondoplayamovil.png"
+					src="../images/index/fondoplayamovil.png"
 					alt=""
 					class="img-sect-download" />
 				<div class="div-sect-download">
@@ -471,64 +358,67 @@
 			<div class="padding-general footer-index2">
 				<div class="div-footer-logo">
 					<div class="div-logo">
-						<a class="logo nostyle" href="index.html">
-							<img src="../images/logoavion.svg" alt="Logo Avion" />
-							<h1 class="h1-logo">my Dream Place</h1>
+						<a class="logo flex align-center nostyle" href="../index.html">
+							<img src="../images/header/plane.svg" alt="Logo Avion" />
+							<h1 class="h1-logo flex align-center">my Dream Place</h1>
 						</a>
 					</div>
 					<p class="footer-p-logo">Your next goto companion for travel</p>
 				</div>
 				<div class="footer-div-company">
-					<h4 class="footer-h4-tit">Company</h4>
+					<h4 class="footer-h4-tit flex align-center">Company</h4>
 					<ul class="footer-ul">
-						<li>About</li>
-						<li>Jobs</li>
-						<li>Newsroom</li>
-						<li>Advertising</li>
-						<li>Contact us</li>
+						<li class="flex align-center">About</li>
+						<li class="flex align-center">Jobs</li>
+						<li class="flex align-center">Newsroom</li>
+						<li class="flex align-center">Advertising</li>
+						<li class="flex align-center">Contact us</li>
 					</ul>
 				</div>
 				<div class="footer-div-explore">
-					<h4 class="footer-h4-tit">Explore</h4>
+					<h4 class="footer-h4-tit flex align-center">Explore</h4>
 					<ul class="footer-ul">
-						<li>Australia</li>
-						<li>New Zealand</li>
-						<li>United States America (USA)</li>
-						<li>Greece</li>
-						<li>Maldives</li>
-						<li>Singapore</li>
-						<li><a href="" class="nostyle">See more</a></li>
+						<li class="flex align-center">Australia</li>
+						<li class="flex align-center">New Zealand</li>
+						<li class="flex align-center">United States America (USA)</li>
+						<li class="flex align-center">Greece</li>
+						<li class="flex align-center">Maldives</li>
+						<li class="flex align-center">Singapore</li>
+						<li class="flex align-center">
+							<a href="" class="nostyle">See more</a>
+						</li>
 					</ul>
 				</div>
 				<div class="footer-div-terms">
-					<h4 class="footer-h4-tit">Terms and Policies</h4>
+					<h4 class="footer-h4-tit flex align-center">Terms and Policies</h4>
 					<ul class="footer-ul">
-						<li>Privacy Policy</li>
-						<li>Terms of use</li>
-						<li>Acessibility</li>
-						<li>Reward system policy</li>
+						<li class="flex align-center">Privacy Policy</li>
+						<li class="flex align-center">Terms of use</li>
+						<li class="flex align-center">Acessibility</li>
+						<li class="flex align-center">Reward system policy</li>
 					</ul>
 				</div>
 				<div class="footer-div-help">
-					<h4 class="footer-h4-tit">Help</h4>
+					<h4 class="footer-h4-tit flex align-center">Help</h4>
 					<ul class="footer-ul">
-						<li>Support</li>
-						<li>Cancel your bookings</li>
-						<li>Use Coupon</li>
-						<li>Refund Policies</li>
-						<li>International Travel Documents</li>
+						<li class="flex align-center">Support</li>
+						<li class="flex align-center">Cancel your bookings</li>
+						<li class="flex align-center">Use Coupon</li>
+						<li class="flex align-center">Refund Policies</li>
+						<li class="flex align-center">International Travel Documents</li>
 					</ul>
 				</div>
 			</div>
-			<div class="footer-barragris">
-				<div class="div-footer-copy">
+			<div class="footer-barragris flex align-center">
+				<div class="div-footer-copy flex align-center">
 					<img
-						src="../images/icon-copyright.png"
+						src="../images/icons/icon-copyright.png"
 						alt="Icono Copyright"
 						class="footer-iconcopy" />
 					<p class="footer-p-copy">my Dream Place 2025</p>
 				</div>
 			</div>
 		</footer>
+		<script type="module" src="../js/main.js"></script>
 	</body>
 </html>

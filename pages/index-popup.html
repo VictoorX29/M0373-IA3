@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -6,15 +6,19 @@
 		<title>IA3: Proyecto 2</title>
 		<meta name="author" content="Víctor M.N." />
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="../images/logoavion.svg" type="image/x-icon" />
+		<link
+			rel="shortcut icon"
+			href="../images/header/plane.svg"
+			type="image/x-icon" />
 		<!-- Estilos -->
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
-		<section class="sect-welcome-card padding-general">
+		<section
+			class="sect-welcome-card flex justify-center align-center padding-general">
 			<div class="welcome-card">
 				<img
-					src="../images/welcome.png"
+					src="../images/index/welcome.png"
 					alt="Bienvenido a my Dream Place"
 					class="img-welcome-card" />
 				<div class="div-text-welcome-card">
@@ -29,33 +33,35 @@
 				</div>
 			</div>
 		</section>
-		<header class="padding-general header">
-			<div class="div-logo div-header-global">
-				<a class="logo nostyle" href="index-home-2.html">
-					<img src="../images/logoavion.svg" alt="Logo Avion" />
-					<h1 class="h1-logo">my Dream Place</h1>
+		<header class="padding-general header flex justify-between align-center">
+			<div class="div-logo flex div-header-global">
+				<a class="logo flex align-center nostyle" href="index.html">
+					<img src="../images/header/plane.svg" alt="Logo Avion" />
+					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
 			</div>
-			<nav class="header-nav">
-				<ul class="header-nav-ul">
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Home</a>
+			<nav class="header-nav flex align-center justify-between">
+				<ul class="header-nav-ul flex justify-between">
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Home</a>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Discover</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Discover</a>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Activities</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center"
+							>Activities</a
+						>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">About</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">About</a>
 					</li>
-					<li class="header-li">
-						<a href="#" class="nostyle header-a">Contact</a>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Contact</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="header-iconos div-header-global">
+			<div class="header-iconos flex align-center div-header-global">
 				<svg
 					class="header-icono-noti"
 					width="24"
@@ -77,15 +83,13 @@
 						stroke="white"
 						stroke-width="2" />
 				</svg>
-				<details class="header-div-desplegable">
-					<summary class="header-summary">
-						<img
-							src="../images/icono-perfil.png"
-							alt="Icono Perfil"
-							class="header-icono-perfil" />
-					</summary>
-					<ul class="header-desplegable">
-						<li class="header-desplegable-li">
+				<div class="header-div-desplegable flex align-center">
+					<img
+						src="../images/icono-perfil.png"
+						alt="Icono Perfil"
+						class="header-icono-perfil" />
+					<ul class="header-desplegable hidden">
+						<li class="header-desplegable-li flex align-center">
 							<img
 								src="../images/icono-usuario.png"
 								alt=""
@@ -93,8 +97,10 @@
 								>Manage account</span
 							>
 						</li>
-						<li class="header-desplegable-li">
-							<a href="my-trips.html" class="nostyle header-desplegable-a">
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="my-trips.html"
+								class="nostyle header-desplegable-a flex align-center">
 								<img
 									src="../images/icono-avion.png"
 									alt=""
@@ -103,7 +109,7 @@
 								>
 							</a>
 						</li>
-						<li class="header-desplegable-li">
+						<li class="header-desplegable-li flex align-center">
 							<img
 								src="../images/icono-cartera.png"
 								alt=""
@@ -111,8 +117,10 @@
 								>Reward and wallet</span
 							>
 						</li>
-						<li class="header-desplegable-li">
-							<a href="index.html" class="nostyle header-desplegable-a">
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="index.html"
+								class="nostyle header-desplegable-a flex align-center">
 								<img
 									src="../images/icono-logout.png"
 									alt=""
@@ -122,13 +130,13 @@
 							</a>
 						</li>
 					</ul>
-				</details>
+				</div>
 			</div>
 		</header>
 		<main class="padding-general index">
 			<div class="div-enjoy">
 				<img
-					src="../images/fondoenjoy.png"
+					src="../images/fondoenjoy.jpg"
 					alt="Fondo Principal"
 					class="img-enjoy" />
 				<div class="div-text-enjoy">
@@ -370,7 +378,7 @@
 			</div>
 			<div class="div-warning">
 				<img
-					src="../images/icon-warning.png"
+					src="../images/icons/warning.svg"
 					alt="Warning Icono"
 					class="warning-icono" />
 				<p class="warning-text">
@@ -413,7 +421,10 @@
 						</div>
 					</div>
 					<div>
-						<img src="../images/greece.png" alt="Greece" class="img-sect-enjoy" />
+						<img
+							src="../images/greece.png"
+							alt="Greece"
+							class="img-sect-enjoy" />
 						<div class="div-text-sect-enjoy">
 							<h3 class="h3-div-text-sect-enjoy">Greece</h3>
 							<p class="p-div-text-sect-enjoy">320 properties</p>
@@ -540,57 +551,59 @@
 			<div class="padding-general footer-index2">
 				<div class="div-footer-logo">
 					<div class="div-logo">
-						<a class="logo nostyle" href="index.html">
-							<img src="../images/logoavion.svg" alt="Logo Avion" />
-							<h1 class="h1-logo">my Dream Place</h1>
+						<a class="logo flex align-center nostyle" href="../index.html">
+							<img src="../images/header/plane.svg" alt="Logo Avion" />
+							<h1 class="h1-logo flex align-center">my Dream Place</h1>
 						</a>
 					</div>
 					<p class="footer-p-logo">Your next goto companion for travel</p>
 				</div>
 				<div class="footer-div-company">
-					<h4 class="footer-h4-tit">Company</h4>
+					<h4 class="footer-h4-tit flex align-center">Company</h4>
 					<ul class="footer-ul">
-						<li>About</li>
-						<li>Jobs</li>
-						<li>Newsroom</li>
-						<li>Advertising</li>
-						<li>Contact us</li>
+						<li class="flex align-center">About</li>
+						<li class="flex align-center">Jobs</li>
+						<li class="flex align-center">Newsroom</li>
+						<li class="flex align-center">Advertising</li>
+						<li class="flex align-center">Contact us</li>
 					</ul>
 				</div>
 				<div class="footer-div-explore">
-					<h4 class="footer-h4-tit">Explore</h4>
+					<h4 class="footer-h4-tit flex align-center">Explore</h4>
 					<ul class="footer-ul">
-						<li>Australia</li>
-						<li>New Zealand</li>
-						<li>United States America (USA)</li>
-						<li>Greece</li>
-						<li>Maldives</li>
-						<li>Singapore</li>
-						<li><a href="" class="nostyle">See more</a></li>
+						<li class="flex align-center">Australia</li>
+						<li class="flex align-center">New Zealand</li>
+						<li class="flex align-center">United States America (USA)</li>
+						<li class="flex align-center">Greece</li>
+						<li class="flex align-center">Maldives</li>
+						<li class="flex align-center">Singapore</li>
+						<li class="flex align-center">
+							<a href="" class="nostyle">See more</a>
+						</li>
 					</ul>
 				</div>
 				<div class="footer-div-terms">
-					<h4 class="footer-h4-tit">Terms and Policies</h4>
+					<h4 class="footer-h4-tit flex align-center">Terms and Policies</h4>
 					<ul class="footer-ul">
-						<li>Privacy Policy</li>
-						<li>Terms of use</li>
-						<li>Acessibility</li>
-						<li>Reward system policy</li>
+						<li class="flex align-center">Privacy Policy</li>
+						<li class="flex align-center">Terms of use</li>
+						<li class="flex align-center">Acessibility</li>
+						<li class="flex align-center">Reward system policy</li>
 					</ul>
 				</div>
 				<div class="footer-div-help">
-					<h4 class="footer-h4-tit">Help</h4>
+					<h4 class="footer-h4-tit flex align-center">Help</h4>
 					<ul class="footer-ul">
-						<li>Support</li>
-						<li>Cancel your bookings</li>
-						<li>Use Coupon</li>
-						<li>Refund Policies</li>
-						<li>International Travel Documents</li>
+						<li class="flex align-center">Support</li>
+						<li class="flex align-center">Cancel your bookings</li>
+						<li class="flex align-center">Use Coupon</li>
+						<li class="flex align-center">Refund Policies</li>
+						<li class="flex align-center">International Travel Documents</li>
 					</ul>
 				</div>
 			</div>
-			<div class="footer-barragris">
-				<div class="div-footer-copy">
+			<div class="footer-barragris flex align-center">
+				<div class="div-footer-copy flex align-center">
 					<img
 						src="../images/icon-copyright.png"
 						alt="Icono Copyright"
