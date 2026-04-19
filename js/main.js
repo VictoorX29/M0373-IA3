@@ -4,7 +4,8 @@ async function destinations() {
 	const divDestinations = document.querySelector('.div-sect-enjoy');
 	let { data: destinations, error } = await supabase
 		.from('destinations')
-		.select('*');
+		.select('*')
+		.order('propiedades', { ascending: false });
 	let htmlDest;
 	if (error) {
 		htmlDest = `<p>Error: ${error.message}</p>`;
@@ -52,7 +53,8 @@ async function featuredHotels() {
 	const divHotels = document.querySelector('.div-sect-popular');
 	let { data: featured_hotels, error } = await supabase
 		.from('featured_hotels')
-		.select('*');
+		.select('*')
+		.order('propiedades', { ascending: false });
 	let htmlHotels;
 	if (error) {
 		htmlHotels = `<p>Error: ${error.message}</p>`;
@@ -70,6 +72,7 @@ async function featuredHotels() {
 			`;
 		}
 	}
+	console.log(featured_hotels);
 	divHotels.innerHTML = htmlHotels;
 }
 destinations();
