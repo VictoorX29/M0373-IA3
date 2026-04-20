@@ -145,5 +145,14 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			document
+				.querySelector('a[href="pages/index-home-2.html"]')
+				.addEventListener('click', function (e) {
+					e.preventDefault();
+					sessionStorage.setItem('popup', 'true');
+					window.location.href = 'pages/index-home-2.html';
+				});
+		</script>
 	</body>
 </html>

@@ -72,7 +72,6 @@ async function featuredHotels() {
 			`;
 		}
 	}
-	console.log(featured_hotels);
 	divHotels.innerHTML = htmlHotels;
 }
 destinations();
