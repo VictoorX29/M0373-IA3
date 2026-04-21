@@ -16,7 +16,7 @@ async function signIn(e) {
 		password,
 	});
 	if (error) {
-		mostrarError(error.message);
+		mostrarError('Email o contraseña incorrectos');
 		return;
 	}
 	sessionStorage.setItem('popup', 'true');
