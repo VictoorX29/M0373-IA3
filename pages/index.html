@@ -14,6 +14,23 @@
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
+		<section
+			class="sect-welcome-card flex justify-center align-center padding-general hidden">
+			<div class="welcome-card">
+				<img
+					src="../images/index/welcome.png"
+					alt="Bienvenido a my Dream Place"
+					class="img-welcome-card" />
+				<div class="div-text-welcome-card">
+					<h2 class="h2-welcome-card">Welcome to My Dream Place</h2>
+					<p class="p-welcome-card">
+						You can now enjoy your travel experience with <br />
+						easy access to resources and more
+					</p>
+					<a href="" class="button-welcome-card nostyle">Get Started</a>
+				</div>
+			</div>
+		</section>
 		<header class="padding-general header flex justify-between align-center">
 			<div class="div-logo flex div-header-global">
 				<a class="logo flex align-center nostyle" href="../index.html">
@@ -42,17 +59,68 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="header-botones flex div-header-global">
+			<div class="header-botones flex div-header-global hidden">
 				<a
 					class="header-botonFondoBlanco header-botones-compartido flex align-center justify-center nostyle"
-					href="register.html">
+					href="auth/register.html">
 					Register
 				</a>
 				<a
 					class="header-botonFondoAzul header-botones-compartido flex align-center justify-center nostyle"
-					href="signin.html">
+					href="auth/signin.html">
 					Sign In
 				</a>
+			</div>
+			<div class="header-iconos flex align-center div-header-global hidden">
+				<img src="../images/header/noti-darkgray.svg" alt="Icon Noti" />
+				<div class="header-div-desplegable flex align-center">
+					<img
+						src="../images/icons/icono-perfil.png"
+						alt="Icono Perfil"
+						class="header-icono-perfil" />
+					<ul class="header-desplegable hidden">
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="dashboard.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icons/icono-usuario.png"
+									alt=""
+									class="desplegable-img" />
+								<span class="desplegable-span">Manage account</span>
+							</a>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="my-trips.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icons/icono-avion.png"
+									alt=""
+									class="desplegable-img" />
+								<span class="desplegable-span">My trips</span>
+							</a>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<img
+								src="../images/icons/icono-cartera.png"
+								alt=""
+								class="desplegable-img" />
+							<span class="desplegable-span">Reward and wallet</span>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="index.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icons/icono-logout.png"
+									alt=""
+									class="desplegable-img" />
+								<span class="desplegable-span">Sign out</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="padding-general index">
@@ -239,6 +307,9 @@
 			</div>
 		</footer>
 		<script type="module" src="../js/inputs.js"></script>
-		<script type="module" src="../js/main.js"></script>
+		<script type="module" src="../js/desplegable.js"></script>
+		<script type="module" src="../js/popup.js"></script>
+		<script type="module" src="../js/header.js"></script>
+		<script type="module" src="../js/cards.js"></script>
 	</body>
 </html>

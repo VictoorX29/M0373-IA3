@@ -18,7 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
 				e.preventDefault();
 				popup.classList.add('hidden');
 			});
-	} else {
-		popup.classList.add('hidden');
 	}
 });

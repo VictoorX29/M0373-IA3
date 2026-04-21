@@ -933,6 +933,17 @@ input[type='number']::-webkit-outer-spin-button {
 .div-label-auth img {
 	cursor: pointer;
 }
+.error-msg:empty {
+	display: none;
+}
+.error-msg {
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.28px;
+	color: red;
+}
 .form-text {
 	background-color: #f2f2f2;
 	border: none;
