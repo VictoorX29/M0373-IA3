@@ -18,5 +18,5 @@ const buttonSignOut = document.querySelector(
 buttonSignOut.addEventListener('click', async function (e) {
 	e.preventDefault();
 	const { error } = await supabase.auth.signOut();
-	window.location.reload();
+	window.location.href = 'index.html';
 });

@@ -198,6 +198,8 @@ body {
 	width: 44px;
 	height: 44px;
 	cursor: pointer;
+	border-radius: 100%;
+	object-fit: cover;
 }
 .header-div-desplegable {
 	position: relative;
@@ -2734,4 +2736,29 @@ label {
 .divgeneral-availa-precio-myTrips {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
+}
+.mainDash {
+	margin-top: 24px;
+	display: flex;
+	gap: 32px;
+	width: 100%;
+	border-radius: 8px;
+	background-color: #ebebeb;
+	padding: 16px;
+}
+.mainLeftDash {
+	width: 25%;
+	padding: 24px;
+}
+.fotoPerfilDash {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.mainRightDash {
+	padding: 24px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	gap: 12px;
 }
