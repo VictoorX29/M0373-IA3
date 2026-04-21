@@ -8,16 +8,16 @@
 		<!-- Favicon -->
 		<link
 			rel="shortcut icon"
-			href="../images/header/plane.svg"
+			href="../../images/header/plane.svg"
 			type="image/x-icon" />
 		<!-- Estilos -->
-		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../../style.css" />
 	</head>
 	<body class="body-signin">
 		<header class="padding-general header flex justify-between align-center">
 			<div class="div-logo flex div-header-global">
-				<a class="logo flex align-center nostyle" href="../index.html">
-					<img src="../images/header/plane.svg" alt="Logo Avion" />
+				<a class="logo flex align-center nostyle" href="../../index.html">
+					<img src="../../images/header/plane.svg" alt="Logo Avion" />
 					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
 			</div>
@@ -30,14 +30,16 @@
 					My Dream Place
 				</p>
 				<form action="inbox.html" method="get" class="form-signin">
-					<label for="email" class="form-label">Your email address</label>
-					<input
-						type="email"
-						name="email"
-						id="email"
-						class="form-text"
-						required
-						placeholder="Email address" />
+					<label for="email" class="label-auth">
+						Your email address
+						<div class="div-label-auth">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email address" />
+						</div>
+					</label>
 					<button type="submit" class="form-button-create">
 						Send Reset Link
 					</button>

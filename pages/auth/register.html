@@ -8,16 +8,16 @@
 		<!-- Favicon -->
 		<link
 			rel="shortcut icon"
-			href="../images/header/plane.svg"
+			href="../../images/header/plane.svg"
 			type="image/x-icon" />
 		<!-- Estilos -->
-		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../../style.css" />
 	</head>
 	<body class="body-signin">
 		<header class="padding-general header flex justify-between align-center">
 			<div class="div-logo flex div-header-global">
-				<a class="logo flex align-center nostyle" href="../index.html">
-					<img src="../images/header/plane.svg" alt="Logo Avion" />
+				<a class="logo flex align-center nostyle" href="../../index.html">
+					<img src="../../images/header/plane.svg" alt="Logo Avion" />
 					<h1 class="h1-logo flex align-center">my Dream Place</h1>
 				</a>
 			</div>
@@ -26,14 +26,16 @@
 			<section class="section-main-signin">
 				<h2 class="tit-signin">Register</h2>
 				<form action="create.html" method="get" class="form-signin">
-					<label for="email" class="form-label">Email address</label>
-					<input
-						type="email"
-						name="email"
-						id="email"
-						class="form-text"
-						required
-						placeholder="Email address" />
+					<label for="email" class="label-auth">
+						Email address
+						<div class="div-label-auth">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email address" />
+						</div>
+					</label>
 					<button type="submit" class="form-button-register">
 						Continue with email
 					</button>
@@ -45,14 +47,14 @@
 				</div>
 				<button class="button-continue-google buttons-continue">
 					<img
-						src="../images/forms/google.svg"
+						src="../../images/forms/google.svg"
 						alt="Icono de Google"
 						class="button-icons" />
 					Continue with Google
 				</button>
 				<button class="button-continue-facebook buttons-continue">
 					<img
-						src="../images/forms/facebook.svg"
+						src="../../images/forms/facebook.svg"
 						alt="Icono de Facebook"
 						class="button-icons" />
 					Continue with Facebook
