@@ -31,6 +31,7 @@ async function register(e) {
 				mostrarError(error.message);
 				return;
 			}
+			sessionStorage.setItem('popup', true);
 			window.location.href = '../index.html';
 		}
 	}
