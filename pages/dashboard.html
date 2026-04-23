@@ -105,8 +105,23 @@
 							alt="Icono Perfil"
 							class="fotoPerfilDash" />
 					</div>
-					<input type="file" name="archivo" id="archivo" />
-					<a href="">Editar</a>
+					<div class="divPreviewFoto">
+						<button id="buttonEditFoto" class="hola">Editar</button>
+						<div class="divFotoInput hidden">
+							<label for="archivo" class="labelInputFileFoto"
+								>Seleccionar archivo</label
+							>
+							<input
+								type="file"
+								name="archivo"
+								id="archivo"
+								class="inputFileFoto"
+								accept="image/jpeg" />
+							<div class="divPreviewFotoInput hidden">
+								<img src="" alt="" id="imgPreviewFoto" />
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="mainRightDash">
 					<div>

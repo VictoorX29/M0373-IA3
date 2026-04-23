@@ -2739,7 +2739,8 @@ label {
 }
 .mainDash {
 	margin-top: 24px;
-	display: flex;
+	display: grid;
+	grid-template-columns: 300px auto;
 	gap: 32px;
 	width: 100%;
 	border-radius: 8px;
@@ -2747,8 +2748,9 @@ label {
 	padding: 16px;
 }
 .mainLeftDash {
-	width: 25%;
-	padding: 24px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 .divFotoPefilDash {
 	width: 100%;
@@ -2769,4 +2771,56 @@ label {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 250px);
 	gap: 12px;
+}
+.divPreviewFoto {
+	margin-top: 12px;
+}
+#buttonEditFoto {
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #2f80ed;
+	height: 32px;
+	color: #2f80ed;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	background-color: #ffffff;
+	transition-duration: 0.2s;
+}
+#buttonEditFoto:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+	transition: background-color 0.2s ease;
+}
+.divFotoInput {
+	margin-top: 8px;
+}
+.divPreviewFotoInput img {
+	width: 50%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 100%;
+}
+.labelInputFileFoto {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	border: 1px solid #2f80ed;
+	border-radius: 6px;
+	padding: 6px;
+	background-color: #ffffff;
+	color: #2f80ed;
+	transition-duration: 0.2s;
+}
+.labelInputFileFoto:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+	transition: background-color 0.2s ease;
+}
+.divPreviewFotoInput {
+	margin-top: 8px;
+}
+.inputFileFoto {
+	display: none;
 }
