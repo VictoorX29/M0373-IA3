@@ -2770,6 +2770,7 @@ label {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 250px);
+	grid-template-rows: minmax(auto, 140px);
 	gap: 12px;
 }
 .divPreviewFoto {

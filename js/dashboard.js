@@ -1,8 +1,9 @@
 import { supabase } from './supabase.js';
-/**
-El código para las imágenes está generado con IA, el del texto NO, porque hice yo la lógica de que se cargaran las imágenes, 
-pero cuando añadía una nueva no se subía porque tenía que limpiar el buffer o el caché o algo así.
-Le pedía ayuda a la IA y me lo hizo.
+/*
+La parte de la consulta y subida de foto de Usuario está hecha con IA porque intenté hacerlo yo,
+pero a la hora de actualizar la foto no se subía correctamente porque se ve que guardaba
+la foto anterior y se había de limpiar la caché o el buffer o algo así me comentó la IA.
+Así que simplemente le dije que el código que ya tenía lo actualizara y funcionara correctamente.
 */
 
 async function consultaFotoUsuario(user) {
@@ -39,12 +40,18 @@ async function consultaSubirFoto(archivo, user) {
 }
 const botonFoto = document.querySelector('#buttonEditFoto');
 const divInput = document.querySelector('.divFotoInput');
-botonFoto.addEventListener('click', async () => {
-	const {
-		data: { user },
-	} = await supabase.auth.getUser();
-	previewFoto(user);
-});
+function consultaBoton(user) {
+	if (user) {
+		botonFoto.classList.remove('hidden');
+		botonFoto.addEventListener('click', async () => {
+			const {
+				data: { user },
+			} = await supabase.auth.getUser();
+			previewFoto(user);
+		});
+	}
+}
+
 function previewFoto(user) {
 	divInput.classList.remove('hidden');
 	const inputFoto = document.querySelector('#archivo');
@@ -128,7 +135,7 @@ async function consultaNameUser(user) {
 		buttonEdit.classList.remove('hidden');
 		buttonEdit.addEventListener('click', () => {
 			if (buttonEdit.textContent.trim() === 'Editar') {
-				divNameUser.innerHTML = `<input type="text" class="inputEditUser" id="inputNameUser" ${profiles.fullName ? `value=${profiles.fullName}` : ''} />`;
+				divNameUser.innerHTML = `<input type="text" class="inputEditUser" id="inputNameUser" ${profiles.fullName ? `value="${profiles.fullName}"` : ''} />`;
 				buttonEdit.textContent = 'Confirmar';
 				divNameUser.innerHTML +=
 					'<button id="buttonCancelNameUser" class="buttonEdit">Cancelar</button>';
@@ -157,9 +164,29 @@ async function actualizarNameUser(user, fullName) {
 	}
 	window.location.reload();
 }
+function consultaEmail(user) {
+	const pEmail = document.querySelector('#pEmailUser');
+	if (user) {
+		pEmail.textContent = user.email;
+	}
+}
+async function contraseña(user) {
+	if (user) {
+		const botonContraseña = document.querySelector('#buttonEditPSWD');
+		botonContraseña.classList.remove('hidden');
+		botonContraseña.addEventListener('click', () => {
+			console.log('Hola');
+		});
+	}
+}
 document.addEventListener('DOMContentLoaded', async () => {
 	const {
 		data: { user },
 	} = await supabase.auth.getUser();
-	(consultaFotoUsuario(user), consultaUsername(user), consultaNameUser(user));
+	(consultaBoton(user),
+		consultaFotoUsuario(user),
+		consultaUsername(user),
+		consultaNameUser(user),
+		consultaEmail(user),
+		contraseña(user));
 });
