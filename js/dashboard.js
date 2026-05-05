@@ -1,10 +1,4 @@
 import { supabase } from './supabase.js';
-/*
-La parte de la consulta y subida de foto de Usuario está hecha con IA porque intenté hacerlo yo,
-pero a la hora de actualizar la foto no se subía correctamente porque se ve que guardaba
-la foto anterior y se había de limpiar la caché o el buffer o algo así me comentó la IA.
-Así que simplemente le dije que el código que ya tenía lo actualizara y funcionara correctamente.
-*/
 
 async function consultaFotoUsuario(user) {
 	const { data } = await supabase.storage
@@ -70,6 +64,13 @@ function previewFoto(user) {
 		}
 	});
 }
+/*
+Este mensaje es para decir que el código que está por encima ha sido hecho por IA.
+Intenté hacerlo yo, pero a la hora de actualizar la foto no se subía correctamente porque se ve que guardaba
+la foto anterior y se había de limpiar la caché o el buffer o algo así me comentó la IA.
+Así que simplemente le dije que el código que ya tenía lo actualizara y funcionara correctamente.
+*/
+
 async function consultaUsername(user) {
 	let { data: profiles, error } = await supabase
 		.from('profiles')
@@ -174,9 +175,257 @@ async function contraseña(user) {
 	if (user) {
 		const botonContraseña = document.querySelector('#buttonEditPSWD');
 		botonContraseña.classList.remove('hidden');
-		botonContraseña.addEventListener('click', () => {
-			console.log('Hola');
+		botonContraseña.addEventListener('click', () => {});
+	}
+}
+let datosGlobales = {
+	nombre: '',
+	props: '',
+	imagen: '',
+};
+function añadirOptionCard() {
+	const divDatosDash = document.querySelector('.divDatosDash');
+	divDatosDash.classList.remove('hidden');
+	const selectDatos = document.querySelector('#selectAñadirDatos');
+	selectDatos.addEventListener('change', () => {
+		document.querySelector('.addDestination').classList.add('hidden');
+		document.querySelector('.addInspiration').classList.add('hidden');
+		document.querySelector('.addHotel').classList.add('hidden');
+		const value = selectDatos.value;
+		document.querySelector(`.add${value}`).classList.remove('hidden');
+		if (datosGlobales.nombre || datosGlobales.props || datosGlobales.imagen) {
+			document.querySelector(`.previewAdd${value}`).classList.remove('hidden');
+		}
+		if (datosGlobales.nombre) {
+			document.querySelector(`#titPreview${value}`).textContent =
+				datosGlobales.nombre;
+			document.querySelector(`#nombre${value}`).value = datosGlobales.nombre;
+		}
+		if (value !== 'Inspiration' && datosGlobales.props) {
+			document.querySelector(`#numPreview${value}`).textContent =
+				datosGlobales.props + ' properties';
+			document.querySelector(`#props${value}`).value = datosGlobales.props;
+		}
+		if (datosGlobales.imagen) {
+			document.querySelector(`#imgPreview${value}`).src = datosGlobales.imagen;
+		}
+	});
+	document
+		.querySelector('#formAddDestination')
+		.addEventListener('input', () => {
+			const titulo = document.querySelector('#titPreviewDestination');
+			const inputTit = document.querySelector('#nombreDestination');
+			const props = document.querySelector('#numPreviewDestination');
+			const inputNum = document.querySelector('#propsDestination');
+			const imagen = document.querySelector('#imgPreviewDestination');
+			const inputImg = document.querySelector('#imagenDestination');
+			if (inputTit.value) {
+				titulo.textContent = inputTit.value;
+				datosGlobales.nombre = inputTit.value;
+			}
+			if (inputNum.value) {
+				props.textContent = inputNum.value + ' properties';
+				datosGlobales.props = inputNum.value;
+			}
+			if (inputImg.files[0]) {
+				var foto = URL.createObjectURL(inputImg.files[0]);
+				imagen.src = foto;
+				datosGlobales.imagen = foto;
+			}
+			document
+				.querySelector('.previewAddDestination')
+				.classList.remove('hidden');
+			if (inputTit.value && inputNum.value && inputImg.files[0]) {
+				if (!document.querySelector('#enviarCardDestination')) {
+					document.querySelector('.previewAddDestination').innerHTML +=
+						'<button class="buttonEdit" id="enviarCardDestination">Enviar Destination</button>';
+					document
+						.querySelector('#enviarCardDestination')
+						.addEventListener('click', () => {
+							const tituloCheck = inputTit.value
+								.trim()
+								.normalize('NFD')
+								.replace(/[\u0300-\u036f]/g, '')
+								.replace(/\s+/g, '-')
+								.toLowerCase();
+							addCardDestination(
+								inputTit.value,
+								tituloCheck,
+								inputImg.files[0],
+								inputNum.value,
+							);
+						});
+				}
+			}
 		});
+	document
+		.querySelector('#formAddInspiration')
+		.addEventListener('input', () => {
+			const titulo = document.querySelector('#titPreviewInspiration');
+			const inputTit = document.querySelector('#nombreInspiration');
+			const cuerpo = document.querySelector('#crpPreviewInspiration');
+			const inputCrp = document.querySelector('#cuerpoInspiration');
+			const imagen = document.querySelector('#imgPreviewInspiration');
+			const inputImg = document.querySelector('#imagenInspiration');
+			if (inputTit.value) {
+				titulo.textContent = inputTit.value;
+				datosGlobales.nombre = inputTit.value;
+			}
+			if (inputCrp.value) {
+				cuerpo.textContent = inputCrp.value;
+			}
+			if (inputImg.files[0]) {
+				const foto = URL.createObjectURL(inputImg.files[0]);
+				imagen.src = foto;
+				datosGlobales.imagen = foto;
+			}
+			document
+				.querySelector('.previewAddInspiration')
+				.classList.remove('hidden');
+			if (inputTit.value && inputCrp.value && inputImg.files[0]) {
+				if (!document.querySelector('#enviarCardInspiration')) {
+					document.querySelector('.previewAddInspiration').innerHTML +=
+						'<button class="buttonEdit" id="enviarCardInspiration">Enviar Inspiration</button>';
+					document
+						.querySelector('#enviarCardInspiration')
+						.addEventListener('click', () => {
+							const tituloCheck = inputTit.value
+								.trim()
+								.normalize('NFD')
+								.replace(/[\u0300-\u036f]/g, '')
+								.replace(/\s+/g, '-')
+								.toLowerCase();
+							addCardInspiration(
+								inputTit.value,
+								tituloCheck,
+								inputImg.files[0],
+								inputCrp.value,
+							);
+						});
+				}
+			}
+		});
+	document.querySelector('#formAddHotel').addEventListener('input', () => {
+		const titulo = document.querySelector('#titPreviewHotel');
+		const inputTit = document.querySelector('#nombreHotel');
+		const props = document.querySelector('#numPreviewHotel');
+		const inputNum = document.querySelector('#propsHotel');
+		const imagen = document.querySelector('#imgPreviewHotel');
+		const inputImg = document.querySelector('#imagenHotel');
+		if (inputTit.value) {
+			titulo.textContent = inputTit.value;
+			datosGlobales.nombre = inputTit.value;
+		}
+		if (inputNum.value) {
+			props.textContent = inputNum.value + ' properties';
+			datosGlobales.props = inputNum.value;
+		}
+		if (inputImg.files[0]) {
+			const foto = URL.createObjectURL(inputImg.files[0]);
+			imagen.src = foto;
+			datosGlobales.imagen = foto;
+		}
+		document.querySelector('.previewAddHotel').classList.remove('hidden');
+		if (inputTit.value && inputNum.value && inputImg.files[0]) {
+			if (!document.querySelector('#enviarCardHotel')) {
+				document.querySelector('.previewAddHotel').innerHTML +=
+					'<button class="buttonEdit" id="enviarCardHotel">Enviar Hotel</button>';
+				document
+					.querySelector('#enviarCardHotel')
+					.addEventListener('click', () => {
+						const tituloCheck = inputTit.value
+							.trim()
+							.normalize('NFD')
+							.replace(/[\u0300-\u036f]/g, '')
+							.replace(/\s+/g, '-')
+							.toLowerCase();
+						addCardHotel(
+							inputTit.value,
+							tituloCheck,
+							inputImg.files[0],
+							inputNum.value,
+						);
+					});
+			}
+		}
+	});
+}
+async function addCardDestination(nombre, nomImage, image_url, propiedades) {
+	const { data: destinations, error } = await supabase
+		.from('destinations')
+		.insert([
+			{
+				nombre: nombre,
+				image_url: `destinations/${nomImage}.webp`,
+				propiedades: propiedades,
+			},
+		])
+		.select();
+	if (error) {
+		console.log(error);
+	} else {
+		const { data, error } = await supabase.storage
+			.from('myDreamPlace')
+			.upload(`destinations/${nomImage}.webp`, image_url, {
+				upsert: true,
+			});
+		if (error) {
+			console.log(error);
+		} else {
+			window.location.href = 'index.html#sect-enjoy';
+		}
+	}
+}
+async function addCardInspiration(nombre, nomImage, image_url, cuerpo) {
+	const { data: destinations, error } = await supabase
+		.from('inspirations')
+		.insert([
+			{
+				titulo: nombre,
+				image_url: `inspirations/${nomImage}.webp`,
+				cuerpo: cuerpo,
+			},
+		])
+		.select();
+	if (error) {
+		console.log(error);
+	} else {
+		const { data, error } = await supabase.storage
+			.from('myDreamPlace')
+			.upload(`inspirations/${nomImage}.webp`, image_url, {
+				upsert: true,
+			});
+		if (error) {
+			console.log(error);
+		} else {
+			window.location.href = 'index.html#sect-nextrip';
+		}
+	}
+}
+async function addCardHotel(nombre, nomImage, image_url, propiedades) {
+	const { data: destinations, error } = await supabase
+		.from('featured_hotels')
+		.insert([
+			{
+				nombre: nombre,
+				image_url: `featured/${nomImage}.webp`,
+				propiedades: propiedades,
+			},
+		])
+		.select();
+	if (error) {
+		console.log(error);
+	} else {
+		const { data, error } = await supabase.storage
+			.from('myDreamPlace')
+			.upload(`featured/${nomImage}.webp`, image_url, {
+				upsert: true,
+			});
+		if (error) {
+			console.log(error);
+		} else {
+			window.location.href = 'index.html#sect-popular';
+		}
 	}
 }
 document.addEventListener('DOMContentLoaded', async () => {
@@ -189,4 +438,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 		consultaNameUser(user),
 		consultaEmail(user),
 		contraseña(user));
+	if (
+		user.email === 'victormn29@gmail.com' ||
+		user.email === 'carrebola@fpllefia.com'
+	) {
+		añadirOptionCard();
+	}
 });

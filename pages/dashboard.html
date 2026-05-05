@@ -159,6 +159,145 @@
 					</div>
 				</div>
 			</div>
+			<div class="divDatosDash hidden">
+				<h2 class="h2-main-checkout">Añadir datos</h2>
+				<div class="mainDatosDash">
+					<h3>Selecciona dónde añadir datos a Main</h3>
+					<select id="selectAñadirDatos">
+						<option disabled selected>Selecciona</option>
+						<option value="Destination">Destinations</option>
+						<option value="Inspiration">Inspirations</option>
+						<option value="Hotel">Hotels</option>
+					</select>
+					<div class="addDestination hidden divs-addCard">
+						<h3 class="h3-addCard">Destination</h3>
+						<div class="inputsAddDestination">
+							<form action="" id="formAddDestination">
+								<h4 class="h4-addCard">Nombre</h4>
+								<input
+									type="text"
+									id="nombreDestination"
+									class="inputs-addCard" />
+								<h4 class="h4-addCard">Propiedades</h4>
+								<input
+									type="number"
+									id="propsDestination"
+									class="inputs-addCard" />
+								<h4 class="h4-addCard">Imagen</h4>
+								<label for="imagenDestination" class="labelInputFileFoto"
+									>Selecciona archivo</label
+								>
+								<input
+									type="file"
+									accept="image/webp"
+									id="imagenDestination"
+									class="inputImageDash" />
+							</form>
+						</div>
+						<div class="previewAddDestination hidden">
+							<h3 class="h3-addCard">Vista Previa Destination</h3>
+							<div>
+								<img
+									src="../images/checkout/lakeside.jpg"
+									alt=""
+									class="img-sect-enjoy"
+									id="imgPreviewDestination" />
+								<div class="div-text-sect-enjoy">
+									<h3 class="h3-div-text-sect-enjoy" id="titPreviewDestination">
+										Destination
+									</h3>
+									<p class="p-div-text-sect-enjoy" id="numPreviewDestination">
+										Nº properties
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addInspiration hidden divs-addCard">
+						<h3 class="h3-addCard">Inspiration</h3>
+						<div class="inputsAddInspiration">
+							<form action="" id="formAddInspiration">
+								<h4 class="h4-addCard">Título</h4>
+								<input
+									type="text"
+									id="nombreInspiration"
+									class="inputs-addCard" />
+								<h4 class="h4-addCard">Cuerpo</h4>
+								<textarea
+									id="cuerpoInspiration"
+									class="inputs-addCard"></textarea>
+								<h4 class="h4-addCard">Imagen</h4>
+								<label for="imagenInspiration" class="labelInputFileFoto"
+									>Selecciona archivo</label
+								>
+								<input
+									type="file"
+									accept="image/webp"
+									id="imagenInspiration"
+									class="inputImageDash" />
+							</form>
+						</div>
+						<div class="previewAddInspiration hidden">
+							<h3 class="h3-addCard">Vista Previa Inspiration</h3>
+							<div class="card-div-sect-nextrip">
+								<img
+									src="../images/checkout/lakeside.jpg"
+									alt=""
+									class="img-card-div-sect-nextrip"
+									id="imgPreviewInspiration" />
+								<div class="div-text-sect-nextrip">
+									<h3
+										class="h3-div-text-sect-nextrip"
+										id="titPreviewInspiration">
+										Título
+									</h3>
+									<p class="p-div-text-sect-nextrip" id="crpPreviewInspiration">
+										Cuerpo
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addHotel hidden divs-addCard">
+						<h3 class="h3-addCard">Hotel</h3>
+						<div class="inputsAddHotel">
+							<form action="" id="formAddHotel">
+								<h4 class="h4-addCard">Nombre</h4>
+								<input type="text" id="nombreHotel" class="inputs-addCard" />
+								<h4 class="h4-addCard">Propiedades</h4>
+								<input type="number" id="propsHotel" class="inputs-addCard" />
+								<h4 class="h4-addCard">Imagen</h4>
+								<label for="imagenHotel" class="labelInputFileFoto"
+									>Selecciona archivo</label
+								>
+								<input
+									type="file"
+									accept="image/webp"
+									id="imagenHotel"
+									class="inputImageDash" />
+							</form>
+						</div>
+						<div class="previewAddHotel hidden">
+							<h3 class="h3-addCard">Vista Previa Hotel</h3>
+							<div>
+								<img
+									src="../images/checkout/lakeside.jpg"
+									alt=""
+									class="img-sect-popular"
+									id="imgPreviewHotel" />
+								<div class="div-text-sect-popular">
+									<h3 class="h3-div-text-sect-popular" id="titPreviewHotel">
+										Hotel
+									</h3>
+									<p class="p-div-text-sect-popular" id="numPreviewHotel">
+										Nº properties
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<div class="padding-general footer-index2">

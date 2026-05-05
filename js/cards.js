@@ -5,7 +5,8 @@ async function destinations() {
 	let { data: destinations, error } = await supabase
 		.from('destinations')
 		.select('*')
-		.order('propiedades', { ascending: false });
+		.order('propiedades', { ascending: false })
+		.limit(4);
 	let htmlDest;
 	if (error) {
 		htmlDest = `<p>Error: ${error.message}</p>`;
@@ -29,7 +30,9 @@ async function inspirations() {
 	const divInspirations = document.querySelector('.div-sect-nextrip');
 	let { data: inspirations, error } = await supabase
 		.from('inspirations')
-		.select('*');
+		.select('*')
+		.order('creada', { ascending: false })
+		.limit(3);
 	let htmlInsp;
 	if (error) {
 		htmlInsp = `<p>Error: ${error.message}</p>`;
@@ -41,7 +44,7 @@ async function inspirations() {
 				<img src="https://kwzqtbwcsamesdbmjyvb.supabase.co/storage/v1/object/public/myDreamPlace/${insp.image_url}" alt="${insp.alt}" class="img-card-div-sect-nextrip">
 				<div class="div-text-sect-nextrip">
 					<h3 class="h3-div-text-sect-nextrip">${insp.titulo}</h3>
-					<p class="p-div-text-sect-nextrip">${insp.cuerpo}.</p>
+					<p class="p-div-text-sect-nextrip">${insp.cuerpo}</p>
 				</div>	
 			</div>
 			`;
@@ -54,7 +57,8 @@ async function featuredHotels() {
 	let { data: featured_hotels, error } = await supabase
 		.from('featured_hotels')
 		.select('*')
-		.order('propiedades', { ascending: false });
+		.order('propiedades', { ascending: false })
+		.limit(4);
 	let htmlHotels;
 	if (error) {
 		htmlHotels = `<p>Error: ${error.message}</p>`;

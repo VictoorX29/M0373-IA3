@@ -593,6 +593,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 8px;
 	width: 295px;
 	height: 220px;
+	object-fit: cover;
 }
 .div-text-sect-enjoy {
 	margin-top: 10px;
@@ -638,6 +639,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 8px;
 	width: 400px;
 	height: 280px;
+	object-fit: cover;
 }
 .div-text-sect-nextrip {
 	position: absolute;
@@ -674,6 +676,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 8px;
 	width: 295px;
 	height: 300px;
+	object-fit: cover;
 }
 .h3-div-text-sect-popular {
 	font-weight: 600;
@@ -2841,4 +2844,65 @@ label {
 }
 .inputFileFoto {
 	display: none;
+}
+.divDatosDash {
+	margin-top: 32px;
+}
+.mainDatosDash {
+	margin-top: 24px;
+	width: 100%;
+	border-radius: 8px;
+	background-color: #ebebeb;
+	padding: 16px;
+}
+#selectAñadirDatos {
+	margin-top: 12px;
+	border-radius: 6px;
+	border: 1px solid #2f80ed;
+	height: 32px;
+	padding-inline: 8px;
+	color: #2f80ed;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	background-color: #ffffff;
+}
+.h3-addCard {
+	margin-top: 8px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #181818;
+}
+.h4-addCard {
+	margin-top: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #181818;
+	/* 244	244	244
+	*/
+}
+.inputs-addCard {
+	border: 1px solid #2f80ed;
+	background-color: rgb(244, 244, 244);
+	border-radius: 4px;
+	color: #181818;
+	padding-block: 4px;
+	padding-inline: 6px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.inputImageDash {
+	display: none;
+}
+.divs-addCard {
+	width: 300px;
+}
+textarea.inputs-addCard {
+	width: 100%;
+	resize: vertical;
 }
