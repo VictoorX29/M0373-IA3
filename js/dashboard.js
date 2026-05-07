@@ -178,37 +178,54 @@ async function contraseña(user) {
 		botonContraseña.addEventListener('click', () => {});
 	}
 }
-let datosGlobales = {
-	nombre: '',
-	props: '',
-	imagen: '',
-};
 function añadirOptionCard() {
 	const divDatosDash = document.querySelector('.divDatosDash');
 	divDatosDash.classList.remove('hidden');
 	const selectDatos = document.querySelector('#selectAñadirDatos');
 	selectDatos.addEventListener('change', () => {
+		selectDatos.disabled = true;
 		document.querySelector('.addDestination').classList.add('hidden');
 		document.querySelector('.addInspiration').classList.add('hidden');
 		document.querySelector('.addHotel').classList.add('hidden');
 		const value = selectDatos.value;
 		document.querySelector(`.add${value}`).classList.remove('hidden');
-		if (datosGlobales.nombre || datosGlobales.props || datosGlobales.imagen) {
-			document.querySelector(`.previewAdd${value}`).classList.remove('hidden');
-		}
-		if (datosGlobales.nombre) {
-			document.querySelector(`#titPreview${value}`).textContent =
-				datosGlobales.nombre;
-			document.querySelector(`#nombre${value}`).value = datosGlobales.nombre;
-		}
-		if (value !== 'Inspiration' && datosGlobales.props) {
-			document.querySelector(`#numPreview${value}`).textContent =
-				datosGlobales.props + ' properties';
-			document.querySelector(`#props${value}`).value = datosGlobales.props;
-		}
-		if (datosGlobales.imagen) {
-			document.querySelector(`#imgPreview${value}`).src = datosGlobales.imagen;
-		}
+		document.querySelector(`.previewAdd${value}`).innerHTML +=
+			'<button class="buttonEdit" onclick="window.location.reload()">Cancelar</button>';
+		/*if (datosGlobales.nombre && datosGlobales.imagen) {
+			if (value !== 'Inspiration') {
+				if (datosGlobales.props) {
+					if (!document.querySelector(`#enviarCard${value}`)) {
+						document.querySelector(`.previewAdd${value}`).innerHTML +=
+							`<button class="buttonEdit" id="enviarCard${value}">Enviar ${value}</button>`;
+						document
+							.querySelector(`#enviarCard${value}`)
+							.addEventListener('click', () => {
+								const tituloCheck = datosGlobales.nombre
+									.trim()
+									.normalize('NFD')
+									.replace(/[\u0300-\u036f]/g, '')
+									.replace(/\s+/g, '-')
+									.toLowerCase();
+								if (value === 'Destination') {
+									addCardDestination(
+										datosGlobales.nombre,
+										tituloCheck,
+										datosGlobales.imagen,
+										datosGlobales,
+									);
+								} else {
+									addCardHotel(
+										datosGlobales.nombre,
+										tituloCheck,
+										datosGlobales.imagen,
+										datosGlobales,
+									);
+								}
+							});
+					}
+				}
+			}
+		}*/
 	});
 	document
 		.querySelector('#formAddDestination')
@@ -221,16 +238,13 @@ function añadirOptionCard() {
 			const inputImg = document.querySelector('#imagenDestination');
 			if (inputTit.value) {
 				titulo.textContent = inputTit.value;
-				datosGlobales.nombre = inputTit.value;
 			}
 			if (inputNum.value) {
 				props.textContent = inputNum.value + ' properties';
-				datosGlobales.props = inputNum.value;
 			}
 			if (inputImg.files[0]) {
 				var foto = URL.createObjectURL(inputImg.files[0]);
 				imagen.src = foto;
-				datosGlobales.imagen = foto;
 			}
 			document
 				.querySelector('.previewAddDestination')
@@ -269,7 +283,6 @@ function añadirOptionCard() {
 			const inputImg = document.querySelector('#imagenInspiration');
 			if (inputTit.value) {
 				titulo.textContent = inputTit.value;
-				datosGlobales.nombre = inputTit.value;
 			}
 			if (inputCrp.value) {
 				cuerpo.textContent = inputCrp.value;
@@ -277,7 +290,6 @@ function añadirOptionCard() {
 			if (inputImg.files[0]) {
 				const foto = URL.createObjectURL(inputImg.files[0]);
 				imagen.src = foto;
-				datosGlobales.imagen = foto;
 			}
 			document
 				.querySelector('.previewAddInspiration')
@@ -314,16 +326,13 @@ function añadirOptionCard() {
 		const inputImg = document.querySelector('#imagenHotel');
 		if (inputTit.value) {
 			titulo.textContent = inputTit.value;
-			datosGlobales.nombre = inputTit.value;
 		}
 		if (inputNum.value) {
 			props.textContent = inputNum.value + ' properties';
-			datosGlobales.props = inputNum.value;
 		}
 		if (inputImg.files[0]) {
 			const foto = URL.createObjectURL(inputImg.files[0]);
 			imagen.src = foto;
-			datosGlobales.imagen = foto;
 		}
 		document.querySelector('.previewAddHotel').classList.remove('hidden');
 		if (inputTit.value && inputNum.value && inputImg.files[0]) {
@@ -428,10 +437,49 @@ async function addCardHotel(nombre, nomImage, image_url, propiedades) {
 		}
 	}
 }
+function consultaFotoGoogle(user) {
+	for (let i = 0; i < user.app_metadata.providers.length; i++) {
+		const n = user.app_metadata.providers[i];
+		if (n === 'google') {
+			return true;
+		}
+	}
+	return false;
+}
+async function consultaGoogleNameSupabaseName(user) {
+	if (user.user_metadata.full_name) {
+		let { data: profiles, error } = await supabase
+			.from('profiles')
+			.select('fullName')
+			.eq('id', user.id)
+			.single();
+		if (!profiles.fullName) {
+			return true;
+		}
+	} else {
+		return false;
+	}
+}
 document.addEventListener('DOMContentLoaded', async () => {
 	const {
 		data: { user },
 	} = await supabase.auth.getUser();
+	const googleFoto = await consultaFotoGoogle(user);
+	if (googleFoto) {
+		const usuarioFoto = await consultaFotoUsuario(user);
+		if (!usuarioFoto.length) {
+			const masFoto = user.user_metadata.picture.replace(/=s\d+-c$/, '=s260-c');
+			const response = await fetch(
+				`https://images.weserv.nl/?url=${encodeURIComponent(masFoto)}`,
+			);
+			const blob = await response.blob();
+			await consultaSubirFoto(blob, user);
+		}
+	}
+	const googleName = await consultaGoogleNameSupabaseName(user);
+	if (googleName) {
+		actualizarNameUser(user, user.user_metadata.full_name);
+	}
 	(consultaBoton(user),
 		consultaFotoUsuario(user),
 		consultaUsername(user),
