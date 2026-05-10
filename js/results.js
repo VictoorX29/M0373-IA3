@@ -15,7 +15,7 @@ async function resultados() {
                     <a href="detalles.html?id=${hotel.id}" class="nostyle a-card-result">
                         <img
                             src="https://kwzqtbwcsamesdbmjyvb.supabase.co/storage/v1/object/public/myDreamPlace/${hotel.image_url}"
-                            alt=""
+                            alt="${hotel.name}"
                             class="img-card-result" />
                     </a>
                 </div>
