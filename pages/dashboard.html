@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IA3: Proyecto 2 | Dashboard</title>
+		<meta name="author" content="Víctor M.N." />
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="../images/header/plane.svg"
+			type="image/x-icon" />
+		<!-- Estilos -->
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body class="detalles-fondogris">
+		<header
+			class="padding-general header-detalles flex justify-between align-center">
+			<div class="div-logo flex div-header-global">
+				<a class="logo flex align-center nostyle" href="../index.html">
+					<img src="../images/header/plane.svg" alt="Logo Avion" />
+					<h1 class="h1-logo flex align-center">my Dream Place</h1>
+				</a>
+			</div>
+			<nav class="header-nav flex align-center justify-between">
+				<ul class="header-nav-ul flex justify-between">
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Home</a>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Discover</a>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center"
+							>Activities</a
+						>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">About</a>
+					</li>
+					<li class="flex align-center">
+						<a href="#" class="nostyle header-a flex align-center">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-iconos flex align-center div-header-global">
+				<img src="../images/header/noti-gray.svg" alt="Icon Noti" />
+				<div class="header-div-desplegable flex align-center">
+					<img
+						src="../images/icons/icono-perfil.png"
+						alt="Icono Perfil"
+						class="header-icono-perfil" />
+					<ul class="header-desplegable hidden">
+						<li class="header-desplegable-li flex align-center">
+							<img
+								src="../images/icons/icono-usuario.png"
+								alt=""
+								class="desplegable-img" /><span class="desplegable-span"
+								>Manage account</span
+							>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="my-trips.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icons/icono-avion.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>My trips</span
+								>
+							</a>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<img
+								src="../images/icons/icono-cartera.png"
+								alt=""
+								class="desplegable-img" /><span class="desplegable-span"
+								>Reward and wallet</span
+							>
+						</li>
+						<li class="header-desplegable-li flex align-center">
+							<a
+								href="index.html"
+								class="nostyle header-desplegable-a flex align-center">
+								<img
+									src="../images/icons/icono-logout.png"
+									alt=""
+									class="desplegable-img" /><span class="desplegable-span"
+									>Sign out</span
+								>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="padding-general main-myTrips">
+			<h2 class="h2-main-checkout">Dashboard</h2>
+			<div class="mainDash">
+				<div class="mainLeftDash">
+					<div class="divFotoPefilDash">
+						<img
+							src="../images/icons/icono-perfil.png"
+							alt="Icono Perfil"
+							class="fotoPerfilDash"
+							referrerpolicy="no-referrer" />
+					</div>
+					<div class="divPreviewFoto">
+						<button id="buttonEditFoto" class="buttonEdit hidden">
+							Editar
+						</button>
+						<div class="divFotoInput hidden">
+							<label for="archivo" class="labelInputFileFoto"
+								>Seleccionar archivo</label
+							>
+							<input
+								type="file"
+								name="archivo"
+								id="archivo"
+								class="inputFileFoto"
+								accept="image/jpeg" />
+							<div class="divPreviewFotoInput hidden">
+								<img src="" alt="" id="imgPreviewFoto" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mainRightDash">
+					<div>
+						<h3>Nombre de usuario</h3>
+						<div id="divUsername">
+							<p id="pUsername">*Usuario*</p>
+						</div>
+						<button id="buttonEditUsername" class="buttonEdit hidden">
+							Editar
+						</button>
+					</div>
+					<div>
+						<h3>Nombre completo</h3>
+						<div id="divNameUser">
+							<p id="pNameUser">*Nombre*</p>
+						</div>
+						<button id="buttonEditNameUser" class="buttonEdit hidden">
+							Editar
+						</button>
+					</div>
+					<div>
+						<h3>Email</h3>
+						<p id="pEmailUser">*Email*</p>
+					</div>
+					<div>
+						<h3>Contraseña</h3>
+						<div id="divPSWD">
+							<p id="pPSWD">****</p>
+						</div>
+						<button
+							id="buttonEditPSWD"
+							class="buttonEdit hidden"
+							onclick="alert('WIP. Please, come back soon')">
+							Cambiar contraseña
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="divDatosDash hidden">
+				<h2 class="h2-main-checkout">Añadir datos</h2>
+				<div class="mainDatosDash">
+					<h3>Selecciona dónde añadir datos a Main</h3>
+					<select id="selectAñadirDatos">
+						<option disabled selected>Selecciona</option>
+						<option value="Destination">Destinations</option>
+						<option value="Inspiration">Inspirations</option>
+						<option value="Hotel">Hotels</option>
+					</select>
+					<div class="addDestination hidden divs-addCard">
+						<h3 class="h3-addCard">Destination</h3>
+						<div class="inputsAddDestination">
+							<form action="" id="formAddDestination">
+								<h4 class="h4-addCard">Nombre</h4>
+								<input
+									type="text"
+									id="nombreDestination"
+									class="inputs-addCard" />
+								<h4 class="h4-addCard">Propiedades</h4>
+								<input
+									type="number"
+									id="propsDestination"
+									class="inputs-addCard" />
+								<h4 class="h4-addCard">Imagen</h4>
+								<label for="imagenDestination" class="labelInputFileFoto"
+									>Selecciona archivo</label
+								>
+								<input
+									type="file"
+									accept="image/webp"
+									id="imagenDestination"
+									class="inputImageDash" />
+							</form>
+						</div>
+						<div class="previewAddDestination hidden">
+							<h3 class="h3-addCard">Vista Previa Destination</h3>
+							<div>
+								<img
+									src="../images/checkout/lakeside.jpg"
+									alt=""
+									class="img-sect-enjoy"
+									id="imgPreviewDestination" />
+								<div class="div-text-sect-enjoy">
+									<h3 class="h3-div-text-sect-enjoy" id="titPreviewDestination">
+										Destination
+									</h3>
+									<p class="p-div-text-sect-enjoy" id="numPreviewDestination">
+										Nº properties
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addInspiration hidden divs-addCard">
+						<h3 class="h3-addCard">Inspiration</h3>
+						<div class="inputsAddInspiration">
+							<form action="" id="formAddInspiration">
+								<h4 class="h4-addCard">Título</h4>
+								<input
+									type="text"
+									id="nombreInspiration"
+									class="inputs-addCard" />
+								<h4 class="h4-addCard">Cuerpo</h4>
+								<textarea
+									id="cuerpoInspiration"
+									class="inputs-addCard"></textarea>
+								<h4 class="h4-addCard">Imagen</h4>
+								<label for="imagenInspiration" class="labelInputFileFoto"
+									>Selecciona archivo</label
+								>
+								<input
+									type="file"
+									accept="image/webp"
+									id="imagenInspiration"
+									class="inputImageDash" />
+							</form>
+						</div>
+						<div class="previewAddInspiration hidden">
+							<h3 class="h3-addCard">Vista Previa Inspiration</h3>
+							<div class="card-div-sect-nextrip">
+								<img
+									src="../images/checkout/lakeside.jpg"
+									alt=""
+									class="img-card-div-sect-nextrip"
+									id="imgPreviewInspiration" />
+								<div class="div-text-sect-nextrip">
+									<h3
+										class="h3-div-text-sect-nextrip"
+										id="titPreviewInspiration">
+										Título
+									</h3>
+									<p class="p-div-text-sect-nextrip" id="crpPreviewInspiration">
+										Cuerpo
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addHotel hidden divs-addCard">
+						<h3 class="h3-addCard">Hotel</h3>
+						<div class="inputsAddHotel">
+							<form action="" id="formAddHotel">
+								<h4 class="h4-addCard">Nombre</h4>
+								<input type="text" id="nombreHotel" class="inputs-addCard" />
+								<h4 class="h4-addCard">Propiedades</h4>
+								<input type="number" id="propsHotel" class="inputs-addCard" />
+								<h4 class="h4-addCard">Imagen</h4>
+								<label for="imagenHotel" class="labelInputFileFoto"
+									>Selecciona archivo</label
+								>
+								<input
+									type="file"
+									accept="image/webp"
+									id="imagenHotel"
+									class="inputImageDash" />
+							</form>
+						</div>
+						<div class="previewAddHotel hidden">
+							<h3 class="h3-addCard">Vista Previa Hotel</h3>
+							<div>
+								<img
+									src="../images/checkout/lakeside.jpg"
+									alt=""
+									class="img-sect-popular"
+									id="imgPreviewHotel" />
+								<div class="div-text-sect-popular">
+									<h3 class="h3-div-text-sect-popular" id="titPreviewHotel">
+										Hotel
+									</h3>
+									<p class="p-div-text-sect-popular" id="numPreviewHotel">
+										Nº properties
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="padding-general footer-index2">
+				<div class="div-footer-logo">
+					<div class="div-logo">
+						<a class="logo flex align-center nostyle" href="../index.html">
+							<img src="../images/header/plane.svg" alt="Logo Avion" />
+							<h1 class="h1-logo flex align-center">my Dream Place</h1>
+						</a>
+					</div>
+					<p class="footer-p-logo">Your next goto companion for travel</p>
+				</div>
+				<div class="footer-div-company">
+					<h4 class="footer-h4-tit flex align-center">Company</h4>
+					<ul class="footer-ul">
+						<li class="flex align-center">About</li>
+						<li class="flex align-center">Jobs</li>
+						<li class="flex align-center">Newsroom</li>
+						<li class="flex align-center">Advertising</li>
+						<li class="flex align-center">Contact us</li>
+					</ul>
+				</div>
+				<div class="footer-div-explore">
+					<h4 class="footer-h4-tit flex align-center">Explore</h4>
+					<ul class="footer-ul">
+						<li class="flex align-center">Australia</li>
+						<li class="flex align-center">New Zealand</li>
+						<li class="flex align-center">United States America (USA)</li>
+						<li class="flex align-center">Greece</li>
+						<li class="flex align-center">Maldives</li>
+						<li class="flex align-center">Singapore</li>
+						<li class="flex align-center">
+							<a href="" class="nostyle">See more</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-div-terms">
+					<h4 class="footer-h4-tit flex align-center">Terms and Policies</h4>
+					<ul class="footer-ul">
+						<li class="flex align-center">Privacy Policy</li>
+						<li class="flex align-center">Terms of use</li>
+						<li class="flex align-center">Acessibility</li>
+						<li class="flex align-center">Reward system policy</li>
+					</ul>
+				</div>
+				<div class="footer-div-help">
+					<h4 class="footer-h4-tit flex align-center">Help</h4>
+					<ul class="footer-ul">
+						<li class="flex align-center">Support</li>
+						<li class="flex align-center">Cancel your bookings</li>
+						<li class="flex align-center">Use Coupon</li>
+						<li class="flex align-center">Refund Policies</li>
+						<li class="flex align-center">International Travel Documents</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-barragris flex align-center">
+				<div class="div-footer-copy flex align-center">
+					<img
+						src="../images/icons/icon-copyright.png"
+						alt="Icono Copyright"
+						class="footer-iconcopy" />
+					<p class="footer-p-copy">my Dream Place 2025</p>
+				</div>
+			</div>
+		</footer>
+		<script type="module" src="../js/desplegable.js"></script>
+		<script type="module" src="../js/header.js"></script>
+		<script type="module" src="../js/dashboard.js"></script>
+	</body>
+</html>

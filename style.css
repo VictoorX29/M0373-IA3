@@ -198,6 +198,8 @@ body {
 	width: 44px;
 	height: 44px;
 	cursor: pointer;
+	border-radius: 100%;
+	object-fit: cover;
 }
 .header-div-desplegable {
 	position: relative;
@@ -218,7 +220,6 @@ body {
 	height: 40px;
 	padding: 10px 14px;
 	gap: 10px;
-	box-shadow: 0px 0.5px 0px 0px #d6d6d6;
 }
 .header-desplegable-li:not(:last-child) {
 	border-bottom: 0.5px solid #d6d6d6;
@@ -341,7 +342,6 @@ body {
 	line-height: 140%;
 	letter-spacing: 0.32px;
 	color: #4f4f4f;
-	white-space: nowrap;
 }
 .button-welcome-card {
 	margin-top: 45px;
@@ -593,6 +593,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 8px;
 	width: 295px;
 	height: 220px;
+	object-fit: cover;
 }
 .div-text-sect-enjoy {
 	margin-top: 10px;
@@ -638,6 +639,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 8px;
 	width: 400px;
 	height: 280px;
+	object-fit: cover;
 }
 .div-text-sect-nextrip {
 	position: absolute;
@@ -674,6 +676,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 8px;
 	width: 295px;
 	height: 300px;
+	object-fit: cover;
 }
 .h3-div-text-sect-popular {
 	font-weight: 600;
@@ -933,6 +936,17 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .div-label-auth img {
 	cursor: pointer;
+}
+.error-msg:empty {
+	display: none;
+}
+.error-msg {
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.28px;
+	color: red;
 }
 .form-text {
 	background-color: #f2f2f2;
@@ -2725,4 +2739,170 @@ label {
 .divgeneral-availa-precio-myTrips {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
+}
+.mainDash {
+	margin-top: 24px;
+	display: grid;
+	grid-template-columns: 300px auto;
+	gap: 32px;
+	width: 100%;
+	border-radius: 8px;
+	background-color: #ebebeb;
+	padding: 16px;
+}
+.mainLeftDash {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.divFotoPefilDash {
+	width: 100%;
+	aspect-ratio: 1/1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fotoPerfilDash {
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 100%;
+}
+.mainRightDash {
+	padding: 24px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	grid-template-rows: minmax(auto, 140px);
+	gap: 12px;
+}
+.divPreviewFoto {
+	margin-top: 12px;
+}
+.buttonEdit {
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #2f80ed;
+	height: 32px;
+	color: #2f80ed;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	background-color: #ffffff;
+	transition-duration: 0.2s;
+}
+.buttonEdit:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+	transition: background-color 0.2s ease;
+}
+.inputEditUser {
+	margin-top: 4px;
+	border: 0;
+	background-color: #f2f2f2;
+	height: 44px;
+	border-radius: 4px;
+	padding-top: 11px;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+	letter-spacing: 0.3px;
+	color: #333333;
+	width: 100%;
+}
+.divFotoInput {
+	margin-top: 8px;
+}
+.divPreviewFotoInput img {
+	width: 50%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 100%;
+}
+.labelInputFileFoto {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	border: 1px solid #2f80ed;
+	border-radius: 6px;
+	padding: 6px;
+	background-color: #ffffff;
+	color: #2f80ed;
+	transition-duration: 0.2s;
+}
+.labelInputFileFoto:hover {
+	background-color: rgba(0, 0, 0, 0.02);
+	transition: background-color 0.2s ease;
+}
+.divPreviewFotoInput {
+	margin-top: 8px;
+}
+.inputFileFoto {
+	display: none;
+}
+.divDatosDash {
+	margin-top: 32px;
+}
+.mainDatosDash {
+	margin-top: 24px;
+	width: 100%;
+	border-radius: 8px;
+	background-color: #ebebeb;
+	padding: 16px;
+}
+#selectAñadirDatos {
+	margin-top: 12px;
+	border-radius: 6px;
+	border: 1px solid #2f80ed;
+	height: 32px;
+	padding-inline: 8px;
+	color: #2f80ed;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	background-color: #ffffff;
+}
+.h3-addCard {
+	margin-top: 8px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #181818;
+}
+.h4-addCard {
+	margin-top: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #181818;
+	/* 244	244	244
+	*/
+}
+.inputs-addCard {
+	border: 1px solid #2f80ed;
+	background-color: rgb(244, 244, 244);
+	border-radius: 4px;
+	color: #181818;
+	padding-block: 4px;
+	padding-inline: 6px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.inputImageDash {
+	display: none;
+}
+.divs-addCard {
+	width: 300px;
+}
+textarea.inputs-addCard {
+	width: 100%;
+	resize: vertical;
 }
